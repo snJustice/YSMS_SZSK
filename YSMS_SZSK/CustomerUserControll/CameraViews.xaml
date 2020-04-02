@@ -1,0 +1,35 @@
+﻿<UserControl
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:YSMS_SZSK.CustomerUserControll"
+             xmlns:HalconDotNet="clr-namespace:HalconDotNet;assembly=halcondotnet" x:Class="YSMS_SZSK.CustomerUserControll.CameraViews"
+             mc:Ignorable="d" Width="376.033" Height="318.596">
+    <Grid >
+        <TabControl x:Name="tabControl"  Margin="0" >
+            <TabItem Header="实时图像" >
+                <HalconDotNet:HWindowControlWPF x:Name="HalconWindow_Copy" HorizontalAlignment="Left" Height="175" Margin="10,37,0,0" VerticalAlignment="Top" Width="213"/>
+            </TabItem>
+            <TabItem Header="测试图像">
+                <Grid Background="#FFE5E5E5">
+                    <HalconDotNet:HWindowControlWPF x:Name="HalconWindow" HorizontalAlignment="Left" Height="175" Margin="10,37,0,0" VerticalAlignment="Top" Width="213"/>
+                </Grid>
+            </TabItem >
+            <TabItem Header="检测图像">
+                <Grid Background="#FFE5E5E5">
+                    <HalconDotNet:HWindowControlWPF x:Name="HalconWindow_2" HorizontalAlignment="Left" Height="175" Margin="10,37,0,0" VerticalAlignment="Top" Width="213"/>
+                </Grid>
+
+            </TabItem>
+            <TabItem Header="快乐图像" >
+                <Grid Background="#FFE5E5E5" RenderTransformOrigin="0.331,0.532">
+
+                    <HalconDotNet:HWindowControlWPF x:Name="HalconWindow_6" HorizontalAlignment="Left" Height="175" Margin="10,37,0,0" VerticalAlignment="Top" Width="213"/>
+                </Grid>
+
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</UserControl>

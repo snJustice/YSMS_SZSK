@@ -1,6 +1,7 @@
 ﻿using System.Windows;
 using YSMS_SZSK.Lib.CustomerCamera;
 using HalconDotNet;
+using YSMS_SZSK.Utils.Communication.TCP_Client.DSocket;
 
 namespace YSMS_SZSK
 {
@@ -36,13 +37,7 @@ namespace YSMS_SZSK
 
         private void btn_Learning_Click(object sender, RoutedEventArgs e)
         {
-            CameraParas paras = new CameraParas();
-           
-           
-
-            Camera camera = new Camera(paras);
-            camera.HWindowCont = HalconWindow;
-            camera.OpenCamera();
+            
 
         }
     }

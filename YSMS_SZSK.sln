@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2048
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.181
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YSMS_SZSK.UI", "YSMS_SZSK\YSMS_SZSK.UI.csproj", "{EDEF30FE-713D-40B5-BE53-B6974BB3AC84}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YSMS_SZSK.Utils", "YSMS_SZSK.Utils\YSMS_SZSK.Utils.csproj", "{53928078-7B84-4C1B-A8CC-50D074B06861}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YSMS_SZSK.HalconAlgorithm", "YSMS_SZSK.HalconAlgorithm\YSMS_SZSK.HalconAlgorithm.csproj", "{6E49334C-A41B-4FDE-9C2B-1A81EAE8C48D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{EDEF30FE-713D-40B5-BE53-B6974BB3AC84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDEF30FE-713D-40B5-BE53-B6974BB3AC84}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDEF30FE-713D-40B5-BE53-B6974BB3AC84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53928078-7B84-4C1B-A8CC-50D074B06861}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53928078-7B84-4C1B-A8CC-50D074B06861}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53928078-7B84-4C1B-A8CC-50D074B06861}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53928078-7B84-4C1B-A8CC-50D074B06861}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E49334C-A41B-4FDE-9C2B-1A81EAE8C48D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E49334C-A41B-4FDE-9C2B-1A81EAE8C48D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E49334C-A41B-4FDE-9C2B-1A81EAE8C48D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E49334C-A41B-4FDE-9C2B-1A81EAE8C48D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

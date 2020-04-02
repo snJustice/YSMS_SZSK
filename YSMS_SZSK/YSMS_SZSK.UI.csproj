@@ -85,6 +85,10 @@
     <Compile Include="Communication\LightControll.cs" />
     <Compile Include="CustomerDataManager\DataManager.cs" />
     <Compile Include="CustomerDataManager\XmlSerializer.cs" />
+    <Page Include="CustomerUserControll\CameraViews.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ImageDrawing\SelectWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -110,6 +114,9 @@
     <Compile Include="CustomerGlobal\PublicVariable.cs" />
     <Compile Include="CustomerGlobal\SoftwareParas.cs" />
     <Compile Include="CustomerGlobal\StaticPublicFunction.cs" />
+    <Compile Include="CustomerUserControll\CameraViews.xaml.cs">
+      <DependentUpon>CameraViews.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ImageDrawing\DrawingCanvas.cs" />
     <Compile Include="ImageDrawing\DrawingTool\Tool.cs" />
     <Compile Include="ImageDrawing\GraphicsBase.cs" />
@@ -196,6 +203,12 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\YSMS_SZSK.Utils\YSMS_SZSK.Utils.csproj">
+      <Project>{53928078-7b84-4c1b-a8cc-50d074b06861}</Project>
+      <Name>YSMS_SZSK.Utils</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
