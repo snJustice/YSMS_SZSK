@@ -28,6 +28,8 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -68,28 +70,15 @@
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Basic\PublicClass\AlgParas.cs" />
-    <Compile Include="Basic\PublicClass\ElementArgs.cs" />
-    <Compile Include="Basic\PublicClass\FocusImage.cs" />
-    <Compile Include="Basic\PublicClass\MeasureElement.cs" />
-    <Compile Include="Basic\PublicClass\OperateInfo.cs" />
-    <Compile Include="Basic\PublicClass\RectangleD.cs" />
-    <Compile Include="Basic\PublicClass\TemplateToolElement.cs" />
-    <Compile Include="Basic\PublicClass\ToolElement.cs" />
     <Compile Include="Communication\LightControll.cs" />
-    <Compile Include="CustomerDataManager\DataManager.cs" />
-    <Compile Include="CustomerDataManager\XmlSerializer.cs" />
     <Page Include="CustomerUserControll\CameraViews.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="ImageDrawing\SelectWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -101,68 +90,31 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="CustomerGlobal\AllModuleValue.cs" />
-    <Compile Include="CustomerGlobal\CfgInfo.cs" />
-    <Compile Include="Basic\PublicClass\Element.cs" />
-    <Compile Include="CustomerGlobal\DispatcherHelper.cs" />
-    <Compile Include="CustomerGlobal\DrawParas.cs" />
-    <Compile Include="CustomerGlobal\Global.cs" />
-    <Compile Include="Basic\PublicClass\PointD.cs" />
-    <Compile Include="CustomerGlobal\PlatformControlParas.cs" />
-    <Compile Include="CustomerGlobal\ProductFilesInfo.cs" />
-    <Compile Include="CustomerGlobal\PublicEnum.cs" />
-    <Compile Include="CustomerGlobal\PublicVariable.cs" />
-    <Compile Include="CustomerGlobal\SoftwareParas.cs" />
-    <Compile Include="CustomerGlobal\StaticPublicFunction.cs" />
     <Compile Include="CustomerUserControll\CameraViews.xaml.cs">
       <DependentUpon>CameraViews.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ImageDrawing\DrawingCanvas.cs" />
-    <Compile Include="ImageDrawing\DrawingTool\Tool.cs" />
-    <Compile Include="ImageDrawing\GraphicsBase.cs" />
-    <Compile Include="ImageDrawing\GraphicsMeasureBase.cs" />
-    <Compile Include="ImageDrawing\GraphicsTemplateToolElement.cs" />
-    <Compile Include="ImageDrawing\HelperFunctions.cs" />
-    <Compile Include="ImageDrawing\SelectWindow.xaml.cs">
-      <DependentUpon>SelectWindow.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ImageDrawing\ZoomBox.cs" />
-    <Compile Include="Lib\CustomerCamera\Camera.cs" />
-    <Compile Include="Lib\CustomerCamera\CameraParas.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="MessagePrompt\ErrorMessage.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="Resources\Languages\en-us.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
-    <Page Include="MessagePrompt\MyMessageBox.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="Resources\Languages\ru-ru.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
-    <Page Include="MessagePrompt\QuestionMessage.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="Resources\Languages\ru-ru客户反翻译.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
-    <Page Include="MessagePrompt\TipsMessage.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="Resources\Languages\zh-cn.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MessagePrompt\ErrorMessage.xaml.cs">
-      <DependentUpon>ErrorMessage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="MessagePrompt\MyMessageBox.xaml.cs">
-      <DependentUpon>MyMessageBox.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="MessagePrompt\QuestionMessage.xaml.cs">
-      <DependentUpon>QuestionMessage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="MessagePrompt\TipsMessage.xaml.cs">
-      <DependentUpon>TipsMessage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -189,15 +141,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Database1.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Database1_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>Database1.mdf</DependentUpon>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
       <Visible>False</Visible>
       <ProductName>.NET Framework 3.5 SP1</ProductName>
@@ -205,10 +148,17 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\YSMS.DataManage\YSMS.DataManage.csproj">
+      <Project>{2afc2bac-191a-49ff-9622-c153cbd600ce}</Project>
+      <Name>YSMS.DataManage</Name>
+    </ProjectReference>
     <ProjectReference Include="..\YSMS_SZSK.Utils\YSMS_SZSK.Utils.csproj">
       <Project>{53928078-7b84-4c1b-a8cc-50d074b06861}</Project>
       <Name>YSMS_SZSK.Utils</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="公司Logo.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

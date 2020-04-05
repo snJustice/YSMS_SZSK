@@ -1,0 +1,965 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <sys:String x:Key="Language">English</sys:String>
+    <sys:String x:Key="Version">版本号</sys:String>
+    <sys:String x:Key="SoftwareVersion">软件版本号</sys:String>
+    <sys:String x:Key="AlgorithmVersion">算法版本号</sys:String>
+    <sys:String x:Key="OKButton">确定</sys:String>
+    <sys:String x:Key="CancelButton">取消</sys:String>
+    <sys:String x:Key="CancelRegion">取消框</sys:String>
+    <sys:String x:Key="CancelCross">取消十字</sys:String>
+    <sys:String x:Key="ClrCache">清空缓存</sys:String>
+
+
+    <sys:String x:Key="Title">YSMS-S130智能测量软件系统V</sys:String>
+    <sys:String x:Key="Define">定义测量</sys:String>
+    <sys:String x:Key="New">新建</sys:String>
+    <sys:String x:Key="Open">打开</sys:String>
+    <sys:String x:Key="Delete">删除</sys:String>
+    <sys:String x:Key="Save">保存</sys:String>
+    <sys:String x:Key="Save Other">另存</sys:String>
+    <sys:String x:Key="Rename">重命名</sys:String>
+    <sys:String x:Key="Station1">工 位 1</sys:String>
+    <sys:String x:Key="Station2">工 位 2</sys:String>
+    <sys:String x:Key="Station3">工 位 3</sys:String>
+    <sys:String x:Key="Station4">工 位 4</sys:String>
+    <sys:String x:Key="Station5">工 位 5</sys:String>
+    <sys:String x:Key="Station6">工 位 6</sys:String>
+    <sys:String x:Key="Enabled">启  用</sys:String>
+    <sys:String x:Key="Product Para">产品参数</sys:String>
+    <sys:String x:Key="Product Positioning">产品定位</sys:String>
+    <sys:String x:Key="Define Defect">缺陷定义</sys:String>
+    <sys:String x:Key="Size Definition">尺寸定义</sys:String>
+    <sys:String x:Key="Channel">通  道</sys:String>
+    <sys:String x:Key="Photo Templates">拍照模板</sys:String>
+    <sys:String x:Key="Real-time Image">实时图像</sys:String>
+    <sys:String x:Key="Station Para">工位参数</sys:String>
+    <sys:String x:Key="Scaling Ratio">缩放比例</sys:String>
+    <sys:String x:Key="Current Image">当前图像</sys:String>
+    <sys:String x:Key="Dynamic Image">动态图像</sys:String>
+    <sys:String x:Key="Static Image">静态图像</sys:String>
+    <sys:String x:Key="Template1">模   板  1</sys:String>
+    <sys:String x:Key="DeleteTemplate">删除模板</sys:String>
+    <sys:String x:Key="Drawing">采    图</sys:String>
+    <sys:String x:Key="OffLineDraw">离线采图</sys:String>
+    <sys:String x:Key="But_Gray">灰度</sys:String>
+    
+    <sys:String x:Key="Save Picture">保存图片</sys:String>
+    <sys:String x:Key="Template Picture">模板图片</sys:String>
+    <sys:String x:Key="Template Image">模板图像</sys:String>
+    <sys:String x:Key="Template2">模   板  2</sys:String>
+    <sys:String x:Key="Template3">模   板  3</sys:String>
+    <sys:String x:Key="Template4">模   板  4</sys:String>
+    <sys:String x:Key="Remote Assistance is on">远程协助已开启</sys:String>
+    <sys:String x:Key="Remote Assistance">远程协助</sys:String>
+    <sys:String x:Key="The software is running normally">软件运行正常</sys:String>
+    <sys:String x:Key="Ningbo Yunsheng">宁波韵升智能技术有限公司</sys:String>
+
+
+    <sys:String x:Key="Batch Measurement">批量测量</sys:String>
+    <sys:String x:Key="Time">时    间</sys:String>
+    <sys:String x:Key="Station">工位</sys:String>
+    <sys:String x:Key="State">状    态</sys:String>
+    <sys:String x:Key="Description">说             明</sys:String>
+    <sys:String x:Key="DefectConfirm">确 认</sys:String>
+    <sys:String x:Key="Display Full Screen">全屏显示</sys:String>
+    <sys:String x:Key="Historical Data">历史数据</sys:String>
+    <sys:String x:Key="ExitThis">退  出</sys:String>
+    <sys:String x:Key="Parameter Setting">参数设置</sys:String>
+    <sys:String x:Key="Channel1">通道1</sys:String>
+    <sys:String x:Key="Measurement Procedure">测量程序</sys:String>
+    <sys:String x:Key="Edit Procedure">编辑程序</sys:String>
+    <sys:String x:Key="Start">开  始</sys:String>
+    <sys:String x:Key="Stop">停  止</sys:String>
+    <sys:String x:Key="Reset">复  位</sys:String>
+    <sys:String x:Key="Pause">暂  停</sys:String>
+    
+    <sys:String x:Key="Channel2">通道2</sys:String>
+    <sys:String x:Key="Measurement">测试</sys:String>
+    <sys:String x:Key="Product Code">产品型号</sys:String>
+    <sys:String x:Key="Batch Number">生产批号</sys:String>
+    <sys:String x:Key="Number of passes">合格计数</sys:String>
+    <sys:String x:Key="Number of disqualification">不合格计数</sys:String>
+    <sys:String x:Key="Alarm Clear">清空报警队列</sys:String>
+    <sys:String x:Key="Coiler1">收卷 1</sys:String>
+    <sys:String x:Key="Coiler2">收卷 2</sys:String>
+    <sys:String x:Key="Save OK Image is on">储存OK原图已开启</sys:String>
+    <sys:String x:Key="Save NG unlabelled  image is on">储存NG未标记原图已开启</sys:String>
+    <sys:String x:Key="Save NG labelled image is on">储存NG已标记原图已开启</sys:String>
+    <sys:String x:Key="Save unmatch image is on">储存未匹配原图已开启</sys:String>
+    <sys:String x:Key="The value of channel1 encoder">通道1单元总数</sys:String>
+    <sys:String x:Key="The value of channel2 encoder">通道2单元总数</sys:String>
+    <sys:String x:Key="ratio">单元系数</sys:String>
+    <sys:String x:Key="ratioLen">单元长度</sys:String>
+    <sys:String x:Key="Clear Encoder">清空</sys:String>
+    <sys:String x:Key="SaveBatchRatio">保存系数</sys:String>
+
+
+    <sys:String x:Key="Generate Circle">生成圆</sys:String>
+    <sys:String x:Key="radius">半径:</sys:String>
+
+    
+
+    <sys:String x:Key="YSMS-S130 intelligent measurement software system V4.0">YSMS-S130智能测量软件系统V4.0</sys:String>
+    <sys:String x:Key="Report">统计报表</sys:String>
+    <sys:String x:Key="Exit">退出系统</sys:String>
+    <sys:String x:Key="Login">用户登录</sys:String>
+    <sys:String x:Key="online mode">联机模式</sys:String>
+    <sys:String x:Key="offline mode">脱机模式</sys:String>
+    <sys:String x:Key="oneChannel">单通道</sys:String>
+    <sys:String x:Key="twoChannel">双通道</sys:String>
+
+
+
+
+    <sys:String x:Key="New product">新建产品</sys:String>
+    <sys:String x:Key="Product name">产品名称</sys:String>
+    <sys:String x:Key="Confirm">确 定</sys:String>
+    <sys:String x:Key="Cancel">取 消</sys:String>
+    <sys:String x:Key="Product type">产品类别</sys:String>
+    <sys:String x:Key="Number of station">工位数量</sys:String>
+    <sys:String x:Key="Color mode">色彩模式:</sys:String>
+    <sys:String x:Key="redscale">红 色</sys:String>
+    <sys:String x:Key="greenscale">绿 色</sys:String>
+    <sys:String x:Key="bluescale">蓝 色</sys:String>
+    <sys:String x:Key="greyscale">灰 度</sys:String>
+    <sys:String x:Key="Choose">选择</sys:String>
+    <sys:String x:Key="Method of Take pictures">拍照方式:</sys:String>
+    <sys:String x:Key="Trigger software">软  件  触  发</sys:String>
+    <sys:String x:Key="Trigger hardware">硬  件  触  发</sys:String>
+    <sys:String x:Key="Channel name">通道名称:</sys:String>
+    <sys:String x:Key="Material box type">料盒类型:</sys:String>
+    <sys:String x:Key="A Material box">A     料    盒</sys:String>
+    <sys:String x:Key="B Material box">B     料    盒</sys:String>
+    <sys:String x:Key="priority model">优先模板</sys:String>
+
+
+    <sys:String x:Key="delete product">删除产品</sys:String>
+    <sys:String x:Key="Product list">产品列表:</sys:String>
+    <sys:String x:Key="delete">删 除</sys:String>
+
+    <sys:String x:Key="Open product">打开产品</sys:String>
+    <sys:String x:Key="Keyword">关键字:</sys:String>
+    <sys:String x:Key="Code">扫码</sys:String>
+ 
+    <sys:String x:Key="Rename product">产品重命名:</sys:String>
+    <sys:String x:Key="Product name after rename">请输入重命名的名称:</sys:String>
+    <sys:String x:Key="Original product name">产品原名称:</sys:String>
+
+    <sys:String x:Key="Save other product">产品另存</sys:String>
+    <sys:String x:Key="Please enter new product name">请输入新产品的名称：</sys:String>
+
+
+    <sys:String x:Key="ExposureTimeRaw">相机曝光时间</sys:String>
+    <sys:String x:Key="GainRaw">相机图像增益</sys:String>
+    <sys:String x:Key="Template mismatch alarm number">模板未匹配报警次数</sys:String>
+    <sys:String x:Key="Camera interval">相机拍照间隔</sys:String>
+    <sys:String x:Key="The number of shots taken at each measurement interval">每次尺寸测量间隔拍照次数</sys:String>
+
+
+    <sys:String x:Key="Light sources1">光源1</sys:String>
+
+    <sys:String x:Key="Light sources">光源</sys:String>
+    <sys:String x:Key="Others">其 他</sys:String>
+
+    <sys:String x:Key="Template 1">模板1</sys:String>
+    <sys:String x:Key="Template 2">模板2</sys:String>
+    <sys:String x:Key="Template 3">模板3</sys:String>
+    <sys:String x:Key="Template 4">模板4</sys:String>
+    <sys:String x:Key="Take pictures 1">拍照1</sys:String>
+
+
+    <sys:String x:Key="Camera template selection">拍照模板选择</sys:String>
+    <sys:String x:Key="Number and position of photos taken">拍照张数和位置</sys:String>
+    <sys:String x:Key="Initial camera position">起始拍照位置</sys:String>
+    <sys:String x:Key="Number of photos taken">拍照次数</sys:String>
+
+
+    
+    <sys:String x:Key="Parameter name">参数名称</sys:String>
+    <sys:String x:Key="Parameter value">参数数值</sys:String>
+    <sys:String x:Key="Parameter Description">参数说明</sys:String>
+
+
+    <sys:String x:Key="Array">阵列</sys:String>
+    <sys:String x:Key="Clear">清空</sys:String>
+    <sys:String x:Key="Direction">方向:</sys:String>
+    <sys:String x:Key="row distance">列距:</sys:String>
+    <sys:String x:Key="number of times">次数:</sys:String>
+    <sys:String x:Key="Image">图像</sys:String>
+    <sys:String x:Key="Pixel">像素</sys:String>
+    <sys:String x:Key="Actual">实际</sys:String>
+    <sys:String x:Key="millimeter">毫米</sys:String>
+    <sys:String x:Key="line distance">行距:</sys:String>
+    <sys:String x:Key="dotdistance">点距</sys:String>
+
+
+    <sys:String x:Key="Defect list">缺陷列表</sys:String>
+    <sys:String x:Key="Delete defect">删除缺陷</sys:String>
+    <sys:String x:Key="Edit defects">编辑缺陷</sys:String>
+    <sys:String x:Key="Test all">试测全部</sys:String>
+    <sys:String x:Key="Detection area">检测区域</sys:String>
+    <sys:String x:Key="rectangle">矩形</sys:String>
+    <sys:String x:Key="Draw">绘 制</sys:String>
+    <sys:String x:Key="Re-draw">重 绘</sys:String>
+    <sys:String x:Key="Generate">阵列</sys:String>
+    <sys:String x:Key="Edit">编辑</sys:String>
+    <sys:String x:Key="circle">圆</sys:String>
+    <sys:String x:Key="Polygon">多边形</sys:String>
+    <sys:String x:Key="Defect algorithm and parameter">缺陷算法及参数</sys:String>
+    <sys:String x:Key="Basic parameters">基本参数</sys:String>
+    <sys:String x:Key="Accuracy level">精 度 等 级</sys:String>
+    <sys:String x:Key="Is check copy region?">是否检测重叠区域？</sys:String>
+    <sys:String x:Key="Continuous">间断/连续NG报警（勾选：间断，不勾选：连续）</sys:String>
+    <sys:String x:Key="Inteval">间断NG报警</sys:String>
+    <sys:String x:Key="Continuous alarm several times">NG次数</sys:String>
+    <sys:String x:Key="GroupNum">连续拍照次数</sys:String>
+    <sys:String x:Key="Advanced parameters">高级参数</sys:String> 
+    <sys:String x:Key="Test">试    测</sys:String>
+    <sys:String x:Key="Add defect">添加缺陷</sys:String>
+    <sys:String x:Key="defect">缺陷</sys:String>
+    <sys:String x:Key="Defect type">缺陷类型</sys:String>
+    <sys:String x:Key="Tips">温馨提示</sys:String>
+    <sys:String x:Key="TipsInfo">1、选择缺陷类型&#x0a;2、绘制检测区域&#x0a;3、调整参数&#x0a;4、试测成功,添加缺陷</sys:String>
+    <sys:String x:Key="Illustration">试测区域</sys:String>
+    <sys:String x:Key="Test chart">试测图</sys:String>
+    <sys:String x:Key="copy">复制</sys:String>
+    <sys:String x:Key="paste">粘贴</sys:String>
+    <sys:String x:Key="orgin">还原</sys:String>
+    <sys:String x:Key="copyStation">工位复制</sys:String>
+    <sys:String x:Key="pasteStation">工位粘贴</sys:String>
+    <sys:String x:Key="lightEstimate">光源评估</sys:String>
+    <sys:String x:Key="picSave">图片保存</sys:String>
+
+    <sys:String x:Key="Generating region">生成框</sys:String>
+    <sys:String x:Key="Generating corss">生成十字</sys:String>
+    <sys:String x:Key="Single Generating">单个生成</sys:String>
+    <sys:String x:Key="Center point algorithm">中心点算法:</sys:String>
+    <sys:String x:Key="The centre of a circle">圆心</sys:String>
+    <sys:String x:Key="Dase island Center">基岛中心</sys:String>
+    <sys:String x:Key="The color of new region">生成区域颜色:</sys:String>
+    <sys:String x:Key="White">白</sys:String>
+    <sys:String x:Key="Black">黑</sys:String>
+    <sys:String x:Key="Gray scale threshold">灰度阈值</sys:String>
+    <sys:String x:Key="The number of positioning area">定位区域个数：</sys:String>
+    <sys:String x:Key="Central point X coordinate">中心点X坐标：</sys:String>
+    <sys:String x:Key="Central point Y coordinate">中心点Y坐标：</sys:String>
+    <sys:String x:Key="Central point X offset">中心点X偏移：</sys:String>
+    <sys:String x:Key="Central point Y offset">中心点Y偏移：</sys:String>
+    <sys:String x:Key="Region height">框高度:</sys:String>
+    <sys:String x:Key="Region Width">框宽度:</sys:String>
+    <sys:String x:Key="Rotation radian">旋转弧度:</sys:String>
+    <sys:String x:Key="Get radian">获取弧度</sys:String>
+    <sys:String x:Key="Generate coordinate">生成坐标</sys:String>
+    <sys:String x:Key="Batch generation">批量生成</sys:String>
+    <sys:String x:Key="Generate algorithm">生成算法：</sys:String>
+    <sys:String x:Key="Parameter list">参数列表</sys:String>
+
+
+    <sys:String x:Key="ROI  X To the center">ROI X向中心偏</sys:String>
+    <sys:String x:Key="ROI  Y To the center">ROI Y向中心偏</sys:String>
+    <sys:String x:Key="ROI Width">ROI  宽   度</sys:String>
+    <sys:String x:Key="ROI Height">ROI  高   度</sys:String>
+    <sys:String x:Key="Locate template parameters">定位模板参数</sys:String>
+    <sys:String x:Key="Product Image Shooting Background">产品图拍摄背景</sys:String>
+    <sys:String x:Key="Picture A">图A</sys:String>
+    <sys:String x:Key="Picture B">图B</sys:String>
+    <sys:String x:Key="Match score">匹配分数</sys:String>
+    <sys:String x:Key="Product boundary greyscale">产品边界灰度</sys:String>
+    <sys:String x:Key="positioning area boundary greyscale">定位区域边界灰度</sys:String>
+    <sys:String x:Key="Match the maximum angle">匹配角度最大值</sys:String>
+    <sys:String x:Key="Select the template area">选择模板面积区域</sys:String>
+    <sys:String x:Key="Select location type">定位方式</sys:String>
+    <sys:String x:Key="Direction Y">Y轴交点方向</sys:String>
+    <sys:String x:Key="Direction Content0">背景到前景</sys:String>
+    <sys:String x:Key="Direction Content1">前景到背景</sys:String>
+    <sys:String x:Key="Direction X">X轴交点方向</sys:String>
+    <sys:String x:Key="Stretch Y">Y轴拉伸系数</sys:String>
+    <sys:String x:Key="Stretch X">X轴拉伸系数</sys:String>
+    <sys:String x:Key="View Y">查看Y</sys:String>
+    <sys:String x:Key="View X">查看X</sys:String>
+    <sys:String x:Key="Surface area">表面区</sys:String>
+    <sys:String x:Key="Normal">常规</sys:String>
+    <sys:String x:Key="Special">打印</sys:String>
+    <sys:String x:Key="Trigger">触发</sys:String>
+    <sys:String x:Key="CrdCross">坐标交点</sys:String>
+    <sys:String x:Key="Background area">背景区</sys:String>
+    <sys:String x:Key="Whether it is a closed area">是否为封闭区</sys:String>
+    <sys:String x:Key="Non-closed">非封闭</sys:String>
+    <sys:String x:Key="Closed">封闭</sys:String>
+    <sys:String x:Key="Whether to check outside the ROI">只检ROI区域？</sys:String>
+    <sys:String x:Key="YES">是</sys:String>
+    <sys:String x:Key="NO">否</sys:String>
+    <sys:String x:Key="TipsROI">1、设置ROI 2、绘制检测区域和定位区域 3、设置模板参数 4、生成模板</sys:String>
+    <sys:String x:Key="Positioning area">定位区域</sys:String>
+    <sys:String x:Key="Generate templates">生成模板</sys:String>
+
+
+    <sys:String x:Key="Adjust array">阵列调整</sys:String>
+
+
+    <sys:String x:Key="Size detection list">尺寸检测列表</sys:String>
+    <sys:String x:Key="Edit size">编辑尺寸</sys:String>
+    <sys:String x:Key="Delete size">删除尺寸</sys:String>
+    <sys:String x:Key="Size nominal value">尺寸公称值</sys:String>
+    <sys:String x:Key="Size upper tolerances">尺寸上公差</sys:String>
+    <sys:String x:Key="Size lower tolerances">尺寸下公差</sys:String>
+    <sys:String x:Key="Size compensation value">尺寸补偿值</sys:String>
+    <sys:String x:Key="Size quantity">尺 寸 数 量</sys:String>
+    <sys:String x:Key="Whether it is displayed">是 否 显 示</sys:String>
+    <sys:String x:Key="No displayed">不显示</sys:String>
+    <sys:String x:Key="Displayed">显示</sys:String>
+    <sys:String x:Key="Size">尺寸</sys:String> 
+    <sys:String x:Key="Size type">尺寸种类</sys:String>
+    <sys:String x:Key="SizeTips">1、选择尺寸类型&#x0a;2、绘制检测区域&#x0a;3、填写检测判据&#x0a;4、试测成功,添加尺寸</sys:String>
+    <sys:String x:Key="Test content">检测内容</sys:String>
+    <sys:String x:Key="Add size">添加尺寸</sys:String>
+    <sys:String x:Key="Test judgement">检测判据</sys:String>
+    <sys:String x:Key="Attention">注：</sys:String>
+
+    
+    <sys:String x:Key="Record information">记录信息</sys:String>
+    <sys:String x:Key="Record screen">屏幕录像</sys:String>
+    <sys:String x:Key="Start the record">开始记录</sys:String>
+    <sys:String x:Key="End the record">结束记录</sys:String>
+    <sys:String x:Key="Help">帮助</sys:String>
+
+    <sys:String x:Key="Historical data">历史数据</sys:String>
+    <sys:String x:Key="Start time">起始时间</sys:String>
+    <sys:String x:Key="End time">结束时间</sys:String>
+    <sys:String x:Key="Search">检索</sys:String>
+    <sys:String x:Key="Export">导出</sys:String>
+
+
+    <sys:String x:Key="screenshot">截图</sys:String>
+    <sys:String x:Key="Schematic diagram1">示意图1</sys:String>
+    <sys:String x:Key="Schematic diagram2">示意图2</sys:String>
+    <sys:String x:Key="Schematic diagram3">示意图3</sys:String>
+    <sys:String x:Key="Schematic diagram4">示意图4</sys:String>
+    <sys:String x:Key="Other info">其他信息</sys:String>
+    <sys:String x:Key="Number of unmatched">未匹配数</sys:String>
+    <sys:String x:Key="Unqualified number">不合格数</sys:String>
+    <sys:String x:Key="alerts">报警次数</sys:String>
+    <sys:String x:Key="Number of abnormal">异常次数</sys:String>
+    <sys:String x:Key="Cache image number">缓存图像数</sys:String>
+    <sys:String x:Key="Picture number">拍照图像数</sys:String>
+    <sys:String x:Key="Discard image number">抛弃图像数</sys:String>
+    <sys:String x:Key="Image processing">处理图像数</sys:String>
+    <sys:String x:Key="The elapsed time">运 行 时 间</sys:String>
+    <sys:String x:Key="second">秒</sys:String>
+    <sys:String x:Key="Processing per second">每秒处理数</sys:String>
+    <sys:String x:Key="Cache number">存图缓存数</sys:String>
+    <sys:String x:Key="Empty the count">清空计数</sys:String>
+    <sys:String x:Key="Template1 correction">模板1校正</sys:String>
+    <sys:String x:Key="Template2 correction">模板2校正</sys:String>
+    <sys:String x:Key="Template3 correction">模板3校正</sys:String>
+    <sys:String x:Key="Template4 correction">模板4校正</sys:String>
+    <sys:String x:Key="Template1 correctionOriginal">模板1还原</sys:String>
+    <sys:String x:Key="Template2 correctionOriginal">模板2还原</sys:String>
+    <sys:String x:Key="Template3 correctionOriginal">模板3还原</sys:String>
+    <sys:String x:Key="Template4 correctionOriginal">模板4还原</sys:String>
+    <sys:String x:Key="Number of qualified">合格数</sys:String>
+    <sys:String x:Key="Size data">尺寸数据</sys:String>
+    <sys:String x:Key="Size name">尺寸名称</sys:String>
+    <sys:String x:Key="Measured value">测量值</sys:String>
+    <sys:String x:Key="Close Test">关闭检测</sys:String>
+
+    <sys:String x:Key="search condition">检索条件</sys:String>
+    <sys:String x:Key="search result">检索结果</sys:String>  
+    <sys:String x:Key="The yield">良品率</sys:String>
+
+
+    <sys:String x:Key="Whether to save OK original image">是否保存OK原图</sys:String>
+    <sys:String x:Key="Whether to save NG original image">是否保存NG原图</sys:String>
+    <sys:String x:Key="Whether to save the tape mark NG original image">是否保存带标记NG原图</sys:String>
+    <sys:String x:Key="Whether to save the tape mark NG screenShot image">是否保存带标记NG截图</sys:String>
+    <sys:String x:Key="Machine and line No">机台及产线编号</sys:String>
+    <sys:String x:Key="the Length of Coiler1">收卷1长度 (m)</sys:String>
+    <sys:String x:Key="the Length of Coiler2">收卷2长度 (m)</sys:String>
+    <sys:String x:Key="Whether to save the unmatched original image">是否保存未匹配原图</sys:String>
+    <sys:String x:Key="Whether to save the unreported unmatched images">是否保存未报警的未匹配图片</sys:String>
+    <sys:String x:Key="Whether to save the noProduct images">是否保存无产品图片</sys:String>
+    <sys:String x:Key="Whether to save the size error original image">是否保存尺寸错误原图</sys:String>
+    <sys:String x:Key="Whether to alarm size error">尺寸错误是否报警</sys:String>
+    <sys:String x:Key="Whether to save the measurement data to the database">是否保存测量数据到数据库</sys:String>
+    <sys:String x:Key="Whether the alarm software should stop detection">报警软件是否停止检测</sys:String>
+    <sys:String x:Key="Whether the alarm hardware is down">报警硬件是否停机</sys:String>
+    <sys:String x:Key="Whether the alarm hardware is down with delay">是否停机延迟</sys:String>
+    <sys:String x:Key="HardwareDelayTime">停机延迟时间（ms）</sys:String>
+    <sys:String x:Key="Whether the reset clears the alarm queue">复位是否清空报警队列</sys:String>
+    <sys:String x:Key="Channel1 Normalmaterial parameters">通道1卷料参数</sys:String>
+    <sys:String x:Key="Channel1 material parameters">通道1片料参数</sys:String>
+    <sys:String x:Key="Qualified full charge">合格满料数</sys:String>
+    <sys:String x:Key="Unqualified full quantity">不合格满料数</sys:String>
+    <sys:String x:Key="Starting position of station1">工位1起始拍照位置</sys:String>
+    <sys:String x:Key="Photo number of station1">工位1拍照次数</sys:String>
+    <sys:String x:Key="Photo interval of station1">工位1拍照间隔</sys:String>
+    <sys:String x:Key="Starting position of station2">工位2起始拍照位置</sys:String>
+    <sys:String x:Key="Photo number of station2">工位2拍照次数</sys:String>
+    <sys:String x:Key="Photo interval of station2">工位2拍照间隔</sys:String>
+    <sys:String x:Key="Starting position of station3">工位3起始拍照位置</sys:String>
+    <sys:String x:Key="Photo number of station3">工位3拍照次数</sys:String>
+    <sys:String x:Key="Photo interval of station3">工位3拍照间隔</sys:String>
+    <sys:String x:Key="Starting position of station4">工位4起始拍照位置</sys:String>
+    <sys:String x:Key="Photo number of station4">工位4拍照次数</sys:String>
+    <sys:String x:Key="Photo interval of station4">工位4拍照间隔</sys:String>
+    <sys:String x:Key="Starting position of station5">工位5起始拍照位置</sys:String>
+    <sys:String x:Key="Photo number of station5">工位5拍照次数</sys:String>
+    <sys:String x:Key="Photo interval of station5">工位5拍照间隔</sys:String>
+    <sys:String x:Key="Starting position of station6">工位6起始拍照位置</sys:String>
+    <sys:String x:Key="Photo number of station6">工位6拍照次数</sys:String>
+    <sys:String x:Key="Photo interval of station6">工位6拍照间隔</sys:String>
+    <sys:String x:Key="Continuous disqualification alarm">连续不合格次数报警</sys:String>
+    <sys:String x:Key="Channel2 material parameters">通道2片料参数</sys:String>
+    
+    <sys:String x:Key="Starting mark of station1">工位1起始标记位置</sys:String>
+    <sys:String x:Key="mark interval of station1">工位1标记间隔位置</sys:String>
+    <sys:String x:Key="Starting mark of station2">工位2起始标记位置</sys:String>
+    <sys:String x:Key="mark interval of station2">工位2标记间隔位置</sys:String>
+    <sys:String x:Key="Starting mark of station3">工位3起始标记位置</sys:String>
+    <sys:String x:Key="mark interval of station3">工位3标记间隔位置</sys:String>
+    <sys:String x:Key="Starting mark of station4">工位4起始标记位置</sys:String>
+    <sys:String x:Key="mark interval of station4">工位4标记间隔位置</sys:String>
+    <sys:String x:Key="Starting mark of station5">工位5起始标记位置</sys:String>
+    <sys:String x:Key="mark interval of station5">工位5标记间隔位置</sys:String>
+    <sys:String x:Key="Starting mark of station6">工位6起始标记位置</sys:String>
+    <sys:String x:Key="mark interval of station6">标记间隔位置</sys:String>
+    <sys:String x:Key="speed">速度</sys:String>
+    <sys:String x:Key="ManualMark">手动打标</sys:String>
+    <sys:String x:Key="IsStartMark">是否开启标记</sys:String>
+    <sys:String x:Key="IsSaveTestImage">是否保存测试图片</sys:String>
+    <sys:String x:Key="MaxLenAlarmCh1">通道1最长料带报警</sys:String>
+    <sys:String x:Key="MaxLenAlarmCh2">通道2最长料带报警</sys:String>
+    <sys:String x:Key="WaitInterval">等待间隔</sys:String>
+    <sys:String x:Key="Pieces">张</sys:String>
+
+    <sys:String x:Key="Save the OK image">保存OK图片</sys:String>
+
+    <sys:String x:Key="software license">软件授权</sys:String>
+    <sys:String x:Key="Device identification code">设备识别码</sys:String>
+    <sys:String x:Key="Software license code">软件授权码</sys:String>
+    <sys:String x:Key="Ningbo Yunsheng Intelligent Technology">宁波韵升智能技术有限公司版权所有</sys:String>
+    <sys:String x:Key="Contact number0574-27861559">联系电话（0574-27861559）</sys:String>
+
+
+    <sys:String x:Key="Exception code">异常代号</sys:String>
+    <sys:String x:Key="Exception description">异常描述</sys:String>
+    <sys:String x:Key="Reason analysis">原因分析</sys:String>
+    <sys:String x:Key="Solution">解决方案</sys:String>
+
+    <sys:String x:Key="Operation in progress">操作进行中......</sys:String>
+    
+    
+    <sys:String x:Key="Yes">是</sys:String>
+    <sys:String x:Key="No">否</sys:String>
+    <sys:String x:Key="Please confirm">请确认：</sys:String>
+
+
+    <sys:String x:Key="Prompt information">提示信息：</sys:String>
+
+    <sys:String x:Key="Authentication">身份验证</sys:String>
+    <sys:String x:Key="Password">密 码：</sys:String>
+
+
+    <sys:String x:Key="Add user">添加用户</sys:String>
+    <sys:String x:Key="Username">账 号:</sys:String>
+    <sys:String x:Key="Confirm password">确认密码:</sys:String>
+    <sys:String x:Key="User type">用户类型:</sys:String>
+    <sys:String x:Key="General user">普通用户</sys:String>
+    <sys:String x:Key="Administrator">管理员</sys:String>
+
+
+    <sys:String x:Key="Password Reset">密码重置</sys:String>
+    <sys:String x:Key="Input password">输入密码:</sys:String>
+
+
+    <sys:String x:Key="Sign in">登 录</sys:String>
+    <sys:String x:Key="account management">账号管理</sys:String>
+
+    <sys:String x:Key="delete user">删除用户</sys:String>
+    <sys:String x:Key="Close">关 闭</sys:String>
+    <sys:String x:Key="tipsupdate">要更改当前所选用户的密码，请单击‘密码重置’</sys:String>
+
+    <sys:String x:Key="Reserch Area">搜索区域</sys:String>
+    <sys:String x:Key="Unframed selection">未框选</sys:String>
+    <sys:String x:Key="Generate Model">模板生成</sys:String>
+    <sys:String x:Key="Model Unit">模板单元</sys:String>
+    <sys:String x:Key="Multi frame template array">多框模板阵列</sys:String>
+    <sys:String x:Key="Base box list">基础框列表：</sys:String>
+
+    <sys:String x:Key="Setting Station">工位设定</sys:String>
+    <sys:String x:Key="Setting Product">产品设定</sys:String>
+    
+    
+
+    <ImageSource  x:Key="Main_Background_Image">/YSMS_130Standard;component/Images/主背景.jpg</ImageSource>
+    <ImageSource  x:Key="Main_Head_Image">/YSMS_130Standard;component/Images/眉头.jpg</ImageSource>
+    <ImageSource  x:Key="Main_Welcome_Image">/YSMS_130Standard;component/Images/03欢迎您进入系统.jpg</ImageSource>
+    <ImageSource  x:Key="Main_User_Image">/YSMS_130Standard;component/Images/02用户登陆.png</ImageSource>
+    <ImageSource  x:Key="Main_Define_Image">/YSMS_130Standard;component/Images/03定义测量.png</ImageSource>
+    <ImageSource  x:Key="Main_Batch_Image">/YSMS_130Standard;component/Images/04批量测量.png</ImageSource>
+    <ImageSource  x:Key="Main_Report_Image">/YSMS_130Standard;component/Images/06统计报表.png</ImageSource>
+    <ImageSource  x:Key="Main_Setting_Image">/YSMS_130Standard;component/Images/09系统设置.png</ImageSource>
+    <ImageSource  x:Key="Main_Exit_Image">/YSMS_130Standard;component/Images/08退出系统.png</ImageSource>
+
+    <!--主界面-->
+    <sys:String x:Key="Communication card registration failed">通讯板卡注册失败</sys:String>
+    <sys:String x:Key="Software start">软件启动</sys:String>
+    <sys:String x:Key="Software load error">软件加载出错！</sys:String>
+    <sys:String x:Key="Insufficient database capacity. Please save and clean the database">数据库容量不足，请保存并清理数据库！</sys:String>
+    <sys:String x:Key="Prompt">提示</sys:String>
+    <sys:String x:Key="D disk space is insufficient. Please clear the disk">D盘空间不足，请清理磁盘！</sys:String>
+    <sys:String x:Key="Define measurement startup">定义测量启动中</sys:String>
+    <sys:String x:Key="Batch measurement startup">批量测量启动中</sys:String>
+    <sys:String x:Key="Do you want to exit the system">确定退出系统吗?</sys:String>
+    <sys:String x:Key="Shut down">关闭中</sys:String>
+    <sys:String x:Key="Software exit">软件退出</sys:String>
+    <sys:String x:Key="System prompt">系统提示</sys:String>
+    <sys:String x:Key="Camera configuration loaded error:">相机配置加载出错:</sys:String>
+    <sys:String x:Key="An error occurred. Please check the program log!">发生错误，请查看程序日志！</sys:String>
+    <sys:String x:Key="System error">系统错误</sys:String>
+    <sys:String x:Key="An unhandled exception occurred：">出现应用程序未处理的异常：</sys:String>
+   
+    <sys:String x:Key="Application thread error :{0}">应用程序线程错误:{0}</sys:String>
+    <sys:String x:Key="Software loading">软件加载中</sys:String>
+    <sys:String x:Key="The program has started!">程序已启动！</sys:String>
+    <sys:String x:Key="Load camera">加载相机......</sys:String>
+    <sys:String x:Key="Load software parameters">加载软件参数......</sys:String>
+    <sys:String x:Key="Please insert the USB boot!">请插入系统启动优盘！</sys:String>
+
+    <sys:String x:Key="Load_Light_Source_Controller">加载光源控制器......</sys:String>
+    <sys:String x:Key="Load_PLC_Info">载入PLC信息......</sys:String>
+    <sys:String x:Key="Load_User_Info">载入用户信息......</sys:String>
+    <sys:String x:Key="Load_Arithmetic">载入算法......</sys:String>
+    <sys:String x:Key="Load_Communication_Register">载入板卡注册......</sys:String>
+    <!--主界面-->
+    
+    
+    
+    <!-- 定义 -->
+    <sys:String x:Key="X array parameter error!">X阵列参数错误！</sys:String>
+    <sys:String x:Key="Y array parameter error!">Y阵列参数错误！</sys:String>
+    <sys:String x:Key="Parameter input error!">参数输入错误！</sys:String>
+   
+    <sys:String x:Key="Circle">圆</sys:String>
+    
+    <sys:String x:Key="Please select template !">请选择模板!</sys:String>
+    <sys:String x:Key="Rotation radian acquisition error, please regain">旋转弧度采集错误，请重新获取</sys:String>
+    <sys:String x:Key="The central point failed to calculate. Please redraw the region!">中心点计算失败,请重绘框！</sys:String>
+    <sys:String x:Key="Automatic setting of background grayscale failed. Check to see if the template has been generated!">自动设置背景灰度值失败，请检查是否已生成模版！</sys:String>
+  
+    <sys:String x:Key="Please select the defect type!">请选择缺陷类型！</sys:String>
+    <sys:String x:Key="Template not generated!">未生成模板！</sys:String>
+    <sys:String x:Key="Fail to save image">存图失败</sys:String>
+    <sys:String x:Key="Defect algorithm error reporting">缺陷算法报错</sys:String>
+    <sys:String x:Key="templet unmatched">模板未匹配</sys:String>
+    <sys:String x:Key="Template location error reporting">模板定位报错</sys:String>
+    <sys:String x:Key="No defect detection has been set">未设置缺陷检测</sys:String>
+    <sys:String x:Key="the time of templet match：">模板匹配时间：</sys:String>
+    <sys:String x:Key="the time of test defect：">缺陷检测时间：</sys:String>
+    <sys:String x:Key="the time of single test：">总检测时间：</sys:String>
+    <sys:String x:Key="Picture does not exist!">图片不存在！</sys:String>
+    <sys:String x:Key="access denied :">拒绝访问:</sys:String>
+    <sys:String x:Key="Error displaying real-time images">显示实时图像出错</sys:String>
+    <sys:String x:Key="real-time images valid">显示实时图像有效</sys:String>
+    <sys:String x:Key="st">工位</sys:String>
+    <sys:String x:Key="now">实时</sys:String>
+    <sys:String x:Key="Tmp1">模板1</sys:String>
+    <sys:String x:Key="Tmp2">模板2</sys:String>
+    <sys:String x:Key="Tmp3">模板3</sys:String>
+    <sys:String x:Key="Tmp4">模板4</sys:String>
+    <sys:String x:Key="Failed to obtain camera pictures!">未能获取相机图片!</sys:String>
+    <sys:String x:Key="The test image does not exist!">测试图像不存在!</sys:String>
+    <sys:String x:Key="Auto set bright dark background LightOrDark numeric error">自动设置亮暗背景LightOrDark数值错误</sys:String>
+    <sys:String x:Key="Auto set bright dark background failed">自动设置亮暗背景失败</sys:String>
+    <sys:String x:Key="Please complete the definition of measuring remote assistance first!">"请先完成定义测量远程协助操作！</sys:String>
+    <sys:String x:Key="Are you sure you want to save product information?">确定要保存产品信息？</sys:String>
+    <sys:String x:Key="Please stop batch measurement of the channel">请先停止批量测量通道</sys:String>
+  
+    <sys:String x:Key="read failure">读取失败</sys:String>
+    <sys:String x:Key="Product information saved successfully">产品信息保存成功</sys:String>
+    <sys:String x:Key="screen coordinate：">屏幕坐标：</sys:String>
+    <sys:String x:Key="pixel coordinate：">像素坐标：</sys:String>
+    <sys:String x:Key="current grayscale：">当前灰度：</sys:String>
+    <sys:String x:Key="StationSUpdate，Error selecting channel number!">StationSUpdate，选中通道号出错！</sys:String>
+   
+    <sys:String x:Key="Do you want to delete the templet?">确定删除模板吗?</sys:String>
+    <sys:String x:Key="Deleted templates">已删除模板</sys:String>
+    <sys:String x:Key="The template image 1 does not exist!">模板图像1不存在!</sys:String>
+    <sys:String x:Key="The template image 2 does not exist!">模板图像2不存在!</sys:String>
+    <sys:String x:Key="The template image 3 does not exist!">模板图像3不存在!</sys:String>
+    <sys:String x:Key="The template image 4 does not exist!">模板图像4不存在!</sys:String>
+    <sys:String x:Key="If the template is corrected, the original template will be removed">是否校正模板，原模板将被清除</sys:String>
+    <sys:String x:Key="Template correction">模板校正</sys:String>
+    <sys:String x:Key="Template matching">模版匹配中</sys:String>
+    <sys:String x:Key="Number of defective rectangles, output errors">缺陷矩形框个数输出错误</sys:String>
+    <sys:String x:Key="Defect rectangle array output error">缺陷矩形框数组输出错误</sys:String>
+    <sys:String x:Key="Size rectangle array output error">尺寸矩形框数组输出错误</sys:String>
+    <sys:String x:Key="Defect template correction not completed!">缺陷模板校正未完成!</sys:String>
+    <sys:String x:Key="Template matching successful, the template is being generated">模版匹配成功，正在生成模版</sys:String>
+    <sys:String x:Key="Template generation is complete and new algorithm parameters are being generated">模板生成完成，正在生成新的算法参数</sys:String>
+    <sys:String x:Key="The algorithm parameter settings are wrong. Please check again!">算法参数设置错误，请重新检查！</sys:String>
+    <sys:String x:Key="Saving product">正在保存产品</sys:String>
+    <sys:String x:Key="Save product error!">保存产品错误！</sys:String>
+    <sys:String x:Key="Replacing template pictures">正在替换模板图片</sys:String>
+    <sys:String x:Key="Replace template image error!">替换模板图片错误！</sys:String>
+    <sys:String x:Key="Read template failed again!">重新读取模板失败！</sys:String>
+    <sys:String x:Key="Template correction succeeded!">模板校正成功！</sys:String>
+    <sys:String x:Key="An error occurred in saving the corrected product!">保存校正后的产品时出错！</sys:String>
+    <sys:String x:Key="Failed to create template!">创建模板失败！</sys:String>
+    <sys:String x:Key="parameter set error!">参数设置错误!</sys:String>
+    <sys:String x:Key="Please box the template unit">请框选模板单元！</sys:String>
+    <sys:String x:Key="Please box the search area">请框选搜索区域</sys:String>
+    <sys:String x:Key="Please Draw the boxes that need the array">请绘制需要阵列的框</sys:String>
+    <sys:String x:Key="Build box failure!">生成框失败!</sys:String>
+    <sys:String x:Key="Build box error !">生成框错误!</sys:String>
+    <sys:String x:Key="Build box error, please check that the input is correct!">生成框错误,请检查输入是否正确!</sys:String>
+    <sys:String x:Key="Basic frame">基本框</sys:String>
+    <sys:String x:Key="Remote assistance has been stopped">已经停止远程协助!</sys:String>
+    <sys:String x:Key="Do you want to stop remote assistance? \n note: if the KK recorder is not turned off, please stop and turn off.">是否停止远程协助？\n注意：如果KK录像机未关闭，请先停止并关闭。</sys:String>
+    <sys:String x:Key="Video file copy failed and forced closing may cause incomplete file storage! Force to end? \n reason: \n1、 Did not start recording files. The \n2、 KK recorders are not closed or closed.">录像文件拷贝失败，强制关闭可能导致文件保存不全！是否强制结束? \n 原因： \n1、没有开始录制文件。 \n2、KK录像机未结束、关闭。</sys:String>   
+    <sys:String x:Key="Remote assistance has started">远程协助已经开始！</sys:String>
+    <sys:String x:Key="Card release error, please check the board">板卡释放出错,请检查板卡!</sys:String>
+    <sys:String x:Key="The resulting new template will overwrite the original template , confirm that the new template will be generated?">生成的新模板将覆盖原模板，确认生成新模板？</sys:String>
+    <sys:String x:Key="No relevant data information, consistent with the current query conditions!">暂无相关数据信息符合当前查询条件!</sys:String>  
+    <sys:String x:Key="Video file copy failed and forced closing may cause incomplete file storage! Force to end? \n reason: \n1、Did not start recording files. The \n2、 KK recorders are not closed or closed.">录像文件拷贝失败，强制关闭可能导致文件保存不全！是否强制结束? \n 原因： \n1、没有开始录制文件。 \n2、KK录像机未结束、关闭。</sys:String>
+    <sys:String x:Key="User name or password cannot be empty!">账号或密码不能为空！</sys:String>
+    <sys:String x:Key="User name or password error!">账号或密码错误!</sys:String>
+    <sys:String x:Key="Please select a region">请框选区域!</sys:String>
+    <sys:String x:Key="Exist in the same name!">存在同名！</sys:String>
+    <sys:String x:Key="Generating template">生成模板中</sys:String>
+    <sys:String x:Key="Please select the test region!">请框选检测区域!</sys:String>
+    <sys:String x:Key="Create template successfully!">创建模板成功!</sys:String>
+    <sys:String x:Key="Please choose size type">请选择尺寸类型</sys:String>
+    <sys:String x:Key="Size algorithm error: output size, type, number wrong!">尺寸算法出错： 输出尺寸种类数错误！</sys:String>
+    <sys:String x:Key="Size algorithm error:The number of {0} error！">尺寸算法出错： {0} 个数错误！</sys:String>
+    <sys:String x:Key="Error in size algorithm:">尺寸算法出错:</sys:String>
+    <sys:String x:Key="Size check not set">未设置尺寸检测</sys:String>
+    <sys:String x:Key="Note: after the \n1、 KK videos are released, please click start recording! \n2、 Before you finish remote assistance, click stop recording, and turn off the KK recorder!">注意：\n1、KK录像机弹出后，请点击开始录制！\n2、结束远程协助之前，请点击停止录制，并关闭KK录像机！</sys:String>
+    <sys:String x:Key="Manual">手动</sys:String>
+    <sys:String x:Key="Wheather to delete the selected product information？">是否删除选中的产品信息？</sys:String>
+    <sys:String x:Key="Does it overwrite the {0} of original product information？">是否覆盖 {0} 原有产品信息？</sys:String>
+    <sys:String x:Key="ModelSelectWindow error:">ModelSelectWindow出错:</sys:String>
+    <sys:String x:Key="Btn_OK_Click error:">Btn_OK_Click出错:</sys:String>
+    <sys:String x:Key="Camera parameters :[{0}={1}],setup failed 。Revert to previous parameters {2}！\r\n{3}">相机参数 :[{0}={1}],设置失败 。恢复为之前参数 {2}！\r\n{3}</sys:String>
+    <sys:String x:Key="WhetherPC correction">是否频场校正</sys:String>
+    <sys:String x:Key="Save_JZ_img">保存校正图片</sys:String>
+    
+    <!-- 定义 -->
+
+    <!-- 批量 -->
+
+
+    <sys:String x:Key="Send result">发送结果</sys:String>
+    <sys:String x:Key="Please select the product type of all inspection areas!">请选择所有检测区产品型号!</sys:String>
+    <sys:String x:Key="The batch number * * cannot be empty!">批号**不能为空!</sys:String>
+    <sys:String x:Key="Please select the product type!">请选择产品型号</sys:String>
+    <sys:String x:Key="Please select the coiler!">请选择收卷号</sys:String>
+    <sys:String x:Key="Two coilers can not be selected at the same time!">两个收卷盘不能同时选用!</sys:String>
+    <sys:String x:Key="Run">运行</sys:String>
+    <sys:String x:Key="Detection lead to reset">检测复位</sys:String>
+    <sys:String x:Key="Detection lead to alarm">检测报警</sys:String>
+    <sys:String x:Key="Continuous unmatched alarm">连续未匹配报警</sys:String>
+    <sys:String x:Key="One of the templates is not matched to the alarm continuously, and there may be a fault leakage.">其中一个模板连续未匹配报警，可能存在错漏冲</sys:String>
+    <sys:String x:Key="Plugging alarm">堵料报警</sys:String>
+    <sys:String x:Key="No product alarm">无产品报警</sys:String>
+    <sys:String x:Key="No check alarm">未开启检测报警</sys:String>
+  
+    <sys:String x:Key="Please close the definition measurement of this channel first!">请先关闭该通道的定义测量</sys:String>
+    <sys:String x:Key="Failed to save software parameters:">软件参数保存失败：</sys:String>
+    <sys:String x:Key="Monitoring startup">监控启动中</sys:String>
+    <sys:String x:Key="Close Full">关闭全屏</sys:String>
+    <sys:String x:Key="Full screen monitor off">全屏监控关闭中</sys:String>
+    <sys:String x:Key="Please complete the remote assistance operation of batch measurement!">请先完成批量测量的远程协助操作！</sys:String>
+  
+    <sys:String x:Key="Error opening picture">打开图片出错</sys:String>
+    <sys:String x:Key="Batch save failed:">批号保存失败：</sys:String>
+    <sys:String x:Key="Please enter the product model!">请输入产品型号!</sys:String>
+    <sys:String x:Key="The starting time must not be greater than the termination time!">起始时间不能大于终止时间!</sys:String>
+    <sys:String x:Key="No data can be exported!">无数据可以导出!</sys:String>
+    <sys:String x:Key="Export successful!">导出成功！</sys:String>
+    <sys:String x:Key="Failed to close the excel process!">关闭excel 进程失败！</sys:String>
+    <sys:String x:Key="No Office 2013 installed!">没有安装Office 2013！</sys:String>
+    <sys:String x:Key="No data template.Xls!">无数据模板.xls！</sys:String>
+    <sys:String x:Key="No data template (Workbook)!">无数据模板(工作簿)！</sys:String>
+    <sys:String x:Key="MissingPhoto">漏拍</sys:String>
+    <sys:String x:Key="MorePhoto">多拍</sys:String>
+    <sys:String x:Key="handlePhoto">处理图片</sys:String>
+    <sys:String x:Key="The number of photos is less than 1">拍照张数设置小于1</sys:String>
+    <sys:String x:Key="no product">无产品</sys:String>
+    <sys:String x:Key="unmatched">未匹配</sys:String>
+    <sys:String x:Key="templet unmatched（original picture）">模板未匹配（原图）</sys:String>
+    <sys:String x:Key="adnormal size">尺寸异常</sys:String>
+    <sys:String x:Key="adnormal size（original）">尺寸不合格（原图）</sys:String>
+    <sys:String x:Key="adnormal size（screenshot）">尺寸不合格（截图）</sys:String>
+    <sys:String x:Key="special">特殊</sys:String>
+    <sys:String x:Key="special and abnormal original picture">特殊异常标记原图</sys:String>
+    <sys:String x:Key="Please stop testing first!">请先停止检测</sys:String>
+    <sys:String x:Key="abnormal">异常</sys:String>
+    <sys:String x:Key="Defect unusual">缺陷异常</sys:String>
+    <sys:String x:Key="Large area alarm">大面积报警</sys:String>
+    <sys:String x:Key="feed offset">上料偏移</sys:String>
+    <sys:String x:Key="the time of test size：">尺寸检测时间：</sys:String>
+    <sys:String x:Key="the time of saving picture：">线程存图时间：</sys:String>
+    <sys:String x:Key="Defect algorithm unmatched after template matching">模板匹配后缺陷算法未匹配</sys:String>
+    <sys:String x:Key="saving the image error">图像保存出错</sys:String>
+    <sys:String x:Key="normal">正常</sys:String>
+    <sys:String x:Key="marked abnormal">标记异常</sys:String>
+    <sys:String x:Key="marked original picture">标记原图</sys:String>
+    <sys:String x:Key="unmarked adnormal">未标记异常</sys:String>
+    <sys:String x:Key="unmarked original picture">未标记原图</sys:String>
+    <sys:String x:Key="Parameter read error:">参数读取错误:</sys:String>
+    <sys:String x:Key="The PLC parameter save failed:">PLC参数保存失败：</sys:String>
+    <sys:String x:Key="Note: after the \n1、 KK videos are released, please click start recording! \n2、Before you finish remote assistance, click stop recording, and turn off the KK recorder!">注意：\n1、KK录像机弹出后，请点击开始录制！\n2、结束远程协助之前，请点击停止录制，并关闭KK录像机！</sys:String>
+    <sys:String x:Key="Software license code cannot be empty. Please enter the software license code">软件授权码不可为空，请输入软件授权码</sys:String>
+    <sys:String x:Key="The software license code is not in the correct format. Please enter the letters or numbers">软件授权码格式不正确，请输入字母或数字</sys:String>
+    <sys:String x:Key="Software permanently authorizes success!">软件永久授权成功！</sys:String>
+    <sys:String x:Key="Software temporary license success!">软件临时授权成功！</sys:String>
+    <sys:String x:Key="The software license code you entered is incorrect. Please contact the manufacturer!">您输入的软件授权码不正确，请联系厂家！</sys:String>
+    <sys:String x:Key="Authorization error!">授权出错！</sys:String>
+    <sys:String x:Key="Camera configuration file exception">相机配置文件异常</sys:String>
+    <sys:String x:Key="Export data">导出数据中</sys:String>
+    <sys:String x:Key="Password error">密码错误</sys:String>
+    <sys:String x:Key="Does it delete the user of">是否要删除用户</sys:String>
+    
+    <sys:String x:Key="Full Screen">全屏幕</sys:String>
+
+
+    <sys:String x:Key="Copy error">复制出错！</sys:String>
+    <sys:String x:Key="Please select the workstation to copy first">请先选择工位复制！</sys:String>
+    <sys:String x:Key="Source file deleted">源文件已删除！</sys:String>
+    <sys:String x:Key="Paste error">粘贴出错！</sys:String>
+    <sys:String x:Key="Template does not exist">模板不存在！</sys:String>
+    <sys:String x:Key="Source files that need to be copied do not exist">需要复制的源文件不存在！</sys:String>
+
+
+    <sys:String x:Key='Picture failure!'>采图失败！</sys:String>
+    <sys:String x:Key='Success in drawing!'>采图成功！</sys:String>
+    <sys:String x:Key='Save successfully'>保存成功</sys:String>
+    <sys:String x:Key='Cancel save'>取消保存</sys:String>
+    <sys:String x:Key='Region_Array_Unit error'>Region_Array_Unit 错误</sys:String>
+    <sys:String x:Key='Region_Array_LHoles error'>Region_Array_LHoles 错误</sys:String>
+    <sys:String x:Key='System hint'>系统提示</sys:String>
+    <sys:String x:Key='Backup data has been cleared!'>备份数据已被清空！</sys:String>
+    <sys:String x:Key='Please create a new product template first!'>请先新建产品模板！</sys:String>
+    <sys:String x:Key='The picture is empty!'>图片为空！</sys:String>
+    <sys:String x:Key='The light source evaluation template already exists, is it replaced?'>光源评估模板已经存在，是否替换？</sys:String>
+    <sys:String x:Key='Light source evaluation template image does not exist!'>光源评估模板图片不存在！</sys:String>
+    <sys:String x:Key='The gray value of the image is abnormal!'>图像灰度值异常！</sys:String>
+    <sys:String x:Key='The gray value of the image is normal!'>图像灰度值正常！</sys:String>
+    <sys:String x:Key='Assessment image error!'>评估图像出错！</sys:String>
+    <sys:String x:Key='The frequency picture exists, is it replaced?'>频场图已经存在，是否替换？</sys:String>
+
+
+    <sys:String x:Key='Plc state'>PLC状态</sys:String>
+    <sys:String x:Key='Information hint'>信息提示</sys:String>
+
+
+    <sys:String x:Key="User login">用户登录</sys:String>
+    <sys:String x:Key="Definition measurement">定义测量</sys:String>
+    <sys:String x:Key="Batch measurement">批量测量</sys:String>
+    <sys:String x:Key="Statistical report forms">统计报表</sys:String>
+    <sys:String x:Key="System Settings">系统设置</sys:String>
+    <sys:String x:Key="Exit system">退出系统</sys:String>
+
+    <sys:String x:Key="Camera on">相机打开中</sys:String>
+    <sys:String x:Key="Channel switching loading">通道切换加载中</sys:String>
+
+    <!-- baicx 20200207 -->
+    <sys:String x:Key="Does it need to be removed">是否需要清除</sys:String>
+    <sys:String x:Key="This is not in the file?">文件中无</sys:String>
+    <sys:String x:Key="Clear cache failure!">清楚缓存失败！</sys:String>
+    <sys:String x:Key="Please confirm if this path exists!">请确认此路径是否存在！</sys:String>
+    <sys:String x:Key="please complete the edit of the check area box first!">请先完成检测区域框的编辑！</sys:String>
+    <sys:String x:Key="please complete the edit of the location box first!">请先完成定位框的编辑！</sys:String>
+    <sys:String x:Key="Images have been classified into this category!">图片已被分到此类！</sys:String>
+    <sys:String x:Key="The Element Coefficient must be greater than 0!">单元系数必须大于0！</sys:String>
+    <sys:String x:Key="Please input the correct product parameters!">请输入正确的产品参数！</sys:String>
+    <sys:String x:Key="Please select the image type first!">请先选择图片类型！</sys:String>
+    <sys:String x:Key="Please close other Excel files first, and then click OK!">请先关闭其他Excel文件，再点击\"确定\"按钮！</sys:String>
+    <sys:String x:Key="Please close the template file!">请关闭模板文件！!</sys:String>
+    <sys:String x:Key="The Coiler length value is not entered correctly!">收卷长度数值输入不正确！</sys:String>
+    <sys:String x:Key="Please make sure the center of the picture is right!">请确认图片中央位置正确！</sys:String>
+    <sys:String x:Key="related data">相关数据</sys:String>
+    <sys:String x:Key="no">无</sys:String>
+    
+    <!-- 批量 -->
+    
+    
+    <!--错误类-->
+    <sys:String x:Key="exType">Exception type ：{0}</sys:String>
+    <sys:String x:Key="exMessage">Exception information：{1}</sys:String>
+    <sys:String x:Key="exStack">错误堆：{2}</sys:String>
+    <sys:String x:Key="StringKeyNotExist">多语言的键值没有配置!</sys:String>
+
+    <!--Qiyi Li--> 
+    <sys:String x:Key="Station without model">工位{0}未建立模板</sys:String>
+    <sys:String x:Key="Station without defect">{0}未添加缺陷</sys:String>
+    <sys:String x:Key="Dark">暗</sys:String>
+    <sys:String x:Key="Light">亮</sys:String>
+    <sys:String x:Key="Switch to new product">切换新产品</sys:String>
+    <sys:String x:Key="Weather to switch to new product">是否切换到新产品?</sys:String>
+    <sys:String x:Key="Off Line">离线</sys:String>
+    <sys:String x:Key="On Line">在线</sys:String>
+    <sys:String x:Key="System Run Mode">运行模式</sys:String>
+    <sys:String x:Key="SoftwareLanguage">语言</sys:String>
+    <sys:String x:Key="Chinese">中文</sys:String>
+    <sys:String x:Key="English">英文</sys:String>
+    <sys:String x:Key="Russian">俄语</sys:String>
+    <sys:String x:Key="Normal Software">电镀冲压</sys:String>
+    <sys:String x:Key="Pieces Software">片式</sys:String>
+    <sys:String x:Key="Hardware Trigger">硬件触发</sys:String>
+    <sys:String x:Key="Software Trigger">软件触发</sys:String>
+    <sys:String x:Key="Whether to save run info data">是否存储运行数据信息</sys:String>
+    <sys:String x:Key="Software type">软件类型</sys:String>
+    <sys:String x:Key="Normal band">普通条带</sys:String>
+    <sys:String x:Key="Strobe lamp">频闪光源</sys:String>
+    <sys:String x:Key="Communication type with PLC">与PLC通讯方式</sys:String>
+    <sys:String x:Key="Pieces simply mode">是否要做片式简化进程处理（一个工位一次错误，后面都不检测)</sys:String>
+    <sys:String x:Key="Hide unmatch model">是否启用未匹配隐藏模式</sys:String>
+    <sys:String x:Key="Hide fuzzy image">是否启用模糊图片隐藏模式</sys:String>
+    <sys:String x:Key="Auto read code">是否开启扫码枪扫码功能</sys:String>
+    <sys:String x:Key="Hide fuzzy image seconds">模糊图片最长时间</sys:String>
+    <sys:String x:Key="Whether algorithm to use model">算法是否需要模板(特殊打印算法时用false)</sys:String>
+    <sys:String x:Key="Box type">是否有料盒模式</sys:String>
+    <sys:String x:Key="Save bmp image">是否保存BMP图片</sys:String>
+    <sys:String x:Key="Auto light or dark">是否自动设置是否背光</sys:String>
+    <sys:String x:Key="Same time">是否同时启停</sys:String>
+    <sys:String x:Key="Show OK">是否显示OK信息</sys:String>
+    <sys:String x:Key="Net work alarm">是否网络传输报警</sys:String>
+    <sys:String x:Key="Client">本机是否是客户端</sys:String>
+    <sys:String x:Key="DeviceID">本机在网络报警中的设备编号</sys:String>
+    <sys:String x:Key="Software ctrl device">是否软件控制电机冲床运动逻辑</sys:String>
+    <sys:String x:Key="Has two channels">是否有两个通道</sys:String>
+    <sys:String x:Key="Has assist">是否进行远程协助</sys:String>
+    <sys:String x:Key="Camera photo type">拍照模式</sys:String>
+    <sys:String x:Key="Has alarm code">是否要编码器延时报警</sys:String>
+    <sys:String x:Key="Distance to alarm code">毫米到编码器值的转换系数</sys:String>
+    <sys:String x:Key="Unite lenth">产品单元长度 通道1</sys:String>
+    <sys:String x:Key="Unite lenth2">产品单元长度 通道2</sys:String>
+    <sys:String x:Key="Max lenth num">最大数量报警停机（成都贴切)</sys:String>
+    <sys:String x:Key="Max lenth num1">最大数量报警停机（成都贴切)</sys:String>
+    <sys:String x:Key="System code">临时获得管理员权限的密码 系统运行密码 默认“yszn”</sys:String>
+    <sys:String x:Key="Has pwd correction">模板校正是否需要输入密码</sys:String>
+    <sys:String x:Key="Stop check">料停后，是否继续检测（冲床启停与检测同步）与ALARM/Di_Pause_1端口配使用</sys:String>
+    <sys:String x:Key="Batch check">是否是批量检测状态与IsStopCheck共用</sys:String>
+    <sys:String x:Key="Sure model">是否固定模板顺序</sys:String>
+    <sys:String x:Key="Check product stop">是否检测料带是停止状态(顺德)</sys:String>
+    <sys:String x:Key="Check product move">是否检测料带移动(台湾住矿)</sys:String>
+    <sys:String x:Key="Check product move cnt">多少次不移动判定为送料机构故障(台湾住矿)</sys:String>
+    <sys:String x:Key="First channel name">第一通道的通道名称</sys:String>
+    <sys:String x:Key="Second channel name">第二通道的通道名称</sys:String>
+    <sys:String x:Key="Last product name">上一次检测的产品名称</sys:String>
+    <sys:String x:Key="First channel last product name">上一次第一通道检测的产品名称</sys:String>
+    <sys:String x:Key="Second channel last product name">上一次第二通道检测的产品名称</sys:String>
+    <sys:String x:Key="First channel last batch number">上一次第一通道检测的产品批号</sys:String>
+    <sys:String x:Key="Second channel last batch number">上一次第二通道检测的产品批号</sys:String>
+    <sys:String x:Key="Color Roi">ROI区颜色</sys:String>
+    <sys:String x:Key="Color shielding area">屏蔽区域颜色</sys:String>
+    <sys:String x:Key="Color detection area">检测区域颜色</sys:String>
+    <sys:String x:Key="Color location area">定位区域颜色</sys:String>
+    <sys:String x:Key="Color size">尺寸颜色</sys:String>
+    <sys:String x:Key="Color defect">缺陷颜色</sys:String>
+    <sys:String x:Key="Save error log time">保存错误日志文件天数</sys:String>
+    <sys:String x:Key="Product set path">产品类型选择路径</sys:String>
+    <sys:String x:Key="Excel template path">报表模板路径</sys:String>
+    <sys:String x:Key="OK image path">正常图片路径</sys:String>
+    <sys:String x:Key="Error image path">异常图片路径</sys:String>
+    <sys:String x:Key="Origin image path">原图路径</sys:String>
+    <sys:String x:Key="Move alter">框移动步长</sys:String>
+    <sys:String x:Key="Alarm image path">重大缺陷图片存储路径</sys:String>
+    <sys:String x:Key="Log path">日志路径</sys:String>
+    <sys:String x:Key="Error log path">错误日志路径</sys:String>
+    <sys:String x:Key="Pic info confirm file path">图片确认信息文档保存路径</sys:String>
+    <sys:String x:Key="Static measure imagepath1">静态检测图像1路径</sys:String>
+    <sys:String x:Key="Static measure imagepath2">静态检测图像2路径</sys:String>
+    <sys:String x:Key="Static measure imagepath3">静态检测图像3路径</sys:String>
+    <sys:String x:Key="Static measure imagepath4">静态检测图像4路径</sys:String>
+    <sys:String x:Key="Adjust image path">模板校正图片路径</sys:String>
+    <sys:String x:Key="Authorize info path">授权码文件路径</sys:String>
+    <sys:String x:Key="Pic info path">图片信息保存路径</sys:String>
+    <sys:String x:Key="Assist files info path">远程协助子文件路径</sys:String>
+    <sys:String x:Key="Choose alg index">默认算法下标</sys:String>
+    <sys:String x:Key="Save image queue max num">存图缓存最大图片数量</sys:String>
+    <sys:String x:Key="Algorithm normal parasnum">算法普通参数个数</sys:String>
+    <sys:String x:Key="Algorithm senior parasnum">算法高级参数个数</sys:String>
+    <sys:String x:Key="Algorithm size parasnum">尺寸算法参数个数</sys:String>
+    <sys:String x:Key="Model unmatch alarm num">模板未匹配报警次数</sys:String>
+    <sys:String x:Key="Camera photo interval">相机拍照间隔</sys:String>
+    <sys:String x:Key="Camera photo count">相机默认拍照张数</sys:String>
+    <sys:String x:Key="Camera start photo position">相机默认拍照开始位置</sys:String>
+    <sys:String x:Key="Camera interval photo position">相机默认拍照间隔位置</sys:String>
+    <sys:String x:Key="Photo num for onesize">每次尺寸测量间隔拍照次数</sys:String>
+    <sys:String x:Key="Multi model alarm unmatched times">多模板时连续未匹配到一个模板几次报警</sys:String>
+    <sys:String x:Key="Detection area off centers">检测区域中心偏移默认值</sys:String>
+    <sys:String x:Key="Detection area max">检测区域高宽最大值</sys:String>
+    <sys:String x:Key="Default create channel">默认创建通道</sys:String>
+    <sys:String x:Key="Default detect channel">默认检测通道</sys:String>
+    <sys:String x:Key="Has backlit">有无背光</sys:String>
+    <sys:String x:Key="Product gray default">产品边界灰度</sys:String>
+    <sys:String x:Key="Hole gray default">定位孔边界灰度</sys:String>
+    <sys:String x:Key="Min score default">最小匹配分数(浮点数)</sys:String>
+    <sys:String x:Key="Add minutes">产品日期需要修正的分钟数</sys:String>
+    <sys:String x:Key="Machine">机器号</sys:String>
+    <sys:String x:Key="Channel station num">通道1工位数</sys:String>
+    <sys:String x:Key="Save dump image OK">是否保存OK截图</sys:String> 
+    <sys:String x:Key="Save dump image NG">是否保存NG截图</sys:String>
+    <sys:String x:Key="Save dump image WPP">是否保存未匹配截图</sys:String>
+    <sys:String x:Key="Save origin image OK">是否保存OK原图</sys:String>
+    <sys:String x:Key="Save origin image NG">是否保存NG未标记原图</sys:String>
+    <sys:String x:Key="Save mark origin image NG">是否保存NG标记原图</sys:String>
+    <sys:String x:Key="Save origin image WPP">是否保存未匹配原图</sys:String>
+    <sys:String x:Key="Save all image WPP">是否保存未报警的未匹配图片</sys:String>
+    <sys:String x:Key="Save no product">是否保存无产品图片</sys:String>
+    <sys:String x:Key="Save origin image size">是否保存尺寸错误原图</sys:String>
+    <sys:String x:Key="Save origin image ImageError">是否保存图像异常的原图</sys:String>
+    <sys:String x:Key="Show origin image ImageError">是否在界面上显示图像异常的原图</sys:String>
+    <sys:String x:Key="Is size error alarm">尺寸错误是否报警</sys:String>
+    <sys:String x:Key="Save measure value to DB">是否保存测量数据到数据库</sys:String>
+    <sys:String x:Key="Is alarm software stop">报警软件是否停机</sys:String>
+    <sys:String x:Key="Is alarm device stop">报警硬件是否停机</sys:String>
+    <sys:String x:Key="Is alarm device stop delay">是否停机延迟</sys:String>
+    <sys:String x:Key="Hardware delay time">停机延迟时间(ms)</sys:String>
+    <sys:String x:Key="Is delay alarm and mark">延时停机并做标记（台湾住矿）</sys:String>
+    <sys:String x:Key="Is pause">是否可暂停（台湾住矿）</sys:String>
+    <sys:String x:Key="Speed">设备运行速度（台湾住矿）</sys:String>
+    <sys:String x:Key="Delay alarm and mark time">延时标记时间ms（台湾住矿）</sys:String>
+    <sys:String x:Key="Pause defect time">暂停时间ms（台湾住矿）</sys:String>
+    <sys:String x:Key="Match angle">匹配角度（台湾住矿）</sys:String>
+    <sys:String x:Key="Is meter record enable">米数文档记录功能是否开启</sys:String>
+    <sys:String x:Key="Device Line No">机台及产线编号</sys:String>
+    <sys:String x:Key="Line length1">收卷长度1： 浮点数</sys:String>
+    <sys:String x:Key="Line length2">收卷长度2： 浮点数</sys:String>
+    <sys:String x:Key="Is reset clear alarm list">复位是否清空报警队列</sys:String>
+    <sys:String x:Key="Is alarm loud sound">报警软件是否亮灯和蜂鸣器</sys:String>
+    <sys:String x:Key="Is save test image">是否保存测试图片</sys:String>
+    <sys:String x:Key="Is save sample image">是否抽样存图</sys:String>
+    <sys:String x:Key="Sample image num">多少时间存一张图片ms（抽样存图）</sys:String>
+    <sys:String x:Key="Grab error num restart">采集多少张出错重启</sys:String>
+    <sys:String x:Key="Is show measure time">是否显示算法时间</sys:String>
+    <sys:String x:Key="Is alarm no product">是否无产品报警</sys:String>
+    <sys:String x:Key="PLC reset">初始化信号读取地址</sys:String>
+    <sys:String x:Key="PLCOK2">通道2 OK读取地址</sys:String>
+    <sys:String x:Key="PLCNG2">通道2 NG读取地址</sys:String>
+    <sys:String x:Key="PulsePerMM">脉冲距离比（多少个脉冲代表一个毫米）片式使用</sys:String>
+    <sys:String x:Key="Is show alarm image">是否显示报警图片</sys:String>
+    <sys:String x:Key="Is cache image alarm">缓存图像报警</sys:String>
+    <sys:String x:Key="Cache alarm numer">缓存图像报警数目</sys:String>
+    <sys:String x:Key="Are you sure you want to save system setup?">确定保存系统设置？</sys:String>
+    <sys:String x:Key="System setup parameter read error:">系统设置参数读取错误：</sys:String>
+    <sys:String x:Key="System setup parameter save error:">系统设置参数保存错误：</sys:String>
+    <sys:String x:Key="Is LearnV">是否学习V型孔间隔</sys:String>
+    <sys:String x:Key="V interval">V间隔</sys:String>
+    <sys:String x:Key="Trigger interval of channel">外部触发拍照间隔</sys:String>
+    <sys:String x:Key="Is user camera para">是否使用相机参数自定义范围</sys:String>
+    <sys:String x:Key="Is show templates usage">是否显示模板使用情况</sys:String>
+    <sys:String x:Key="Visual">可视化</sys:String>
+    <sys:String x:Key="Template usage">模板使用情况</sys:String>
+    <sys:String x:Key="Template No">模板号</sys:String>
+    <sys:String x:Key="Matched">匹配</sys:String>
+    <sys:String x:Key="No matched">未匹配</sys:String>
+
+
+</ResourceDictionary>

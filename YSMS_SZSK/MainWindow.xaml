@@ -4,7 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:YSMS_SZSK"
-        xmlns:HalconDotNet="clr-namespace:HalconDotNet;assembly=halcondotnet" xmlns:MessagePrompt="clr-namespace:YSMS_SZSK.MessagePrompt" xmlns:CustomerUserControll="clr-namespace:YSMS_SZSK.CustomerUserControll" x:Class="YSMS_SZSK.MainWindow"
+        xmlns:HalconDotNet="clr-namespace:HalconDotNet;assembly=halcondotnet"  xmlns:CustomerUserControll="clr-namespace:YSMS_SZSK.CustomerUserControll" x:Class="YSMS_SZSK.MainWindow"
         mc:Ignorable="d"
         Title="MainWindow" Height="676.5" Width="1124">
     <Grid x:Name="Grid_Main">
@@ -28,8 +28,6 @@
                 <ColumnDefinition Width="287*"/>
                 <ColumnDefinition Width="290*"/>
             </Grid.ColumnDefinitions>
-            <CustomerUserControll:CameraViews  Margin="0,0,0,0" />
-            <CustomerUserControll:CameraViews Grid.Column="1"   Margin="0,0,0,0" />
         </Grid>
         <Grid Grid.Column="1"   Margin="0,330,0,0" VerticalAlignment="Bottom" Height="100"   />
         <Button Content="参数设置" x:Name="btn_ParametersSetting" HorizontalAlignment="Left" Margin="42,0,0,281" VerticalAlignment="Bottom" Width="75" Height="22" Grid.Column="2"/>

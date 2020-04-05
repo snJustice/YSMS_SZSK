@@ -4,10 +4,7 @@ using System.IO.Ports;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-using YSMS_SZSK.CustomerGlobal;
-using YSMS_SZSK.LibCustomerDataManager;
-using YSMS_SZSK.MessagePrompt;
+using YSMS.DataManage;
 
 namespace YSMS_SZSK.Communication
 {
@@ -85,6 +82,7 @@ namespace YSMS_SZSK.Communication
                     }
                     catch (Exception ex)
                     {
+                        Console.WriteLine(ex.Message);
                     }
                 };
 
@@ -297,7 +295,7 @@ namespace YSMS_SZSK.Communication
         {
             lightControlList = new List<LightControl>();
 
-            string lightcontrolpath = CfgInfo.getInstance().LightControXmlPath;
+            string lightcontrolpath = SoftwareInfo.getInstance().IsUserCamParaTips;
 
             System.Xml.Linq.XElement root = null;
 
@@ -308,8 +306,7 @@ namespace YSMS_SZSK.Communication
             catch (Exception e)
             {
 
-                MyMessageBox.GetInstance().tipsInfo = "光源控制器：\n" + e.Message;
-                MyMessageBox.GetInstance().ShowWindow(PublicEnum.MessageType.Tips);
+                Console.WriteLine(e.Message);
                 return;
             }
 

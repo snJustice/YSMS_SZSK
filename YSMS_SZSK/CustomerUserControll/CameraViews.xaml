@@ -1,35 +1,148 @@
-﻿<UserControl
+﻿<UserControl x:Class="YSMS_SZSK.CustomerUserControll.CameraViews"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:YSMS_SZSK.CustomerUserControll"
-             xmlns:HalconDotNet="clr-namespace:HalconDotNet;assembly=halcondotnet" x:Class="YSMS_SZSK.CustomerUserControll.CameraViews"
-             mc:Ignorable="d" Width="376.033" Height="318.596">
-    <Grid >
-        <TabControl x:Name="tabControl"  Margin="0" >
-            <TabItem Header="实时图像" >
-                <HalconDotNet:HWindowControlWPF x:Name="HalconWindow_Copy" HorizontalAlignment="Left" Height="175" Margin="10,37,0,0" VerticalAlignment="Top" Width="213"/>
+             mc:Ignorable="d" 
+             d:DesignHeight="500" d:DesignWidth="613" FontSize="13" FontFamily="Microsoft YaHei" FontWeight="Bold" >
+    <Grid>
+        <TabControl Height="485" HorizontalAlignment="Left" Name="tabControl1" VerticalAlignment="Top" Width="613" >
+            <TabItem Header="{DynamicResource Real-time Image}" Name="tabItem1" Focusable="True" FontSize="15">
+                <Grid Name="hGrid1">
+                    <WindowsFormsHost Height="455" Width="600" HorizontalAlignment="Left" Margin="0,0,0,0" Name="windowsFormsHost1" VerticalAlignment="Top"  />
+                    <Button Content="{DynamicResource screenshot}" Height="23" HorizontalAlignment="Left" Margin="537,0,0,0" Name="button_ScreenShot" VerticalAlignment="Top" Width="60"  >
+                        <Button.ToolTip>
+                            <ToolTip>
+                                <StackPanel>
+                                    <TextBlock Text="{DynamicResource screenshot}"></TextBlock>
+                                </StackPanel>
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
+                </Grid>
             </TabItem>
-            <TabItem Header="测试图像">
-                <Grid Background="#FFE5E5E5">
-                    <HalconDotNet:HWindowControlWPF x:Name="HalconWindow" HorizontalAlignment="Left" Height="175" Margin="10,37,0,0" VerticalAlignment="Top" Width="213"/>
+            <TabItem Header="{DynamicResource Schematic diagram1}" Name="tabItem2" FontSize="15">
+                <Grid Name="hGrid2">
+                    <WindowsFormsHost Height="455" Width="600" HorizontalAlignment="Left" Margin="0,0,0,0" Name="windowsFormsHost2" VerticalAlignment="Top"  />
                 </Grid>
-            </TabItem >
-            <TabItem Header="检测图像">
-                <Grid Background="#FFE5E5E5">
-                    <HalconDotNet:HWindowControlWPF x:Name="HalconWindow_2" HorizontalAlignment="Left" Height="175" Margin="10,37,0,0" VerticalAlignment="Top" Width="213"/>
-                </Grid>
-
             </TabItem>
-            <TabItem Header="快乐图像" >
-                <Grid Background="#FFE5E5E5" RenderTransformOrigin="0.331,0.532">
-
-                    <HalconDotNet:HWindowControlWPF x:Name="HalconWindow_6" HorizontalAlignment="Left" Height="175" Margin="10,37,0,0" VerticalAlignment="Top" Width="213"/>
+            <TabItem Header="{DynamicResource Schematic diagram2}" Name="tabItem3" FontSize="15">
+                <Grid Name="hGrid3">
+                    <WindowsFormsHost Height="455" Width="600" HorizontalAlignment="Left" Margin="0,0,0,0" Name="windowsFormsHost3" VerticalAlignment="Top"  />
                 </Grid>
+            </TabItem>
+            <TabItem Header="{DynamicResource Schematic diagram3}" Name="tabItem7" FontSize="15">
+                <Grid Name="hGrid4">
+                    <WindowsFormsHost Height="455" Width="600" HorizontalAlignment="Left" Margin="0,0,0,0" Name="windowsFormsHost4" VerticalAlignment="Top"  />
+                </Grid>
+            </TabItem>
+            <TabItem Header="{DynamicResource Schematic diagram4}" Name="tabItem8"  FontSize="15">
+                <Grid Name="hGrid5">
+                    <WindowsFormsHost Height="455" Width="600" HorizontalAlignment="Left" Margin="0,0,0,0" Name="windowsFormsHost5" VerticalAlignment="Top"  />
+                </Grid>
+            </TabItem>
+            <TabItem Header="{DynamicResource Other info}" Name="tabItem4" FontSize="15">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="7*" />
+                        <ColumnDefinition Width="5*" />
+                        <ColumnDefinition Width="9*" />
+                    </Grid.ColumnDefinitions>
+                    <Label Content="{DynamicResource Number of qualified}" FontSize="15" Height="30" HorizontalAlignment="Left" Margin="2,23,0,0" Name="label1" VerticalAlignment="Top" Grid.Column="1" />
+                    <Label Content="{DynamicResource Number of unmatched}" Grid.Column="1" Height="30"  HorizontalAlignment="Left" Margin="0,63,0,0" Name="label2" VerticalAlignment="Top" FontSize="15" />
+                    <Label Content="{DynamicResource Unqualified number}" FontSize="15" Height="30" HorizontalAlignment="Left" Margin="0,99,0,0" Name="label3" VerticalAlignment="Top" Grid.Column="1" />
+                    <Label Content="{DynamicResource alerts}" FontSize="15" Height="30" HorizontalAlignment="Left" Margin="0,135,0,0" Name="label4" VerticalAlignment="Top" Grid.Column="1" />
+                    <Label Content="{DynamicResource Number of abnormal}" Grid.Column="1" Height="28" HorizontalAlignment="Left" Margin="2,170,0,0" Name="label13" VerticalAlignment="Top" />
 
+                    <Label Content="0" Grid.Column="1" Height="28" HorizontalAlignment="Left" Margin="93,23,0,0"  Name="label_PassNum"   VerticalAlignment="Top" />
+                    <Label Content="0" Grid.Column="1" Height="28" HorizontalAlignment="Left" Margin="93,62,0,0" Name="label_UnMatchNum" VerticalAlignment="Top" />
+                    <Label Content="0" Grid.Column="1" Height="28" HorizontalAlignment="Left" Margin="93,98,0,0" Name="label_ErrorNum"   VerticalAlignment="Top" />
+                    <Label Content="0" Grid.Column="1" Height="28" HorizontalAlignment="Left" Margin="93,133,0,0" Name="label_AlarmNum" VerticalAlignment="Top" />
+                    <Label Content="0" Grid.Column="1" Height="28" HorizontalAlignment="Left" Margin="93,0,0,255" Name="label_AbnormalNumber" VerticalAlignment="Bottom" />
+
+                    <Label Content="{DynamicResource Cache image number}" FontSize="15" Height="30" HorizontalAlignment="Left" Margin="0,206,0,0" Name="label5" VerticalAlignment="Top" Grid.Column="1" IsEnabled="True" Visibility="Visible" />
+                    <Label Content="{DynamicResource Picture number}" FontSize="15" Height="30" HorizontalAlignment="Left" Margin="0,226,0,0" Name="label6" VerticalAlignment="Top" Grid.Column="1" IsEnabled="True"  />
+                    <Label Content="{DynamicResource Discard image number}" FontSize="15" Height="30" HorizontalAlignment="Left" Margin="0,246,0,0" Name="label7" VerticalAlignment="Top" Grid.Column="1" IsEnabled="True"  />
+                    <Label Content="{DynamicResource Image processing}" FontSize="15" Height="30" HorizontalAlignment="Left" Margin="0,266,0,0" Name="label8" VerticalAlignment="Top" Grid.Column="1" IsEnabled="True"  />
+                    <Label Content="{DynamicResource The elapsed time}" FontSize="15" Height="30" HorizontalAlignment="Left" Margin="0,286,0,0" Name="label9" VerticalAlignment="Top" Grid.Column="1" IsEnabled="True"  />
+                    <Label Content="{DynamicResource second}" FontSize="15" Height="30" HorizontalAlignment="Left" Margin="3,286,0,0" Name="label10" VerticalAlignment="Top" Grid.Column="2" IsEnabled="True"  />
+                    <Label Content="{DynamicResource Processing per second}" FontSize="15" Height="30" HorizontalAlignment="Left" Margin="0,306,0,0" Name="label11" VerticalAlignment="Top" Grid.Column="1" IsEnabled="True"  />
+                    <Label Content="{DynamicResource Cache number}" FontSize="15" Height="30" HorizontalAlignment="Left" Margin="0,326,0,0" Name="label12" VerticalAlignment="Top" Grid.Column="1" IsEnabled="True"  />
+                    <Label Content="{DynamicResource Template usage}" Visibility="Collapsed" FontSize="15" Height="30" HorizontalAlignment="Left" Margin="0,354,0,0" Name="labelTemplateusage" VerticalAlignment="Top" Grid.Column="1" IsEnabled="True"  />
+                    <Label Content="{DynamicResource Template No}" Visibility="Collapsed" FontSize="15" Height="30" HorizontalAlignment="Left" Margin="134,354,0,0" Name="labelTemplateNo" VerticalAlignment="Top" Grid.Column="1" IsEnabled="True"  />
+                    <Label Visibility="Collapsed" FontSize="15" Height="30" HorizontalAlignment="Left" Margin="37,354,0,0" Name="labelTemplateMatch" VerticalAlignment="Top" Grid.Column="2" IsEnabled="True"  />
+
+                    <Label Content="0" Grid.Column="1" Height="30" HorizontalAlignment="Right" Margin="0,354,109,0" Name="label_TemplateNum" VerticalAlignment="Top" IsEnabled="True"  Width="32" Grid.ColumnSpan="2" />
+                    <Label Content="0" Grid.Column="1" Height="30" HorizontalAlignment="Left" Margin="93,206,0,0" Name="label_CachePhotoNum" VerticalAlignment="Top" IsEnabled="True"  Width="34" />
+                    <Label Content="0" Grid.Column="1" Height="28" HorizontalAlignment="Left" Margin="93,226,0,0" Name="label_AllPhotoNum" VerticalAlignment="Top" IsEnabled="True"   Width="92" />
+                    <Label Content="0" Grid.Column="1" Height="28" HorizontalAlignment="Left" Margin="93,246,0,0" Name="label_ThrowPhotoNum" VerticalAlignment="Top" IsEnabled="True"  Width="92" />
+                    <Label Content="0" Grid.Column="1" Height="28" HorizontalAlignment="Left" Margin="93,266,0,0" Name="label_MeasurePhotoNum" VerticalAlignment="Top" IsEnabled="True"  Width="92" />
+                    <Label Content="0" Grid.Column="1" HorizontalAlignment="Left" Margin="93,286,0,135" Name="label_MeasureTime" IsEnabled="True" Width="92" />
+                    <Label Content="0" Grid.Column="1" Height="28" HorizontalAlignment="Left" Margin="93,0,0,115" Name="label_PerSecondMeasureNum" VerticalAlignment="Bottom" IsEnabled="True"  Width="92" />
+                    <Label Content="0" Grid.Column="1" Height="28" HorizontalAlignment="Left" Margin="93,326,0,0" Name="label_SaveLoopImageNum" VerticalAlignment="Top" IsEnabled="True" Width="92" />
+
+                    <Button Content="{DynamicResource Empty the count}" Grid.Column="2" Height="30" HorizontalAlignment="Left" Margin="15,180,0,0" Name="button_ResetNum" VerticalAlignment="Top" Width="120" >
+                        <Button.ToolTip>
+                            <ToolTip>
+                                <StackPanel>
+                                    <TextBlock Text="{DynamicResource Empty the count}"></TextBlock>
+                                </StackPanel>
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
+                    <Button Content="{DynamicResource Template1 correction}" Height="30" HorizontalAlignment="Left" Margin="16,20,0,0" Name="button_AdjustModel1" VerticalAlignment="Top" Width="120" Grid.Column="2"  IsEnabled="False">
+                        <Button.ToolTip>
+                            <ToolTip>
+                                <StackPanel>
+                                    <TextBlock Text="{DynamicResource Template1 correction}"></TextBlock>
+                                </StackPanel>
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
+                    <Button Content="{DynamicResource Template2 correction}" Height="30" HorizontalAlignment="Left" Margin="16,60,0,0" Name="button_AdjustModel2" VerticalAlignment="Top" Width="120" Grid.Column="2"  IsEnabled="False">
+                        <Button.ToolTip>
+                            <ToolTip>
+                                <StackPanel>
+                                    <TextBlock Text="{DynamicResource Template2 correction}"></TextBlock>
+                                </StackPanel>
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
+                    <Button Content="{DynamicResource Template3 correction}" Height="30" HorizontalAlignment="Left" Margin="16,100,0,0" Name="button_AdjustModel3" VerticalAlignment="Top" Width="120" Grid.Column="2"  IsEnabled="False">
+                        <Button.ToolTip>
+                            <ToolTip>
+                                <StackPanel>
+                                    <TextBlock Text="{DynamicResource Template3 correction}"></TextBlock>
+                                </StackPanel>
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
+                    <Button Content="{DynamicResource Template4 correction}" Height="30" HorizontalAlignment="Left" Margin="16,140,0,0" Name="button_AdjustModel4" VerticalAlignment="Top" Width="120" Grid.Column="2"  IsEnabled="False">
+                        <Button.ToolTip>
+                            <ToolTip>
+                                <StackPanel>
+                                    <TextBlock Text="{DynamicResource Template4 correction}"></TextBlock>
+                                </StackPanel>
+                            </ToolTip>
+                        </Button.ToolTip>
+                    </Button>
+                </Grid>
+            </TabItem>
+            <TabItem Header="{DynamicResource Size data}" Name="tabItem6" FontSize="15">
+                <Grid>
+                    <DataGrid AutoGenerateColumns="False" Height="339" HorizontalAlignment="Left" Margin="6,6,0,0" Name="dGSizereport" VerticalAlignment="Top" Width="588"  ItemsSource="{Binding}">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="{DynamicResource Size name}"   Binding="{Binding sName}"  Width="100" IsReadOnly="True"  />
+                            <DataGridTextColumn Header="{DynamicResource Measured value}" Binding="{Binding  sValue}" IsReadOnly="True"  />
+                        </DataGrid.Columns>
+
+
+                    </DataGrid>
+                    <!--<Button Content="Button" Height="23" HorizontalAlignment="Left" Margin="168,393,0,0" Name="button1" VerticalAlignment="Top" Width="75" Click="button1_Click" />-->
+                </Grid>
             </TabItem>
         </TabControl>
-
+        <Button Content="{DynamicResource Close Test}" Name="button_CloseTest" HorizontalAlignment="Right" VerticalAlignment="Top"  />
     </Grid>
 </UserControl>

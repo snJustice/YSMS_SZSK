@@ -1,5 +1,5 @@
 ﻿using System.Windows;
-using YSMS_SZSK.Lib.CustomerCamera;
+
 using HalconDotNet;
 using YSMS_SZSK.Utils.Communication.TCP_Client.DSocket;
 

@@ -1,0 +1,959 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+    <sys:String x:Key="Language">中文</sys:String>
+    <sys:String x:Key="Version">Version</sys:String>
+    <sys:String x:Key="SoftwareVersion">SoftwareVersion</sys:String>
+    <sys:String x:Key="AlgorithmVersion">AlgorithmVersion</sys:String>
+    <sys:String x:Key="OKButton">OK</sys:String>
+    <sys:String x:Key="CancelButton">Cancel</sys:String>
+    <sys:String x:Key="CancelRegion">CancelRegion</sys:String>
+    <sys:String x:Key="CancelCross">CancelCross</sys:String>
+    <sys:String x:Key="ClrCache">ClrCache</sys:String>
+
+    <sys:String x:Key="Title">YSMS-S130 Intelligent Measurement Software System V</sys:String>
+    <sys:String x:Key="Define">Define</sys:String>
+    <sys:String x:Key="New">New</sys:String>
+    <sys:String x:Key="Open">Open</sys:String>
+    <sys:String x:Key="Delete">Del</sys:String>
+    <sys:String x:Key="Save">Save</sys:String>
+    <sys:String x:Key="Save Other">SaveO</sys:String>
+    <sys:String x:Key="Rename">name</sys:String>
+    <sys:String x:Key="Station1">Station1</sys:String>
+    <sys:String x:Key="Station2">Station2</sys:String>
+    <sys:String x:Key="Station3">Station3</sys:String>
+    <sys:String x:Key="Station4">Station4</sys:String>
+    <sys:String x:Key="Station5">Station5</sys:String>
+    <sys:String x:Key="Station6">Station6</sys:String>
+    <sys:String x:Key="Enabled">Enabled</sys:String>
+    <sys:String x:Key="Product Para">ParaSet</sys:String>
+    <sys:String x:Key="Product Positioning">Location</sys:String>
+    <sys:String x:Key="Define Defect">Defect</sys:String>
+    <sys:String x:Key="Size Definition">Size</sys:String> 
+    <sys:String x:Key="Channel">Channel</sys:String>
+    <sys:String x:Key="Photo Templates">Photo Templates</sys:String>
+    <sys:String x:Key="Real-time Image">Real-time</sys:String>
+    <sys:String x:Key="Station Para">Parameter</sys:String>
+    <sys:String x:Key="Scaling Ratio">Scaling</sys:String>
+    <sys:String x:Key="Current Image">Current</sys:String>
+    <sys:String x:Key="Dynamic Image">Dynamic</sys:String>
+    <sys:String x:Key="Static Image">Static</sys:String>
+    <sys:String x:Key="Template1">Template1</sys:String>
+    <sys:String x:Key="DeleteTemplate">DelTemplate</sys:String>
+    <sys:String x:Key="Drawing">Drawing</sys:String>
+    <sys:String x:Key="OffLineDraw">OffLineDraw</sys:String>
+    
+    <sys:String x:Key="Save Picture">SaveImage</sys:String>
+    <sys:String x:Key="Template Picture">Template</sys:String> 
+    <sys:String x:Key="Template Image">Template</sys:String>
+    <sys:String x:Key="Template2">Template2</sys:String>
+    <sys:String x:Key="Template3">Template3</sys:String>
+    <sys:String x:Key="Template4">Template4</sys:String>
+    <sys:String x:Key="Remote Assistance is on">Remote is on</sys:String>
+    <sys:String x:Key="Remote Assistance">Remote</sys:String>
+    <sys:String x:Key="The software is running normally">The software is running normally</sys:String>
+    <sys:String x:Key="Ningbo Yunsheng">Ningbo Yunsheng</sys:String>
+
+
+
+    <sys:String x:Key="Batch Measurement">Batch</sys:String>
+    <sys:String x:Key="Time">Time</sys:String>
+    <sys:String x:Key="Station">Station</sys:String>
+    <sys:String x:Key="State">State</sys:String>
+    <sys:String x:Key="Description">Description</sys:String>
+    <sys:String x:Key="DefectConfirm">Confirm</sys:String>
+    <sys:String x:Key="Display Full Screen">Full Screen</sys:String>
+    <sys:String x:Key="Historical Data">History</sys:String>
+    <sys:String x:Key="ExitThis">Exit</sys:String>
+    <sys:String x:Key="Parameter Setting">ParaSet</sys:String>
+    <sys:String x:Key="Channel1">Channel1</sys:String>
+    <sys:String x:Key="Measurement Procedure">Procedure</sys:String>
+    <sys:String x:Key="Edit Procedure">Edit</sys:String>
+    <sys:String x:Key="Start">Start</sys:String>
+    <sys:String x:Key="Stop">Stop</sys:String>
+    <sys:String x:Key="Reset">Reset</sys:String>
+    <sys:String x:Key="Pause">Pause</sys:String>
+    <sys:String x:Key="Channel2">Channel2</sys:String>
+    <sys:String x:Key="Measurement">Measurement</sys:String>
+    <sys:String x:Key="Product Code">Type</sys:String>
+    <sys:String x:Key="Batch Number">LotNum</sys:String>
+    <sys:String x:Key="Number of passes">Passes</sys:String>
+    <sys:String x:Key="Number of disqualification">Disqualification</sys:String>
+    <sys:String x:Key="Alarm Clear">Alarm Clear</sys:String>
+    <sys:String x:Key="Coiler1">Coiler 1</sys:String>
+    <sys:String x:Key="Coiler2">Coiler 2</sys:String>
+    <sys:String x:Key="Save OK Image is on">OK Image</sys:String>
+    <sys:String x:Key="Save NG unlabelled  image is on">NG unlabelled  image</sys:String>
+    <sys:String x:Key="Save NG labelled image is on">NG labelled image</sys:String>
+    <sys:String x:Key="Save unmatch image is on">Unmatch image</sys:String>
+    <sys:String x:Key="The value of channel1 encoder">channel1 encoder</sys:String>
+    <sys:String x:Key="The value of channel2 encoder">channel2 encoder</sys:String>
+    <sys:String x:Key="ratio">ratio</sys:String>
+    <sys:String x:Key="ratioLen">ratioLen</sys:String>
+    <sys:String x:Key="Clear Encoder">Clr</sys:String>
+    <sys:String x:Key="SaveBatchRatio">SaveBatchRatio</sys:String>
+
+
+
+    <sys:String x:Key="YSMS-S130 intelligent measurement software system V4.0">YSMS-S130 intelligent measurement software system V4.0</sys:String>
+    <sys:String x:Key="Report">Report</sys:String>
+    <sys:String x:Key="Exit">Exit</sys:String>
+    <sys:String x:Key="Login">Login</sys:String>
+    <sys:String x:Key="on-line mode">on-line mode</sys:String>
+    <sys:String x:Key="offline mode">offline mode</sys:String>
+    <sys:String x:Key="oneChannel">oneChannel</sys:String>
+    <sys:String x:Key="twoChannel">twoChannel</sys:String>
+
+
+
+    <sys:String x:Key="New product">New product</sys:String>
+    <sys:String x:Key="Product name">Name</sys:String>
+    <sys:String x:Key="Confirm">Confirm</sys:String>
+    <sys:String x:Key="Cancel">Cancel</sys:String>
+    <sys:String x:Key="Product type">Type</sys:String>
+    <sys:String x:Key="Number of station">Station</sys:String>
+    <sys:String x:Key="Color mode">ColorMode:</sys:String>
+    <sys:String x:Key="redscale">redscale</sys:String>
+    <sys:String x:Key="greenscale">greenscale</sys:String>
+    <sys:String x:Key="bluescale">bluescale</sys:String>
+    <sys:String x:Key="greyscale">grayscale</sys:String>
+    <sys:String x:Key="Choose">opt</sys:String>
+    <sys:String x:Key="Method of Take pictures">Method</sys:String>
+    <sys:String x:Key="Trigger software">Trigger software</sys:String>
+    <sys:String x:Key="Trigger hardware">Trigger hardware</sys:String>
+    <sys:String x:Key="Channel name">Channel</sys:String>
+    <sys:String x:Key="Material box type">Material box type</sys:String>
+    <sys:String x:Key="A Material box">A Material box</sys:String>
+    <sys:String x:Key="B Material box">B Material box</sys:String>
+    <sys:String x:Key="priority model">priority model</sys:String>
+
+    
+    <sys:String x:Key="delete product">delete product</sys:String>
+    <sys:String x:Key="Product list">Product list:</sys:String>
+    <sys:String x:Key="delete">delete</sys:String>
+    
+
+    <sys:String x:Key="Open product">Open product</sys:String>
+    <sys:String x:Key="Keyword">Keyword</sys:String>
+    <sys:String x:Key="Code">Code</sys:String>   
+
+
+    <sys:String x:Key="Rename product">Rename product:</sys:String>
+    <sys:String x:Key="Product name after rename">Product name after rename:</sys:String>
+    <sys:String x:Key="Original product name">Original product name:</sys:String>
+
+    <sys:String x:Key="Save other product">Save other product</sys:String>
+    <sys:String x:Key="Please enter new product name">Please enter new product name：</sys:String>
+
+
+    <sys:String x:Key="ExposureTimeRaw">ExposureTimeRaw</sys:String>
+    <sys:String x:Key="GainRaw">GainRaw</sys:String>
+    <sys:String x:Key="Template mismatch alarm number">Template mismatch alarm number</sys:String>
+    <sys:String x:Key="Camera interval">Camera interval</sys:String>
+    <sys:String x:Key="The number of shots taken at each measurement interval">Shots taken at each measurement interval</sys:String>
+
+
+    <sys:String x:Key="Light sources1">Light1</sys:String>
+
+    <sys:String x:Key="Light sources">Light</sys:String>
+    <sys:String x:Key="Others">Others</sys:String>
+
+    <sys:String x:Key="Template 1">Template 1</sys:String>
+    <sys:String x:Key="Template 2">Template 2</sys:String>
+    <sys:String x:Key="Template 3">Template 3</sys:String>
+    <sys:String x:Key="Template 4">Template 4</sys:String>
+    <sys:String x:Key="Take pictures 1">Take pictures 1</sys:String>
+
+
+    <sys:String x:Key="Camera template selection">Camera template selection</sys:String>
+    <sys:String x:Key="Number and position of photos taken">Number and position of photos taken</sys:String>
+    <sys:String x:Key="Initial camera position">Initial camera position</sys:String>
+    <sys:String x:Key="Number of photos taken">Number of photos taken</sys:String>
+
+    <sys:String x:Key="Parameter name">Para name</sys:String>
+    <sys:String x:Key="Parameter value">Para value</sys:String>
+    <sys:String x:Key="Parameter Description">Para Description</sys:String>
+
+    <sys:String x:Key="Array">Array</sys:String>
+    <sys:String x:Key="Clear">Clear</sys:String>
+    <sys:String x:Key="Direction">Direct:</sys:String>
+    <sys:String x:Key="RowVal">row distance:</sys:String>
+    <sys:String x:Key=" number of times">number of times:</sys:String>
+    <sys:String x:Key="Image">Image</sys:String>
+    <sys:String x:Key="Pixel">Pixel</sys:String>
+    <sys:String x:Key="Actual">Actual</sys:String>
+    <sys:String x:Key="millimeter">mm</sys:String>
+    <sys:String x:Key="LineVal">line distance:</sys:String>
+    <sys:String x:Key="dotdistance">dotdistance</sys:String>
+
+    <sys:String x:Key="Defect list">Defect list</sys:String>
+    <sys:String x:Key="Delete defect">Del defect</sys:String>
+    <sys:String x:Key="Edit defects">Edit defects</sys:String>
+    <sys:String x:Key="Test all">Test all</sys:String>
+    <sys:String x:Key="Detection area">Detection area</sys:String>
+    <sys:String x:Key="rectangle">rectangle</sys:String>
+    <sys:String x:Key="Draw">Draw</sys:String>
+    <sys:String x:Key="Re-draw">Redraw</sys:String>
+    <sys:String x:Key="Generate">Build</sys:String>
+    <sys:String x:Key="Edit">Edit</sys:String>
+    <sys:String x:Key="circle">circle</sys:String>
+    <sys:String x:Key="Polygon">Polygon</sys:String>    
+    <sys:String x:Key="Defect algorithm and parameter">Defect algorithm and parameter</sys:String>
+    <sys:String x:Key="Basic parameters">Basic</sys:String>
+    <sys:String x:Key="Accuracy level">Accuracy</sys:String>
+    <sys:String x:Key="Is check copy region?">Is check copy region?</sys:String>
+    <sys:String x:Key="Continuous">IsContinuous Alarm（true is interval, false is continuous）</sys:String>
+    <sys:String x:Key="Inteval">Inteval Alarm</sys:String>
+    <sys:String x:Key="GroupNum">GroupNum</sys:String>
+    <sys:String x:Key="Continuous alarm several times">ContinuousAlarm</sys:String>
+    <sys:String x:Key="Advanced parameters">Advanced</sys:String>
+    <sys:String x:Key="Test">Test</sys:String>
+    <sys:String x:Key="Add defect">AddDefect</sys:String>
+    <sys:String x:Key="defect">Defect</sys:String>
+    <sys:String x:Key="Defect type">Defect type</sys:String>
+    <sys:String x:Key="Tips">Tips</sys:String>
+    <sys:String x:Key="TipsInfo">1、Select defect type;2、Draw insepction area&#x0a;3、 Adjust parameter&#x0a;4、Test successful, add defect</sys:String>
+    <sys:String x:Key="Illustration">TestRange</sys:String>
+    <sys:String x:Key="Test chart">Test chart</sys:String>
+    <sys:String x:Key="copy">copy</sys:String>
+    <sys:String x:Key="paste">paste</sys:String>
+    <sys:String x:Key="orgin">orgin</sys:String>
+    <sys:String x:Key="copyStation">CopyStation</sys:String>
+    <sys:String x:Key="pasteStation">PasteStation</sys:String>
+    <sys:String x:Key="lightEstimate">lightEstimate</sys:String>
+    <sys:String x:Key="picSave">picSave</sys:String>
+
+
+    <sys:String x:Key="Generating region">NewRegion</sys:String>
+    <sys:String x:Key="Generating corss">NewCorss</sys:String>
+    <sys:String x:Key="Single Generating">Single Generating</sys:String>
+    <sys:String x:Key="Center point algorithm">Algorithm</sys:String>
+    <sys:String x:Key="The centre of a circle">The centre of a circle</sys:String>
+    <sys:String x:Key="Dase island Center">Dase island Center</sys:String>
+    <sys:String x:Key="The color of new region">RegionColor:</sys:String>
+    <sys:String x:Key="White">White</sys:String>
+    <sys:String x:Key="Black">Black</sys:String>
+    <sys:String x:Key="Gray scale threshold">Gray scale</sys:String>
+    <sys:String x:Key="The number of positioning area">AreaNum：</sys:String>
+    <sys:String x:Key="Central point X coordinate">Central X：</sys:String>
+    <sys:String x:Key="Central point Y coordinate">Central Y：</sys:String>
+    <sys:String x:Key="Central point X offset">X offset：</sys:String>
+    <sys:String x:Key="Central point Y offset">Y offset：</sys:String>
+    <sys:String x:Key="RegionHeight">Region height:</sys:String>
+    <sys:String x:Key="RegionWidth">Region Width:</sys:String>
+    <sys:String x:Key="Rotation radian">TurnRadian:</sys:String>
+    <sys:String x:Key="Get radian">Get radian</sys:String>
+    <sys:String x:Key="Generate coordinate">Generate</sys:String>
+    <sys:String x:Key="Batch generation">Batch generation</sys:String>
+    <sys:String x:Key="Generate algorithm">Algorithm：</sys:String>
+    <sys:String x:Key="Parameter list">ParameterList</sys:String>
+
+
+    <sys:String x:Key="ROI  X To the center">ROI in X</sys:String>
+    <sys:String x:Key="ROI  Y To the center">ROI in Y</sys:String>
+    <sys:String x:Key="ROI Width">ROI Width</sys:String>
+    <sys:String x:Key="ROI Height">ROI Height</sys:String>
+    <sys:String x:Key="Locate template parameters">Locate parameters</sys:String>
+    <sys:String x:Key="Product Image Shooting Background">Background</sys:String>
+    <sys:String x:Key="Picture A">Pic A</sys:String>
+    <sys:String x:Key="Picture B">Pic B</sys:String>
+    <sys:String x:Key="Match score">Match score</sys:String>
+    <sys:String x:Key="Product boundary greyscale">Product boundary</sys:String>
+    <sys:String x:Key="positioning area boundary greyscale">Region boundary</sys:String>
+    <sys:String x:Key="Match the maximum angle">Maximum angle</sys:String>
+    <sys:String x:Key="Select the template area">Template area</sys:String>
+    <sys:String x:Key="Select location type">Location type</sys:String>
+    <sys:String x:Key="Direction Y">Direction Y</sys:String>
+    <sys:String x:Key="Direction Content0">Back to Front</sys:String>
+    <sys:String x:Key="Direction Content1">Front to Back</sys:String>
+    <sys:String x:Key="Direction X">Direction X</sys:String>
+    <sys:String x:Key="Stretch Y">Stretch Y</sys:String>
+    <sys:String x:Key="Stretch X">Stretch X</sys:String>
+    <sys:String x:Key="View Y">View Y</sys:String>
+    <sys:String x:Key="View X">View X</sys:String>
+    <sys:String x:Key="Surface area">face</sys:String>
+    <sys:String x:Key="Normal">Normal</sys:String>
+    <sys:String x:Key="Special">Special</sys:String>
+    <sys:String x:Key="Trigger">Trigger</sys:String>
+    <sys:String x:Key="CrdCross">CrdCross</sys:String>
+    <sys:String x:Key="Background area">back</sys:String>
+    <sys:String x:Key="Whether it is a closed area">Closed area?</sys:String>
+    <sys:String x:Key="Non-closed">Non-closed</sys:String>
+    <sys:String x:Key="Closed">Closed</sys:String>
+    <sys:String x:Key="Whether to check outside the ROI">Check outside?</sys:String>
+    <sys:String x:Key="YES">YES</sys:String>
+    <sys:String x:Key="NO">NO</sys:String>
+    <sys:String x:Key="TipsROI">1、Setting ROI 2、Draw detection area and positioning area 3、Setting template parameter 4、Generate templates</sys:String>
+    <sys:String x:Key="Positioning area">Positioning area</sys:String>
+    <sys:String x:Key="Generate templates">NewModel</sys:String>
+
+
+    <sys:String x:Key="Adjust array">Adjust array</sys:String>
+
+
+
+    <sys:String x:Key="Size detection list">Size detection list</sys:String>
+    <sys:String x:Key="Edit size">Edit size</sys:String>
+    <sys:String x:Key="Delete size">Del size</sys:String>
+    <sys:String x:Key="Size nominal value">Nominal value</sys:String>
+    <sys:String x:Key="Size upper tolerances">Upper tolerances</sys:String>
+    <sys:String x:Key="Size lower tolerances">Lower tolerances</sys:String>
+    <sys:String x:Key="Size compensation value">Compensation</sys:String>
+    <sys:String x:Key="Size quantity">Size quantity</sys:String>
+    <sys:String x:Key="Whether it is displayed">Displayed?</sys:String>
+    <sys:String x:Key="No displayed">No displayed</sys:String>
+    <sys:String x:Key="Displayed">Displayed</sys:String>
+    <sys:String x:Key="Size">Size</sys:String>
+    <sys:String x:Key="Size type">Size type</sys:String>
+    <sys:String x:Key="SizeTips">1、 Select size type&#x0a;2、Draw detection area&#x0a;3、Fill in the detection criteria&#x0a;4、Test successful, add size</sys:String>
+    <sys:String x:Key="Test content">Test content</sys:String>
+    <sys:String x:Key="Add size">Add size</sys:String>
+    <sys:String x:Key="Test judgement">Test judgement</sys:String>
+    <sys:String x:Key="Attention">Attention</sys:String>
+
+
+    <sys:String x:Key="Record information">Record information</sys:String>
+    <sys:String x:Key="Record screen">Record screen</sys:String>
+    <sys:String x:Key="Start the record">Start the record</sys:String>
+    <sys:String x:Key="End the record">End the record</sys:String>
+    <sys:String x:Key="Help">Help</sys:String>
+
+
+    <sys:String x:Key="Historical data">Historical data</sys:String>
+    <sys:String x:Key="Start time">Start time</sys:String>
+    <sys:String x:Key="End time">End time</sys:String>
+    <sys:String x:Key="Search">Search</sys:String>
+    <sys:String x:Key="Export">Export</sys:String>
+
+
+    <sys:String x:Key="screenshot">screenshot</sys:String>
+    <!--<sys:String x:Key="Schematic diagram1">Schematic diagram1</sys:String>
+    <sys:String x:Key="Schematic diagram2">Schematic diagram2</sys:String>
+    <sys:String x:Key="Schematic diagram3">Schematic diagram3</sys:String>
+    <sys:String x:Key="Schematic diagram4">Schematic diagram4</sys:String> -->
+
+    <sys:String x:Key="Schematic diagram1">Diagram1</sys:String>
+    <sys:String x:Key="Schematic diagram2">Diagram2</sys:String>
+    <sys:String x:Key="Schematic diagram3">Diagram3</sys:String>
+    <sys:String x:Key="Schematic diagram4">Diagram4</sys:String> 
+
+    <sys:String x:Key="Other info">Other info</sys:String>
+    <sys:String x:Key="Number of unmatched">Unmatched</sys:String>
+    <sys:String x:Key="Unqualified number">Unqualified</sys:String>
+    <sys:String x:Key="alerts">Alerts</sys:String>
+    <sys:String x:Key="Number of abnormal">AbnormalNum</sys:String>
+    
+    <sys:String x:Key="Cache image number">Cache</sys:String>
+    <sys:String x:Key="Picture number">Pictures</sys:String>
+    <sys:String x:Key="Discard image number">Discards</sys:String>
+    <sys:String x:Key="Image processing">Processing</sys:String>
+    <sys:String x:Key="The elapsed time">ElapsedTime</sys:String>
+    <sys:String x:Key="second">s</sys:String>
+    <sys:String x:Key="Processing per second">Processing/s</sys:String>
+    <sys:String x:Key="Cache number">SaveCache</sys:String>
+    <sys:String x:Key="Empty the count">EmptyCount</sys:String>
+    <sys:String x:Key="Template1 correction">Correction1</sys:String>
+    <sys:String x:Key="Template2 correction">Correction2</sys:String>
+    <sys:String x:Key="Template3 correction">Correction3</sys:String>
+    <sys:String x:Key="Template4 correction">Correction4</sys:String>
+    <sys:String x:Key="Template1 correctionOriginal">Original1</sys:String>
+    <sys:String x:Key="Template2 correctionOriginal">Original2</sys:String>
+    <sys:String x:Key="Template3 correctionOriginal">Original3</sys:String>
+    <sys:String x:Key="Template4 correctionOriginal">Original4</sys:String>
+    <sys:String x:Key="Number of qualified">Qualified</sys:String>
+    <sys:String x:Key="Size data">Size data</sys:String>
+    <sys:String x:Key="Size name">Size name</sys:String>
+    <sys:String x:Key="Measured value">Measured value</sys:String>
+    <sys:String x:Key="Close Test">Close Test</sys:String>
+
+    <sys:String x:Key="search condition">search condition</sys:String>
+    <sys:String x:Key="search result">search result</sys:String>
+    <sys:String x:Key="The yield">The yield</sys:String>
+
+
+    <sys:String x:Key="Whether to save OK original image">Save OK original image?</sys:String>
+    <sys:String x:Key="Whether to save NG original image">Save NG original image?</sys:String>
+    <sys:String x:Key="Whether to save the tape mark NG original image">Save tape mark NG original image?</sys:String>
+    <sys:String x:Key="Whether to save the tape mark NG screenShot image">Save the mark NG screenShot image?</sys:String>
+    <sys:String x:Key="Machine and line No">Machine and line No</sys:String>
+    <sys:String x:Key="the Length of Coiler1">Length of Coiler1(m)</sys:String>
+    <sys:String x:Key="the Length of Coiler2">Length of Coiler2(m)</sys:String>
+    <sys:String x:Key="Whether to save the unmatched original image">Save the unmatched original image?</sys:String>
+    <sys:String x:Key="Whether to save the unreported unmatched images">Save unreported unmatched image?</sys:String>
+    <sys:String x:Key="Whether to save the noProduct images">Save noproduct image?</sys:String>
+    <sys:String x:Key="Whether to save the size error original image">Save the size error original image?</sys:String>
+    <sys:String x:Key="Whether to alarm size error">Alarm size error?</sys:String>
+    <sys:String x:Key="Whether to save the measurement data to the database">Save measurement data to database?</sys:String>
+    <sys:String x:Key="Whether the alarm software should stop detection">Alarm software is stop detection?</sys:String>
+    <sys:String x:Key="Whether the alarm hardware is down">The alarm hardware is down?</sys:String>
+    <sys:String x:Key="Whether the alarm hardware is down with delay">Hardware is down with delay</sys:String>
+    <sys:String x:Key="HardwareDelayTime">Delay time（ms）</sys:String>
+    <sys:String x:Key="Whether the reset clears the alarm queue">The reset clears the alarm queue?</sys:String>
+    <sys:String x:Key="Channel1 material parameters">Channel1 material paras</sys:String>
+    <sys:String x:Key="Channel1 Normalmaterial parameters">Channel1 Normalmaterial paras</sys:String>
+    <sys:String x:Key="Qualified full charge">Qualified full charge</sys:String>
+    <sys:String x:Key="Unqualified full quantity">Unqualified full quantity</sys:String>
+    <sys:String x:Key="Starting position of station1">Starting position of station1</sys:String>
+    <sys:String x:Key="Photo number of station1">Photo number of station1</sys:String>
+    <sys:String x:Key="Photo interval of station1">Photo interval of station1</sys:String>
+    <sys:String x:Key="Starting position of station2">Starting position of station2</sys:String>
+    <sys:String x:Key="Photo number of station2">Photo number of station2</sys:String>
+    <sys:String x:Key="Photo interval of station2">Photo interval of station2</sys:String>
+    <sys:String x:Key="Starting position of station3">Starting position of station3</sys:String>
+    <sys:String x:Key="Photo number of station3">Photo number of station3</sys:String>
+    <sys:String x:Key="Photo interval of station3">Photo interval of station3</sys:String>
+    <sys:String x:Key="Starting position of station4">Starting position of station4</sys:String>
+    <sys:String x:Key="Photo number of station4">Photo number of station4</sys:String>
+    <sys:String x:Key="Photo interval of station4">Photo interval of station4</sys:String>
+
+    <sys:String x:Key="Starting position of station5">Starting position of station5</sys:String>
+    <sys:String x:Key="Photo number of station5">Photo number of station5</sys:String>
+    <sys:String x:Key="Photo interval of station5">Photo interval of station5</sys:String>
+    <sys:String x:Key="Starting position of station6">Starting position of station6</sys:String>
+    <sys:String x:Key="Photo number of station6">Photo number of station6</sys:String>
+    <sys:String x:Key="Photo interval of station6">Photo interval of station6</sys:String>
+    
+    <sys:String x:Key="Continuous disqualification alarm">Continuous disqualification alarm</sys:String>
+    <sys:String x:Key="Channel2 material parameters">Channel2 material parameters</sys:String>
+
+    <sys:String x:Key="Starting mark of station1">Starting mark of station1</sys:String>
+    <sys:String x:Key="mark interval of station1">mark interval of station1</sys:String>
+    <sys:String x:Key="Starting mark of station2">Starting mark of station2</sys:String>
+    <sys:String x:Key="mark interval of station2">mark interval of station2</sys:String>
+    <sys:String x:Key="Starting mark of station3">Starting mark of station3</sys:String>
+    <sys:String x:Key="mark interval of station3">mark interval of station3</sys:String>
+    <sys:String x:Key="Starting mark of station4">Starting mark of station4</sys:String>
+    <sys:String x:Key="mark interval of station4">mark interval of station4</sys:String>
+    <sys:String x:Key="Starting mark of station5">Starting mark of station5</sys:String>
+    <sys:String x:Key="mark interval of station5">mark interval of station5</sys:String>
+    <sys:String x:Key="Starting mark of station6">Starting mark of station6</sys:String>
+    <sys:String x:Key="mark interval of station6">mark interval</sys:String>
+    <sys:String x:Key="speed">speed</sys:String>
+    <sys:String x:Key="ManualMark">ManualMark</sys:String>
+    <sys:String x:Key="IsStartMark">IsStartMark</sys:String>
+    <sys:String x:Key="IsSaveTestImage">IsSaveTestImage</sys:String>
+    <sys:String x:Key="MaxLenAlarmCh1">MaxLenAlarmCh1</sys:String>
+    <sys:String x:Key="MaxLenAlarmCh2">MaxLenAlarmCh2</sys:String>
+    <sys:String x:Key="WaitInterval">WaitInterval</sys:String>
+    <sys:String x:Key="Pieces">Pieces</sys:String>
+
+    <sys:String x:Key="Save the OK image">Save the OK image</sys:String>
+
+
+    <sys:String x:Key="software license">software license</sys:String>
+    <sys:String x:Key="Device identification code">Device identification code</sys:String>
+    <sys:String x:Key="Software license code">Software license code</sys:String>
+    <sys:String x:Key="Ningbo Yunsheng Intelligent Technology">Ningbo Yunsheng Intelligent Technology Co., Ltd. all rights reserved</sys:String>
+    <sys:String x:Key="Contact number0574-27861559">"Contact number（0574-27861559）</sys:String>
+
+
+    <sys:String x:Key="Exception code">Exception code</sys:String>
+    <sys:String x:Key="Exception description">Exception description</sys:String>
+    <sys:String x:Key="Reason analysis">Reason analysis</sys:String>
+    <sys:String x:Key="Solution">Solution</sys:String>
+
+    <sys:String x:Key="Operation in progress">Operation in progress</sys:String>
+
+
+    <sys:String x:Key="Yes">Yes</sys:String>
+    <sys:String x:Key="No">No</sys:String>
+    <sys:String x:Key="Please confirm">Confirm</sys:String>
+
+
+    <sys:String x:Key="Prompt information">Prompt</sys:String>
+
+    <sys:String x:Key="Authentication">Authentication</sys:String>
+    <sys:String x:Key="Password">Password</sys:String>
+
+
+    <sys:String x:Key="Add user">Add user</sys:String>
+    <sys:String x:Key="Username">User</sys:String>
+    <sys:String x:Key="Confirm password">Confirm</sys:String>
+    <sys:String x:Key="User type">User type</sys:String>
+    <sys:String x:Key="General user">General</sys:String>
+    <sys:String x:Key="Administrator">Admin</sys:String>
+
+    <sys:String x:Key="Password Reset">ResetPwd</sys:String>
+    <sys:String x:Key="Input password">InputPwd</sys:String>
+
+
+    <sys:String x:Key="Sign in">Login</sys:String>
+    <sys:String x:Key="account management">Accounts</sys:String>
+
+    <sys:String x:Key="delete user">delete user</sys:String>
+    <sys:String x:Key="Close">Close</sys:String>
+    <sys:String x:Key="tipsupdate">Click 'Password' to change the password. </sys:String>
+
+    <sys:String x:Key="Generate Circle">Generate Circle</sys:String>
+    <sys:String x:Key="Radius">radius</sys:String>
+
+
+    <sys:String x:Key="Reserch Area">Reserch</sys:String>
+    <sys:String x:Key="Unframed selection">Unframed selection</sys:String>
+    <sys:String x:Key="Generate Model">Generate Model</sys:String>
+    <sys:String x:Key="Model Unit">ModelUnit</sys:String>
+    <sys:String x:Key="Multi frame template array">Multi-template array</sys:String>
+    <sys:String x:Key="Base box list">Base List</sys:String>
+
+    <sys:String x:Key="Setting Station">Station Setting</sys:String>
+    <sys:String x:Key="Setting Product">Setting Product</sys:String>
+    
+    <ImageSource  x:Key="Main_Background_Image">/YSMS_130Standard;component/Images/主背景_en.jpg</ImageSource>
+    <ImageSource  x:Key="Main_Head_Image">/YSMS_130Standard;component/Images/眉头_en.jpg</ImageSource>
+    <ImageSource  x:Key="Main_Welcome_Image">/YSMS_130Standard;component/Images/03欢迎您进入系统_en.jpg</ImageSource>
+    <ImageSource  x:Key="Main_User_Image">/YSMS_130Standard;component/Images/02用户登陆_en.png</ImageSource>
+    <ImageSource  x:Key="Main_Define_Image">/YSMS_130Standard;component/Images/03定义测量_en.png</ImageSource>
+    <ImageSource  x:Key="Main_Batch_Image">/YSMS_130Standard;component/Images/04批量测量_en.png</ImageSource>
+    <ImageSource  x:Key="Main_Report_Image">/YSMS_130Standard;component/Images/06统计报表_en.png</ImageSource>
+    <ImageSource  x:Key="Main_Setting_Image">/YSMS_130Standard;component/Images/09系统设置_en.png</ImageSource>
+    <ImageSource  x:Key="Main_Exit_Image">/YSMS_130Standard;component/Images/08退出系统_en.png</ImageSource>
+
+    <!--主界面-->
+    <sys:String x:Key="Communication card registration failed">Communication card registration failed</sys:String>
+    <sys:String x:Key="Software start">Software start</sys:String>
+    <sys:String x:Key="Software load error">Software load error！</sys:String>
+    <sys:String x:Key="Insufficient database capacity. Please save and clean the database">Insufficient database capacity. Please save and clean the database！</sys:String>
+    <sys:String x:Key="Prompt">Prompt</sys:String>
+    <sys:String x:Key="D disk space is insufficient. Please clear the disk">D disk space is insufficient. Please clear the disk</sys:String>
+    <sys:String x:Key="Define measurement startup">Define measurement startup</sys:String>
+    <sys:String x:Key="Batch measurement startup">Batch measurement startup</sys:String>
+    <sys:String x:Key="Do you want to exit the system">Do you want to exit the system</sys:String>
+    <sys:String x:Key="Shut down">Shut down</sys:String>
+    <sys:String x:Key="Software exit">Software exit</sys:String>
+    <sys:String x:Key="System prompt">System prompt</sys:String>
+    <sys:String x:Key="Camera configuration loaded error:">Camera configuration loaded error:</sys:String>
+    <sys:String x:Key="An error occurred. Please check the program log!">An error occurred. Please check the program log!</sys:String>
+    <sys:String x:Key="System error">System error</sys:String>
+    <sys:String x:Key="An unhandled exception occurred：">An unhandled exception occurred：</sys:String>
+   
+    <sys:String x:Key="Application thread error :{0}">Application thread error :{0}</sys:String>
+    <sys:String x:Key="Software loading">Software loading</sys:String>
+    <sys:String x:Key="The program has started!">The program has started!</sys:String>
+    <sys:String x:Key="Load camera">Load camera</sys:String>
+    <sys:String x:Key="Load software parameters">Load software parameters</sys:String>
+    <sys:String x:Key="Please insert the USB boot!">Please insert the USB boot!</sys:String>
+
+    <sys:String x:Key="Load_Light_Source_Controller">Load Light Source Controller......</sys:String>
+    <sys:String x:Key="Load_PLC_Info">Load PLC Info......</sys:String>
+    <sys:String x:Key="Load_User_Info">Load User Info......</sys:String>
+    <sys:String x:Key="Load_Arithmetic">Load Arithmetic......</sys:String>
+    <sys:String x:Key="Load_Communication_Register">Load Communication Register......</sys:String>
+    <!--主界面-->
+
+
+
+    <!-- 定义 -->
+    <sys:String x:Key="X array parameter error!">X array parameter error!</sys:String>
+    <sys:String x:Key="Y array parameter error!">Y array parameter error!</sys:String>
+    <sys:String x:Key="Parameter input error!">Parameter input error!</sys:String>
+
+    <sys:String x:Key="Circle">Circle</sys:String>
+
+    <sys:String x:Key="Please select template !">Please select template !</sys:String>
+    <sys:String x:Key="Rotation radian acquisition error, please regain">Rotation radian acquisition error, please regain</sys:String>
+    <sys:String x:Key="The central point failed to calculate. Please redraw the region!">The central point failed to calculate. Please redraw the region!</sys:String>
+    <sys:String x:Key="Automatic setting of background grayscale failed. Check to see if the template has been generated!">Automatic setting of background grayscale failed. Check to see if the template has been generated!</sys:String>
+
+    <sys:String x:Key="Please select the defect type!">Please select the defect type!</sys:String>
+    <sys:String x:Key="Template not generated!">Template not generated!</sys:String>
+    <sys:String x:Key="Fail to save image">Fail to save image</sys:String>
+    <sys:String x:Key="Defect algorithm error reporting">Defect algorithm error reporting</sys:String>
+    <sys:String x:Key="templet unmatched">templet unmatched</sys:String>
+    <sys:String x:Key="Template location error reporting">Template location error reporting</sys:String>
+    <sys:String x:Key="No defect detection has been set">No defect detection has been set</sys:String>
+    <sys:String x:Key="the time of templet match：">the time of templet match：</sys:String>
+    <sys:String x:Key="the time of test defect：">the time of test defect：</sys:String>
+    <sys:String x:Key="the time of single test：">the time of single test：</sys:String>
+    <sys:String x:Key="Picture does not exist!">Picture does not exist!</sys:String>
+    <sys:String x:Key="access denied :">access denied :</sys:String>
+    <sys:String x:Key="Error displaying real-time images">Error displaying real-time images</sys:String>
+    <sys:String x:Key="st">st</sys:String>
+    <sys:String x:Key="now">now</sys:String>
+    <sys:String x:Key="Tmp1">Tmp1</sys:String>
+    <sys:String x:Key="Tmp2">Tmp2</sys:String>
+    <sys:String x:Key="Tmp3">Tmp3</sys:String>
+    <sys:String x:Key="Tmp4">Tmp4</sys:String>
+    <sys:String x:Key="Failed to obtain camera pictures!">Failed to obtain camera pictures!</sys:String>
+    <sys:String x:Key="The test image does not exist!">The test image does not exist!</sys:String>
+    <sys:String x:Key="Auto set bright dark background LightOrDark numeric error">Auto set bright dark background LightOrDark numeric error</sys:String>
+    <sys:String x:Key="Auto set bright dark background failed">Auto set bright dark background failed</sys:String>
+    <sys:String x:Key="Please complete the definition of measuring remote assistance first!">Please complete the definition of measuring remote assistance first!</sys:String>
+    <sys:String x:Key="Are you sure you want to save product information?">Are you sure you want to save product information?</sys:String>
+    <sys:String x:Key="Please stop batch measurement of the channel">Please stop batch measurement of the channel</sys:String>
+
+    <sys:String x:Key="read failure">read failure</sys:String>
+    <sys:String x:Key="Product information saved successfully">Product information saved successfully</sys:String>
+    <sys:String x:Key="screen coordinate：">screen coordinate：</sys:String>
+    <sys:String x:Key="pixel coordinate：">pixel coordinate：</sys:String>
+    <sys:String x:Key="current grayscale：">current grayscale：</sys:String>
+    <sys:String x:Key="StationSUpdate，Error selecting channel number!">StationSUpdate，Error selecting channel number!</sys:String>
+
+    <sys:String x:Key="Do you want to delete the templet?">Do you want to delete the templet?</sys:String>
+    <sys:String x:Key="Deleted templates">Deleted templates</sys:String>
+    <sys:String x:Key="The template image 1 does not exist!">The template image 1 does not exist!</sys:String>
+    <sys:String x:Key="The template image 2 does not exist!">The template image 2 does not exist!</sys:String>
+    <sys:String x:Key="The template image 3 does not exist!">The template image 3 does not exist!</sys:String>
+    <sys:String x:Key="The template image 4 does not exist!">The template image 4 does not exist!</sys:String>
+    <sys:String x:Key="If the template is corrected, the original template will be removed">If the template is corrected, the original template will be removed</sys:String>
+    <sys:String x:Key="Template correction">Template correction</sys:String>
+    <sys:String x:Key="Template matching">Template matching</sys:String>
+    <sys:String x:Key="Number of defective rectangles, output errors">Number of defective rectangles, output errors</sys:String>
+    <sys:String x:Key="Defect rectangle array output error">Defect rectangle array output error</sys:String>
+    <sys:String x:Key="Size rectangle array output error">Size rectangle array output error</sys:String>
+    <sys:String x:Key="Defect template correction not completed!">Defect template correction not completed!</sys:String>
+    <sys:String x:Key="Template matching successful, the template is being generated">Template matching successful, the template is being generated</sys:String>
+    <sys:String x:Key="Template generation is complete and new algorithm parameters are being generated">Template generation is complete and new algorithm parameters are being generated</sys:String>
+    <sys:String x:Key="The algorithm parameter settings are wrong. Please check again!">The algorithm parameter settings are wrong. Please check again!</sys:String>
+    <sys:String x:Key="Saving product">Saving product</sys:String>
+    <sys:String x:Key="Save product error!">Save product error!</sys:String>
+    <sys:String x:Key="Replacing template pictures">Replacing template pictures</sys:String>
+    <sys:String x:Key="Replace template image error!">Replace template image error!</sys:String>
+    <sys:String x:Key="Read template failed again!">Read template failed again!</sys:String>
+    <sys:String x:Key="Template correction succeeded!">Template correction succeeded!</sys:String>
+    <sys:String x:Key="An error occurred in saving the corrected product!">An error occurred in saving the corrected product!</sys:String>
+    <sys:String x:Key="Failed to create template!">Failed to create template!</sys:String>
+    <sys:String x:Key="parameter set error!">parameter set error!</sys:String>
+    <sys:String x:Key="Please box the template unit">Please box the template unit</sys:String>
+    <sys:String x:Key="Please box the search area">Please box the search area</sys:String>
+    <sys:String x:Key="Please Draw the boxes that need the array">Please Draw the boxes that need the array</sys:String>
+    <sys:String x:Key="Build box failure!">Build box failure!</sys:String>
+    <sys:String x:Key="Build box error !">Build box error !</sys:String>
+    <sys:String x:Key="Build box error, please check that the input is correct!">Build box error, please check that the input is correct!</sys:String>
+    <sys:String x:Key="Basic frame">Basic frame</sys:String>
+    <sys:String x:Key="Remote assistance has been stopped">Remote assistance has been stopped</sys:String>
+    <sys:String x:Key="Do you want to stop remote assistance? \n note: if the KK recorder is not turned off, please stop and turn off.">Do you want to stop remote assistance? \n note: if the KK recorder is not turned off, please stop and turn off.</sys:String>
+    <sys:String x:Key="Video file copy failed and forced closing may cause incomplete file storage! Force to end? \n reason: \n1、 Did not start recording files. The \n2、 KK recorders are not closed or closed.">Video file copy failed and forced closing may cause incomplete file storage! Force to end? \n reason: \n1、 Did not start recording files. The \n2、 KK recorders are not closed or closed.</sys:String>
+    <sys:String x:Key="Remote assistance has started">Remote assistance has started</sys:String>
+    <sys:String x:Key="Card release error, please check the board">Card release error, please check the board</sys:String>
+    <sys:String x:Key="The resulting new template will overwrite the original template , confirm that the new template will be generated?">The resulting new template will overwrite the original template , confirm that the new template will be generated?</sys:String>
+    <sys:String x:Key="No relevant data information, consistent with the current query conditions!">No relevant data information, consistent with the current query conditions!</sys:String>
+    <sys:String x:Key="Video file copy failed and forced closing may cause incomplete file storage! Force to end? \n reason: \n1、Did not start recording files. The \n2、 KK recorders are not closed or closed.">Video file copy failed and forced closing may cause incomplete file storage! Force to end? \n reason: \n1、Did not start recording files. The \n2、 KK recorders are not closed or closed.</sys:String>
+    <sys:String x:Key="User name or password cannot be empty!">User name or password cannot be empty!</sys:String>
+    <sys:String x:Key="User name or password error!">User name or password error!</sys:String>
+    <sys:String x:Key="Please select a region">Please select a region</sys:String>
+    <sys:String x:Key="Exist in the same name!">Exist in the same name!</sys:String>
+    <sys:String x:Key="Generating template">Generating template</sys:String>
+    <sys:String x:Key="Please select the test region!">Please select the test region!</sys:String>
+    <sys:String x:Key="Create template successfully!">Create template successfully!</sys:String>
+    <sys:String x:Key="Please choose size type">Please choose size type</sys:String>
+    <sys:String x:Key="Size algorithm error: output size, type, number wrong!">Size algorithm error: output size, type, number wrong!</sys:String>
+    <sys:String x:Key="Size algorithm error:The number of {0} error！">Size algorithm error:The number of {0} error！</sys:String>
+    <sys:String x:Key="Error in size algorithm:">Error in size algorithm:</sys:String>
+    <sys:String x:Key="Size check not set">Size check not set</sys:String>
+    <sys:String x:Key="Note: after the \n1、 KK videos are released, please click start recording! \n2、 Before you finish remote assistance, click stop recording, and turn off the KK recorder!">Note: after the \n1、 KK videos are released, please click start recording! \n2、 Before you finish remote assistance, click stop recording, and turn off the KK recorder!</sys:String>
+    <sys:String x:Key="Manual">Manual</sys:String>
+    <sys:String x:Key="Wheather to delete the selected product information？">Wheather to delete the selected product information？</sys:String>
+    <sys:String x:Key="Does it overwrite the {0} of original product information？">Does it overwrite the {0} of original product information？</sys:String>
+    <sys:String x:Key="ModelSelectWindow error:">ModelSelectWindow error:</sys:String>
+    <sys:String x:Key="Btn_OK_Click error:">Btn_OK_Click error:</sys:String>
+    <sys:String x:Key="Camera parameters :[{0}={1}],setup failed 。Revert to previous parameters {2}！\r\n{3}">Camera parameters :[{0}={1}],setup failed 。Revert to previous parameters {2}！\r\n{3}</sys:String>
+    <!-- 定义 -->
+
+    <!-- 批量 -->
+    <sys:String x:Key="Send result">Send result</sys:String>
+    <sys:String x:Key="Please select the coiler!">Please select the coiler!</sys:String>
+    <sys:String x:Key="Two coilers can not be selected at the same time!">Two coilers can not be selected at the same time!</sys:String>
+    <sys:String x:Key="Please select the product type of all inspection areas!">Please select the product type of all inspection areas!</sys:String>
+    <sys:String x:Key="The batch number * * cannot be empty!">The batch number * * cannot be empty!</sys:String>
+    <sys:String x:Key="Please select the product type!">Please select the product type!</sys:String>
+    <sys:String x:Key="Run">Run</sys:String>
+    <sys:String x:Key="Detection lead to reset">Detection lead to reset</sys:String>
+    <sys:String x:Key="Detection lead to alarm">Detection lead to alarm</sys:String>
+    <sys:String x:Key="Continuous unmatched alarm">Continuous unmatched alarm</sys:String>
+    <sys:String x:Key="One of the templates is not matched to the alarm continuously, and there may be a fault leakage.">One of the templates is not matched to the alarm continuously, and there may be a fault leakage.</sys:String>
+    <sys:String x:Key="Plugging alarm">Plugging alarm</sys:String>
+    <sys:String x:Key="No product alarm">No product alarm</sys:String>
+    <sys:String x:Key="No check alarm">No check alarm</sys:String>
+
+    <sys:String x:Key="Please close the definition measurement of this channel first!">Please close the definition measurement of this channel first!</sys:String>
+    <sys:String x:Key="Failed to save software parameters:">Failed to save software parameters:</sys:String>
+    <sys:String x:Key="Monitoring startup">Monitoring startup</sys:String>
+    <sys:String x:Key="Close Full">Close Full</sys:String>
+    <sys:String x:Key="Full screen monitor off">Full screen monitor off</sys:String>
+    <sys:String x:Key="Please complete the remote assistance operation of batch measurement!">Please complete the remote assistance operation of batch measurement!</sys:String>
+
+    <sys:String x:Key="Error opening picture">Error opening picture</sys:String>
+    <sys:String x:Key="Batch save failed:">Batch save failed:</sys:String>
+    <sys:String x:Key="Please enter the product model!">Please enter the product model!</sys:String>
+    <sys:String x:Key="The starting time must not be greater than the termination time!">The starting time must not be greater than the termination time!</sys:String>
+    <sys:String x:Key="No data can be exported!">No data can be exported!</sys:String>
+    <sys:String x:Key="Export successful!">Export successful!</sys:String>
+    <sys:String x:Key="Failed to close the excel process!">Failed to close the excel process!</sys:String>
+    <sys:String x:Key="No Office 2013 installed!">No Office 2013 installed!</sys:String>
+    <sys:String x:Key="No data template.Xls!">No data template.Xls!</sys:String>
+    <sys:String x:Key="No data template (Workbook)!">No data template (Workbook)!</sys:String>
+    <sys:String x:Key="MissingPhoto">MissingPhoto</sys:String>
+    <sys:String x:Key="MorePhoto">MorePhoto</sys:String>
+    <sys:String x:Key="handlePhoto">handlePhoto</sys:String>
+    <sys:String x:Key="The number of photos is less than 1">The number of photos is less than 1</sys:String>
+    <sys:String x:Key="no product">no product</sys:String>
+    <sys:String x:Key="unmatched">unmatched</sys:String>
+    <sys:String x:Key="templet unmatched（original picture）">templet unmatched（original picture）</sys:String>
+    <sys:String x:Key="adnormal size">adnormal size</sys:String>
+    <sys:String x:Key="adnormal size（original）">adnormal size（original）</sys:String>
+    <sys:String x:Key="adnormal size（screenshot）">adnormal size（screenshot）</sys:String>
+    <sys:String x:Key="special">special</sys:String>
+    <sys:String x:Key="special and abnormal original picture">special and abnormal original picture</sys:String>
+    <sys:String x:Key="Please stop testing first!">Please stop testing first!</sys:String>
+    <sys:String x:Key="abnormal">abnormal</sys:String>
+    <sys:String x:Key="Defect unusual">Defect unusual</sys:String>
+    <sys:String x:Key="Large area alarm">Large area alarm</sys:String>
+    <sys:String x:Key="feed offset">feed offset</sys:String>
+    <sys:String x:Key="the time of test size：">the time of test size：</sys:String>
+    <sys:String x:Key="the time of saving picture：">the time of saving picture：</sys:String>
+    <sys:String x:Key="Defect algorithm unmatched after template matching">Defect algorithm unmatched after template matching</sys:String>
+    <sys:String x:Key="saving the image error">saving the image error</sys:String>
+    <sys:String x:Key="normal">normal</sys:String>
+    <sys:String x:Key="marked abnormal">marked abnormal</sys:String>
+    <sys:String x:Key="marked original picture">marked original picture</sys:String>
+    <sys:String x:Key="unmarked adnormal">unmarked adnormal</sys:String>
+    <sys:String x:Key="unmarked original picture">unmarked original picture</sys:String>
+    <sys:String x:Key="Parameter read error:">Parameter read error:</sys:String>
+    <sys:String x:Key="The PLC parameter save failed:">The PLC parameter save failed:</sys:String>
+    <sys:String x:Key="Note: after the \n1、 KK videos are released, please click start recording! \n2、Before you finish remote assistance, click stop recording, and turn off the KK recorder!">Note: after the \n1、 KK videos are released, please click start recording! \n2、Before you finish remote assistance, click stop recording, and turn off the KK recorder!</sys:String>
+    <sys:String x:Key="Software license code cannot be empty. Please enter the software license code">Software license code cannot be empty. Please enter the software license code</sys:String>
+    <sys:String x:Key="The software license code is not in the correct format. Please enter the letters or numbers">The software license code is not in the correct format. Please enter the letters or numbers</sys:String>
+    <sys:String x:Key="Software permanently authorizes success!">Software permanently authorizes success!</sys:String>
+    <sys:String x:Key="Software temporary license success!">Software temporary license success!</sys:String>
+    <sys:String x:Key="The software license code you entered is incorrect. Please contact the manufacturer!">The software license code you entered is incorrect. Please contact the manufacturer!</sys:String>
+    <sys:String x:Key="Authorization error!">Authorization error!</sys:String>
+    <sys:String x:Key="Camera configuration file exception">Camera configuration file exception</sys:String>
+    <sys:String x:Key="Export data">Export data</sys:String>
+    <sys:String x:Key="Password error">Password error</sys:String>
+    <sys:String x:Key="Does it delete the user of">Does it delete the user of</sys:String>
+
+    <sys:String x:Key="Full Screen">Full Screen</sys:String>
+
+
+    <sys:String x:Key="Copy error">Copy error</sys:String>
+    <sys:String x:Key="Please select the workstation to copy first">Please select the workstation to copy first</sys:String>
+    <sys:String x:Key="Source file deleted">Source file deleted</sys:String>
+    <sys:String x:Key="Paste error">Paste error</sys:String>
+    <sys:String x:Key="Template does not exist">Template does not exist</sys:String>
+    <sys:String x:Key="Source files that need to be copied do not exist">Source files that need to be copied do not exist</sys:String>
+
+
+    <sys:String x:Key="Picture failure!">Picture failure!</sys:String>
+    <sys:String x:Key="Success in drawing!">Success in drawing!</sys:String>
+    <sys:String x:Key="Save successfully">Save successfully</sys:String>
+    <sys:String x:Key="Cancel save">Cancel save</sys:String>
+    <sys:String x:Key="Region_Array_Unit error">Region_Array_Unit error</sys:String>
+    <sys:String x:Key="Region_Array_LHoles error">Region_Array_LHoles error</sys:String>
+    <sys:String x:Key="System hint">System hint</sys:String>
+    <sys:String x:Key="Backup data has been cleared!">Backup data has been cleared!</sys:String>
+    <sys:String x:Key="Please create a new product template first!">Please create a new product template first!</sys:String>
+    <sys:String x:Key="The picture is empty!">The picture is empty!</sys:String>
+    <sys:String x:Key="The light source evaluation template already exists, is it replaced?">The light source evaluation template already exists, is it replaced?</sys:String>
+    <sys:String x:Key="Light source evaluation template image does not exist!">Light source evaluation template image does not exist!</sys:String>
+    <sys:String x:Key="The gray value of the image is abnormal!">The gray value of the image is abnormal!</sys:String>
+    <sys:String x:Key="The gray value of the image is normal!">The gray value of the image is normal!</sys:String>
+    <sys:String x:Key="Assessment image error!">Assessment image error!</sys:String>
+
+    <sys:String x:Key="Plc state">Plc state</sys:String>
+    <sys:String x:Key="Information hint">Information hint</sys:String>
+
+    <sys:String x:Key="User login">User login</sys:String>
+    <sys:String x:Key="Definition measurement">Definition measurement</sys:String>
+    <sys:String x:Key="Batch measurement">Batch measurement</sys:String>
+    <sys:String x:Key="Statistical report forms">Statistical report forms</sys:String>
+    <sys:String x:Key="System Settings">System Settings</sys:String>
+    <sys:String x:Key="Exit system">Exit system</sys:String>
+
+    <sys:String x:Key="Camera on">Camera on</sys:String>
+    <sys:String x:Key="Channel switching loading">Channel switching loading</sys:String>
+
+    <!-- baicx 20200207 -->
+    <sys:String x:Key="Does it need to be removed">Does it need to be removed</sys:String>
+    <sys:String x:Key="This is not in the file?">This is not in the file</sys:String>
+    <sys:String x:Key="Clear cache failure!">Clear cache failure!</sys:String>
+    <sys:String x:Key="Please confirm if this path exists!">Please confirm if this path exists!</sys:String>
+    <sys:String x:Key="please complete the edit of the check area box first!">please complete the edit of the check area box first!</sys:String>
+    <sys:String x:Key="please complete the edit of the location box first!">please complete the edit of the location box first!</sys:String>
+    <sys:String x:Key="Images have been classified into this category!">Images have been classified into this category!</sys:String>
+    <sys:String x:Key="The Element Coefficient must be greater than 0!">The Element Coefficient must be greater than 0!</sys:String>
+    <sys:String x:Key="Please input the correct product parameters!">Please input the correct product parameters!</sys:String>
+    <sys:String x:Key="Please select the image type first!">Please select the image type first!</sys:String>
+    <sys:String x:Key="Please close other Excel files first, and then click OK!">Please close other Excel files first, and then click OK!</sys:String>
+    <sys:String x:Key="Please close the template file!">Please close the template file!</sys:String>
+    <sys:String x:Key="The Coiler length value is not entered correctly!">The Coiler length value is not entered correctly!</sys:String>
+    <sys:String x:Key="Please make sure the center of the picture is right!">Please make sure the center of the picture is right!</sys:String>
+    <sys:String x:Key="related data">related data</sys:String>
+    <sys:String x:Key="no">no</sys:String>
+    
+    <!-- 批量 -->
+
+
+    <!--错误类-->
+    <sys:String x:Key="exType">Exception type ：{0}</sys:String>
+    <sys:String x:Key="exMessage">Exception information：{1}</sys:String>
+    <sys:String x:Key="exStack">Exception information：{2}</sys:String>
+    <sys:String x:Key="StringKeyNotExist">Multilingual keys are not configured!</sys:String>
+
+    <!--Qiyi Li-->
+    <sys:String x:Key="Station without model">Station{0} without model</sys:String>
+    <sys:String x:Key="Station without defect">{0}without defect</sys:String>
+    <sys:String x:Key="Dark">Dark</sys:String>
+    <sys:String x:Key="Light">Light</sys:String>
+    <sys:String x:Key="Switch to new product">Switch to new product</sys:String>
+    <sys:String x:Key="Weather to switch to new product">Weather to switch to new product?</sys:String>
+    <sys:String x:Key="Off Line">Off Line</sys:String>
+    <sys:String x:Key="On Line">On Line</sys:String>
+    <sys:String x:Key="System Run Mode">System Run Mode</sys:String>
+    <sys:String x:Key="SoftwareLanguage">Language</sys:String>
+    <sys:String x:Key="Chinese">Chinese</sys:String>
+    <sys:String x:Key="English">English</sys:String>
+    <sys:String x:Key="Russian">Russian</sys:String>
+    <sys:String x:Key="Normal Software">Normal</sys:String>
+    <sys:String x:Key="Pieces Software">Pieces</sys:String>
+    <sys:String x:Key="Hardware Trigger">Hardware Trigger</sys:String>
+    <sys:String x:Key="Software Trigger">Software Trigger</sys:String>
+    <sys:String x:Key="Whether to save run info data">Whether to save run info data</sys:String>
+    <sys:String x:Key="Software type">Software type</sys:String>
+    <sys:String x:Key="Normal band">Normal band</sys:String>
+    <sys:String x:Key="Strobe lamp">Strobe lamp</sys:String>
+    <sys:String x:Key="Communication type with PLC">Communication type with PLC</sys:String>
+    <sys:String x:Key="Pieces simply mode">Pieces simply mode</sys:String>
+    <sys:String x:Key="Hide unmatch model">Hide unmatch model</sys:String>
+    <sys:String x:Key="Hide fuzzy image">Hide fuzzy image</sys:String>
+    <sys:String x:Key="Auto read code">Auto read code</sys:String>
+    <sys:String x:Key="Hide fuzzy image seconds">Hide fuzzy image seconds</sys:String>
+    <sys:String x:Key="Whether algorithm to use model">Whether algorithm to use model</sys:String>
+    <sys:String x:Key="Box type">Whether is box type</sys:String>
+    <sys:String x:Key="Save bmp image">Whether to save bmp image</sys:String>
+    <sys:String x:Key="Auto light or dark">Auto light or dark</sys:String>
+    <sys:String x:Key="Same time">Whether to start/stop at same time</sys:String>
+    <sys:String x:Key="Show OK">Whether to show OK information</sys:String>
+    <sys:String x:Key="Net work alarm">Whether network alarm</sys:String>
+    <sys:String x:Key="Client">Whether local PC is client</sys:String>
+    <sys:String x:Key="DeviceID">Device ID in network alarm</sys:String>
+    <sys:String x:Key="Software ctrl device">Whether software controls the motor logic</sys:String>
+    <sys:String x:Key="Has two channels">Has two channels</sys:String>
+    <sys:String x:Key="Has assist">Has remote assist</sys:String>
+    <sys:String x:Key="Camera photo type">Camera photo type</sys:String>
+    <sys:String x:Key="Has alarm code">Has alarm code</sys:String>
+    <sys:String x:Key="Distance to alarm code">Distance to alarm code</sys:String>
+    <sys:String x:Key="Unite lenth">Unite lenth channel 1</sys:String>
+    <sys:String x:Key="Unite lenth2">Unite lenth channel 2</sys:String>
+    <sys:String x:Key="Max lenth num">Max lenth num</sys:String>
+    <sys:String x:Key="Max lenth num1">Max lenth num</sys:String>
+    <sys:String x:Key="System code">System code default is "yszn"</sys:String>
+    <sys:String x:Key="Has pwd correction">Has password for correction</sys:String>
+    <sys:String x:Key="Stop check">Stop check, use with ALARM/Di_Pause_1 port</sys:String>
+    <sys:String x:Key="Batch check">Batch check</sys:String>
+    <sys:String x:Key="Sure model">Sure model</sys:String>
+    <sys:String x:Key="Check product stop">Check product stop</sys:String>
+    <sys:String x:Key="Check product move">Check product move</sys:String>
+    <sys:String x:Key="Check product move cnt">Check product move cnt</sys:String>
+    <sys:String x:Key="First channel name">First channel name</sys:String>
+    <sys:String x:Key="Second channel name">Second channel name</sys:String>
+    <sys:String x:Key="Last product name">Last product name</sys:String>
+    <sys:String x:Key="First channel last product name">First channel last product name</sys:String>
+    <sys:String x:Key="Second channel last product name">Second channel last product name</sys:String>
+    <sys:String x:Key="First channel last batch number">First channel last batch number</sys:String>
+    <sys:String x:Key="Second channel last batch number">Second channel last batch number</sys:String>
+    <sys:String x:Key="Color Roi">Color Roi</sys:String>
+    <sys:String x:Key="Color shielding area">Color shielding area</sys:String>
+    <sys:String x:Key="Color detection area">Color detection area</sys:String>
+    <sys:String x:Key="Color location area">Color location area</sys:String>
+    <sys:String x:Key="Color size">Color size</sys:String>
+    <sys:String x:Key="Color defect">Color defect</sys:String>
+    <sys:String x:Key="Save error log time">Save error log time</sys:String>
+    <sys:String x:Key="Product set path">Product set path</sys:String>
+    <sys:String x:Key="Excel template path">Excel template path</sys:String>
+    <sys:String x:Key="OK image path">OK image path</sys:String>
+    <sys:String x:Key="Error image path">Error image path</sys:String>
+    <sys:String x:Key="Origin image path">Origin image path</sys:String>
+    <sys:String x:Key="Move alter">Move alter</sys:String>
+    <sys:String x:Key="Alarm image path">Alarm image path</sys:String>
+    <sys:String x:Key="Log path">Log path</sys:String>
+    <sys:String x:Key="Error log path">Error log path</sys:String>
+    <sys:String x:Key="Pic info confirm file path">Pic info confirm file path</sys:String>
+    <sys:String x:Key="Static measure imagepath1">Static measure image 1 path</sys:String>
+    <sys:String x:Key="Static measure imagepath2">Static measure image 2 path</sys:String>
+    <sys:String x:Key="Static measure imagepath3">Static measure image 3 path</sys:String>
+    <sys:String x:Key="Static measure imagepath4">Static measure image 4 path</sys:String>
+    <sys:String x:Key="Adjust image path">Adjust image path</sys:String>
+    <sys:String x:Key="Authorize info path">Authorize info path</sys:String>
+    <sys:String x:Key="Pic info path">Pic info path</sys:String>
+    <sys:String x:Key="Assist files info path">Assist files info path</sys:String>
+    <sys:String x:Key="Choose alg index">default algorithm index</sys:String>
+    <sys:String x:Key="Save image queue max num">Maximun number of save image queue</sys:String>
+    <sys:String x:Key="Algorithm normal parasnum">Normal parasnum of Algorithm</sys:String>
+    <sys:String x:Key="Algorithm senior parasnum">Senior parasnum of Algorithm</sys:String>
+    <sys:String x:Key="Algorithm size parasnum">Parasnum of size Algorithm</sys:String>
+    <sys:String x:Key="Model unmatch alarm num">Model unmatch alarm number</sys:String>
+    <sys:String x:Key="Camera photo interval">Camera photo interval</sys:String>
+    <sys:String x:Key="Camera photo count">Camera photo count</sys:String>
+    <sys:String x:Key="Camera start photo position">Camera start photo position</sys:String>
+    <sys:String x:Key="Camera interval photo position">Camera interval photo position</sys:String>
+    <sys:String x:Key="Photo num for onesize">Photo number for onesize</sys:String>
+    <sys:String x:Key="Multi model alarm unmatched times">Multi-model alarm unmatched times</sys:String>
+    <sys:String x:Key="Detection area off centers">Detection area off centers</sys:String>
+    <sys:String x:Key="Detection area max">Maximum value of detection area</sys:String>
+    <sys:String x:Key="Default create channel">Default create channel</sys:String>
+    <sys:String x:Key="Default detect channel">Default detect channel</sys:String>
+    <sys:String x:Key="Has backlit">Has backlit</sys:String>
+    <sys:String x:Key="Product gray default">Product gray default</sys:String>
+    <sys:String x:Key="Hole gray default">Hole gray default</sys:String>
+    <sys:String x:Key="Min score default">Min score default</sys:String>
+    <sys:String x:Key="Add minutes">Minutes of product date to be corrected</sys:String>
+    <sys:String x:Key="Machine">Machine No.</sys:String>
+    <sys:String x:Key="Channel station num">Station number of channel 1</sys:String>
+    <sys:String x:Key="Save dump image OK">Save dump OK image</sys:String>
+    <sys:String x:Key="Save dump image NG">Save dump NG image</sys:String>
+    <sys:String x:Key="Save dump image WPP">Save dump WPP image</sys:String>
+    <sys:String x:Key="Save origin image OK">Save origin OK image</sys:String>
+    <sys:String x:Key="Save origin image NG">Save origin NG image</sys:String>
+    <sys:String x:Key="Save mark origin image NG">Save mark origin NG image</sys:String>
+    <sys:String x:Key="Save origin image WPP">Save origin WPP image</sys:String>
+    <sys:String x:Key="Save all image WPP">Save all WPP image</sys:String>
+    <sys:String x:Key="Save no product">Save no product image</sys:String>
+    <sys:String x:Key="Save origin image size">Save origin size image</sys:String>
+    <sys:String x:Key="Save origin image ImageError">Save origin image when image is error</sys:String>
+    <sys:String x:Key="Show origin image ImageError">Show origin image when image is error</sys:String>
+    <sys:String x:Key="Is size error alarm">Whether alarm when size is error</sys:String>
+    <sys:String x:Key="Save measure value to DB">Save measure value to DB</sys:String>
+    <sys:String x:Key="Is alarm software stop">Whether software stop when alarm</sys:String>
+    <sys:String x:Key="Is alarm device stop">Whether device stop when alarm</sys:String>
+    <sys:String x:Key="Is alarm device stop delay">Whether device stop witch delay</sys:String>
+    <sys:String x:Key="Hardware delay time">Hardware delay time (ms)</sys:String>
+    <sys:String x:Key="Is delay alarm and mark">Is delay alarm and mark</sys:String>
+    <sys:String x:Key="Is pause">Is pause</sys:String>
+    <sys:String x:Key="Speed">Device speed</sys:String>
+    <sys:String x:Key="Delay alarm and mark time">Delay alarm and mark time</sys:String>
+    <sys:String x:Key="Pause defect time">Pause defect time</sys:String>
+    <sys:String x:Key="Match angle">Match angle</sys:String>
+    <sys:String x:Key="Is meter record enable">Is meter record enable</sys:String>
+    <sys:String x:Key="Device Line No">Device Line No.</sys:String>
+    <sys:String x:Key="Line length1">Line length 1</sys:String>
+    <sys:String x:Key="Line length2">Line length 2</sys:String>
+    <sys:String x:Key="Is reset clear alarm list">Is reset clear alarm list</sys:String>
+    <sys:String x:Key="Is alarm loud sound">Is alarm loud sound</sys:String>
+    <sys:String x:Key="Is save test image">Whether to save test image</sys:String>
+    <sys:String x:Key="Is save sample image">Whether to save sample image</sys:String>
+    <sys:String x:Key="Sample image num">How much time to save sample image</sys:String>
+    <sys:String x:Key="Grab error num restart">restart after how many error is collected</sys:String>
+    <sys:String x:Key="Is show measure time">Whether to show algorithm measure time</sys:String>
+    <sys:String x:Key="Is alarm no product">Whether to alarm when no product</sys:String>
+    <sys:String x:Key="PLC reset">PLC reset address</sys:String>
+    <sys:String x:Key="PLCOK2">PLCOK2</sys:String>
+    <sys:String x:Key="PLCNG2">PLCNG2</sys:String>
+    <sys:String x:Key="PulsePerMM">Pulse distance ratio</sys:String>
+    <sys:String x:Key="Is show alarm image">Whether to show alarm image</sys:String>
+    <sys:String x:Key="Is cache image alarm">Whether has cache image alarm</sys:String>
+    <sys:String x:Key="Cache alarm numer">Cache alarm numer</sys:String>
+    <sys:String x:Key="Are you sure you want to save system setup?">Are you sure you want to save system setup?</sys:String>
+    <sys:String x:Key="System setup parameter read error:">System setup parameter read error:</sys:String>
+    <sys:String x:Key="System setup parameter save error:">System setup parameter save error:</sys:String>
+    <sys:String x:Key="Is LearnV">Whether to use LearnV</sys:String>
+    <sys:String x:Key="V interval">V interval</sys:String>
+    <sys:String x:Key="Trigger interval of channel">Trigger interval of channel</sys:String>
+    <sys:String x:Key="Is user camera para">Whether to user user-defined camera parameter</sys:String>
+    <sys:String x:Key="Is show templates usage">Whether to show templates usage</sys:String>
+    <sys:String x:Key="Visual">Visual</sys:String>
+    <sys:String x:Key="Template usage">Template usage</sys:String>
+    <sys:String x:Key="Template No">No.</sys:String>
+    <sys:String x:Key="Matched">Matched</sys:String>
+    <sys:String x:Key="No matched">No matched</sys:String>
+
+</ResourceDictionary>

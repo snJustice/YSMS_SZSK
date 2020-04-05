@@ -24,8 +24,8 @@ namespace YSMS_SZSK.Utils.Communication.TCP_Client.DSocket.DataFilter
             if (false)
             {
                 //fixed length filter
-                _fixedSizeReceiveFilter = new FixedSizeDataReceiveFilter(this, rest);
-                NextReceiveFilter = _fixedSizeReceiveFilter;
+               // _fixedSizeReceiveFilter = new FixedSizeDataReceiveFilter(this, rest);
+               // NextReceiveFilter = _fixedSizeReceiveFilter;
             }
 
             else 
