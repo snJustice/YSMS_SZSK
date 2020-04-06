@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--文件路径：      **\Products\**\CameraParas.xml-->
+<CameraParas>
+  <CameraPara CameraNo="01">
+    <Para4HTuple ParaNo="00" ParaName="LightSourceSelector" ParaValue="Off" ParaType="string" />
+    <Para4HTuple ParaNo="01" ParaName="BalanceRatioRaw" ParaValue="105" ParaType="int" />
+    <Para4HTuple ParaNo="02" ParaName="ExposureTimeRaw" ParaValue="500" ParaType="int" />
+    <Para4HTuple ParaNo="03" ParaName="GainRaw" ParaValue="390" ParaType="int" />
+  </CameraPara>
+  <CameraPara CameraNo="02">
+    <Para4HTuple ParaNo="00" ParaName="LightSourceSelector" ParaValue="Off" ParaType="string" />
+    <Para4HTuple ParaNo="01" ParaName="BalanceRatioRaw" ParaValue="105" ParaType="int" />
+    <Para4HTuple ParaNo="02" ParaName="ExposureTimeRaw" ParaValue="600" ParaType="int" />
+    <Para4HTuple ParaNo="03" ParaName="GainRaw" ParaValue="390" ParaType="int" />
+  </CameraPara>
+  <CameraPara CameraNo="03">
+    <Para4HTuple ParaNo="00" ParaName="LightSourceSelector" ParaValue="Off" ParaType="string" />
+    <Para4HTuple ParaNo="01" ParaName="BalanceRatioRaw" ParaValue="105" ParaType="int" />
+    <Para4HTuple ParaNo="02" ParaName="ExposureTimeRaw" ParaValue="500" ParaType="int" />
+    <Para4HTuple ParaNo="03" ParaName="GainRaw" ParaValue="390" ParaType="int" />
+  </CameraPara>
+  <CameraPara CameraNo="04">
+    <Para4HTuple ParaNo="00" ParaName="LightSourceSelector" ParaValue="Off" ParaType="string" />
+    <Para4HTuple ParaNo="01" ParaName="BalanceRatioRaw" ParaValue="105" ParaType="int" />
+    <Para4HTuple ParaNo="02" ParaName="ExposureTimeRaw" ParaValue="500" ParaType="int" />
+    <Para4HTuple ParaNo="03" ParaName="GainRaw" ParaValue="390" ParaType="int" />
+  </CameraPara>
+</CameraParas>

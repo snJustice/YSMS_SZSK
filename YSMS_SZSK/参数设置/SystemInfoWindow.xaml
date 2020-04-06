@@ -1,0 +1,220 @@
+﻿<Window x:Class="YSMS_SZSK.参数设置.SystemInfoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="{DynamicResource Parameter Setting}" Height="790" Width="325" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="/YSMS_SZSK;component/Images/公司Logo.ico" FontSize="13" FontFamily="Microsoft YaHei" FontWeight="Bold" >
+    <Grid Height="751">
+        <TabControl Height="700" HorizontalAlignment="Left" Name="tabControl1" VerticalAlignment="Top" Width="305">
+            <TabItem Header="{DynamicResource Basic parameters}" Name="tabItem1">
+                <Grid Width="302">
+                    <CheckBox Content="{DynamicResource Whether to save OK original image}" Height="20" FontSize="14" HorizontalAlignment="Left" Margin="7,9,0,0" Name="checkBox_OK" VerticalAlignment="Top" />
+                    <CheckBox Content="{DynamicResource Whether to save NG original image}" FontSize="14" Height="20" HorizontalAlignment="Left" Margin="7,34,0,0" Name="checkBox_NG" VerticalAlignment="Top" />
+                    <CheckBox Content="{DynamicResource Whether to save the tape mark NG original image}" FontSize="14" Height="20" HorizontalAlignment="Left" Margin="7,59,0,0" Name="checkBox_MarkNG" VerticalAlignment="Top" />
+                    <CheckBox Content="{DynamicResource Whether to save the unmatched original image}" FontSize="14" Height="20" HorizontalAlignment="Left" Margin="7,110,0,0" Name="checkBox_WPP" VerticalAlignment="Top" />
+                    <CheckBox Content="{DynamicResource Whether to save the unreported unmatched images}" FontSize="14" Height="20" HorizontalAlignment="Left" Margin="7,135,0,0" Name="checkBox_allWPP" VerticalAlignment="Top" />
+                    <CheckBox Content="{DynamicResource Whether to save the size error original image}" FontSize="14" Height="20" HorizontalAlignment="Left" Margin="7,185,0,0" Name="checkBox_Size" VerticalAlignment="Top" />
+                    <CheckBox Content="{DynamicResource Whether to alarm size error}" FontSize="14" Height="20" HorizontalAlignment="Left" Margin="7,211,0,0" Name="checkBox_SizeAlarm" VerticalAlignment="Top" />
+                    <CheckBox Content="{DynamicResource Whether to save the measurement data to the database}" FontSize="14" Height="20" HorizontalAlignment="Left" Margin="7,237,0,0" Name="checkBox_MeasureSize2DB" VerticalAlignment="Top" />
+                    <CheckBox Content="{DynamicResource Whether the alarm software should stop detection}" FontSize="14" Height="20" HorizontalAlignment="Left" Margin="7,263,0,0" Name="checkBox_IsAlarmSoftwareStop" VerticalAlignment="Top" />
+                    <CheckBox Content="{DynamicResource Whether the alarm hardware is down}" FontSize="14" Height="20" HorizontalAlignment="Left" Margin="7,290,0,0" Name="checkBox_IsAlarmDeviceStop" VerticalAlignment="Top" />
+                    <CheckBox Content="{DynamicResource Whether the alarm hardware is down with delay}" FontSize="14" Height="20" HorizontalAlignment="Left" Margin="7,317,0,0" Name="checkBox_IsAlarmDeviceStopDelay" VerticalAlignment="Top" />
+                    <Label Content="{DynamicResource HardwareDelayTime}" Height="28" HorizontalAlignment="Left" Margin="3,342,0,0" Name="label_Hardwaredelay" VerticalAlignment="Top"/>
+                    <TextBox Height="23" HorizontalAlignment="Right" Margin="0,0,37,283" Name="textBox_Hardwaredelay" VerticalAlignment="Bottom" Width="110"/>
+                    <CheckBox Content="{DynamicResource Whether the reset clears the alarm queue}" FontSize="14" Height="20" HorizontalAlignment="Left" Margin="7,375,0,0" Name="checkBox_IsResetClearAlarmList" VerticalAlignment="Top" />
+                    <CheckBox Content="{DynamicResource Whether to save the noProduct images}" FontSize="14" Height="20" HorizontalAlignment="Left" Margin="7,160,0,0" Name="checkBox_noProduct" VerticalAlignment="Top" />
+                    <CheckBox Content="{DynamicResource IsStartMark}" HorizontalAlignment="Left" Margin="7,404,0,0" Name="checkbox_IsStartMark"  Click="checkbox_IsStartMark_Click" Height="23" VerticalAlignment="Top" />
+                    <Label Content="{DynamicResource MaxLenAlarmCh1}" Height="28" HorizontalAlignment="Left" Margin="7,433,0,0" Name="label1" VerticalAlignment="Top"  Visibility="Hidden"/>
+                    <TextBox Height="23" HorizontalAlignment="Right" Margin="0,0,38,186" Name="textBox_MaxLenAlarm" VerticalAlignment="Bottom" Width="110" Visibility="Hidden"/>
+                    <Label Content="{DynamicResource MaxLenAlarmCh2}" Height="28" HorizontalAlignment="Left" Margin="7,0,0,151" Name="label2" VerticalAlignment="Bottom" Visibility="Hidden" />
+                    <TextBox Height="23" HorizontalAlignment="Right" Margin="0,468,38,0" Name="textBox_MaxLenAlarm2" VerticalAlignment="Top" Width="110" Visibility="Hidden" />
+                    <Label Content="{DynamicResource WaitInterval}" Height="28" HorizontalAlignment="Left" Margin="7,499,0,0" Name="label3" VerticalAlignment="Top" Visibility="Hidden" />
+                    <TextBox Height="23" HorizontalAlignment="Right" Margin="0,501,38,0" Name="textBox_WaitInterval" VerticalAlignment="Top" Visibility="Hidden" Width="110" />
+                    <Label Content="{DynamicResource Pieces}" Height="28" HorizontalAlignment="Left" Margin="270,501,0,0" Name="label4" VerticalAlignment="Top" Visibility="Hidden" />
+                    <CheckBox Content="{DynamicResource Whether to save the tape mark NG screenShot image}" FontSize="14" Height="20" HorizontalAlignment="Left" Margin="7,85,0,0" Name="checkBox_screenShot" VerticalAlignment="Top" />
+                    <Label Content="{DynamicResource Machine and line No}" Height="28" HorizontalAlignment="Left" Margin="7,536,0,0" Name="label5" VerticalAlignment="Top" FontWeight="Bold"  Visibility="Hidden" Foreground="Blue" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="154,538,0,0" Name="textBox_DeviceLineNo" VerticalAlignment="Top" Width="110" Visibility="Hidden" Background="{x:Null}" BorderBrush="Black" Foreground="Blue" TextAlignment="Center" />
+                    <Label Content="{DynamicResource the Length of Coiler1}" Height="28" HorizontalAlignment="Left" Margin="7,569,0,0" Name="label6" VerticalAlignment="Top" Visibility="Hidden" Foreground="Blue" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="154,573,0,0" Name="textBox_LineLength1" VerticalAlignment="Top" Width="110" Visibility="Hidden" Background="{x:Null}" BorderBrush="Black" Foreground="Blue" TextAlignment="Center" />
+                    <Label Content="{DynamicResource the Length of Coiler2}" Height="28" HorizontalAlignment="Left" Margin="7,604,0,0" Name="label7" VerticalAlignment="Top" Visibility="Hidden" Foreground="Blue" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="154,0,0,16" Name="textBox_LineLength2" VerticalAlignment="Bottom" Width="110" Visibility="Hidden" Background="{x:Null}" BorderBrush="Black" Foreground="Blue" TextAlignment="Center" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="{DynamicResource Channel1 Normalmaterial parameters}" Name="TabParaNormal_channel1">
+                <Grid Height="588">
+                    <Label Content="{DynamicResource speed}" Height="28" HorizontalAlignment="Left" Margin="6,9,0,0" VerticalAlignment="Top" Width="120" />
+                    <Label Content="{DynamicResource Starting mark of station2}" Height="28" Width="124"  Margin="2,59,0,0"  VerticalAlignment ="Top" HorizontalAlignment="Left"/>
+                    <Label Content="{DynamicResource Starting mark of station3}" Height="28" Width="124"  Margin="2,84,0,0"  VerticalAlignment ="Top" HorizontalAlignment="Left"/>
+                    <Label Content="{DynamicResource Starting mark of station4}" Height="28" Width="124"  Margin="2,109,0,0"  VerticalAlignment ="Top" HorizontalAlignment="Left"/>
+                    <Label Content="{DynamicResource Starting mark of station1}" Height="28" HorizontalAlignment="Left" Margin="2,34,0,0" VerticalAlignment="Top" Width="124" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="128,37,0,0" Name="textBox_photeStart1_1m" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="128,62,0,0" Name="textBox_photeStart2_1m" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="128,87,0,0" Name="textBox_photeStart3_1m" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="128,112,0,0" Name="textBox_photeStart4_1m" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="128,137,0,0" Name="textBox_photeStart5_1m" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="128,163,0,0" Name="textBox_photeStart6_1m" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="128,189,0,0" Name="textBox_photoInterval6_1m" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="128,12,0,0" Name="textBox_Speed" VerticalAlignment="Top" Width="120" />
+                    <Label Content="{DynamicResource Starting mark of station5}" Height="28" HorizontalAlignment="Left" Margin="2,134,0,0" VerticalAlignment="Top" Width="124" />
+                    <Label Content="{DynamicResource Starting mark of station6}" Height="28" HorizontalAlignment="Left" Margin="2,160,0,0" VerticalAlignment="Top" Width="124" />
+                    <Label Content="{DynamicResource mark interval of station6}" Height="28" HorizontalAlignment="Left" Margin="2,186,0,0" VerticalAlignment="Top" Width="124" />
+                    <Label Content="mm/s" Height="28" HorizontalAlignment="Left" Margin="246,10,0,0" VerticalAlignment="Top" />
+                    <Label Content="mm" Height="28" HorizontalAlignment="Left" Margin="246,62,0,0" VerticalAlignment="Top" />
+                    <Label Content="mm" Height="28" HorizontalAlignment="Left" Margin="246,87,0,0" VerticalAlignment="Top" />
+                    <Label Content="mm" Height="28" HorizontalAlignment="Left" Margin="246,112,0,0" VerticalAlignment="Top" />
+                    <Label Content="mm" Height="28" HorizontalAlignment="Left" Margin="246,137,0,0" VerticalAlignment="Top" />
+                    <Label Content="mm" Height="28" HorizontalAlignment="Left" Margin="246,163,0,0" VerticalAlignment="Top" />
+                    <Label Content="mm" Height="28" HorizontalAlignment="Left" Margin="246,187,0,0" VerticalAlignment="Top" />
+                    <Label Content="mm" Height="28" HorizontalAlignment="Left" Margin="246,37,0,0" VerticalAlignment="Top" />
+                    <Label Content="{DynamicResource V interval}" Name="labelIntervalV_1" Visibility="Hidden" Height="28" HorizontalAlignment="Left" Margin="2,215,0,0" VerticalAlignment="Top" Width="124" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="128,216,0,0" Name="tBIntervalV" Visibility="Hidden" VerticalAlignment="Top" Width="120" />
+                    <Label Content="{DynamicResource Pieces}"  Name="labelIntervalV_2" Visibility="Hidden" Height="28" HorizontalAlignment="Left" Margin="246,214,0,0" VerticalAlignment="Top" />
+                    <Label Content="{DynamicResource Trigger interval of channel}" Height="28" HorizontalAlignment="Left" Margin="2,245,0,0" Name="label8" VerticalAlignment="Top" Width="124" />
+                    <TextBox Height="23" HorizontalAlignment="Right" Margin="0,246,47,0" Name="textBox_TriggerInterval" VerticalAlignment="Top" Width="120" />
+                </Grid>
+
+            </TabItem>
+
+            <TabItem Header="{DynamicResource Channel1 material parameters}" Name="TabPara_channel1">
+                <Grid Height="587">
+                    <Label Content="{DynamicResource Qualified full charge}" Height="28" Width="120"  Margin="6,-2,0,0" VerticalAlignment ="Top" HorizontalAlignment="Left"/>
+                    <Label Content="{DynamicResource Unqualified full quantity}" Height="28" Width="120"  Margin="6,23,0,0"  VerticalAlignment ="Top" HorizontalAlignment="Left" />
+                    <Label Content="{DynamicResource Starting position of station1}" Height="28" Width="120"  Margin="6,72,0,0"  VerticalAlignment ="Top" HorizontalAlignment="Left"/>
+                    <Label Content="{DynamicResource Photo number of station1}" Height="28" Width="120" Margin="6,97,0,0" VerticalAlignment ="Top" HorizontalAlignment="Left" />
+                    <Label Content="{DynamicResource Photo interval of station1}" Height="28" Width="120" Margin="6,122,0,0" VerticalAlignment ="Top" HorizontalAlignment="Left" />
+                    <Label Content="{DynamicResource Starting position of station2}" Height="28" Width="120"  Margin="6,147,0,0"  VerticalAlignment ="Top" HorizontalAlignment="Left"/>
+                    <Label Content="{DynamicResource Photo number of station2}" Height="28" Width="120" Margin="6,172,0,0" VerticalAlignment ="Top" HorizontalAlignment="Left" />
+                    <Label Content="{DynamicResource Photo interval of station2}" Height="28" Width="120" Margin="6,197,0,0" VerticalAlignment ="Top" HorizontalAlignment="Left" />
+                    <Label Content="{DynamicResource Starting position of station3}" Height="28" Width="120"  Margin="6,222,0,0"  VerticalAlignment ="Top" HorizontalAlignment="Left"/>
+                    <Label Content="{DynamicResource Photo number of station3}" Height="28" Width="120" Margin="6,247,0,0" VerticalAlignment ="Top" HorizontalAlignment="Left" />
+                    <Label Content="{DynamicResource Photo interval of station3}" Height="28" Width="120" Margin="6,272,0,0" VerticalAlignment ="Top" HorizontalAlignment="Left" />
+                    <Label Content="{DynamicResource Starting position of station4}" Height="28" Width="120"  Margin="6,297,0,0"  VerticalAlignment ="Top" HorizontalAlignment="Left"/>
+                    <Label Content="{DynamicResource Photo number of station4}" Height="28" Width="120" Margin="6,322,0,0" VerticalAlignment ="Top" HorizontalAlignment="Left" />
+                    <Label Content="{DynamicResource Photo interval of station4}" Height="28" Width="120" Margin="6,347,0,0" VerticalAlignment ="Top" HorizontalAlignment="Left" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="125,0,0,0" Name="textBox_OKNum_1" VerticalAlignment="Top" Width="120" />
+                    <TextBox HorizontalAlignment="Left" Margin="125,25,0,330" Name="textBox_NGNum_1" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="125,75,0,0" Name="textBox_photeStart1_1" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="125,100,0,0" Name="textBox_photoNum1_1" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="125,125,0,0" Name="textBox_photoInterval1_1" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="125,150,0,0" Name="textBox_photeStart2_1" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="125,175,0,0" Name="textBox_photoNum2_1" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="125,200,0,0" Name="textBox_photoInterval2_1" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="125,225,0,0" Name="textBox_photeStart3_1" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="125,250,0,0" Name="textBox_photoNum3_1" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="125,275,0,0" Name="textBox_photoInterval3_1" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="125,300,0,0" Name="textBox_photeStart4_1" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="125,325,0,0" Name="textBox_photoNum4_1" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="125,350,0,0" Name="textBox_photoInterval4_1" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="125,376,0,0" Name="textBox_photeStart5_1" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="125,401,0,0" Name="textBox_photoNum5_1" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="125,426,0,0" Name="textBox_photoInterval5_1" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="125,453,0,0" Name="textBox_photeStart6_1" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="125,478,0,0" Name="textBox_photoNum6_1" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="125,503,0,0" Name="textBox_photoInterval6_1" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="125,50,0,0" Name="textBox_NGAlarm_1" VerticalAlignment="Top" Width="120" />
+                    <Label Content="{DynamicResource Continuous disqualification alarm}" Height="28" HorizontalAlignment="Left" Margin="7,48,0,0" VerticalAlignment="Top" Width="120" />
+                    <Label Content="mm" Height="28" HorizontalAlignment="Left" Margin="243,75,0,0"  VerticalAlignment="Top" />
+                    <Label Content="mm" Height="28" HorizontalAlignment="Left" Margin="243,125,0,0" VerticalAlignment="Top" />
+                    <Label Content="mm" Height="28" HorizontalAlignment="Left" Margin="243,150,0,0" VerticalAlignment="Top" />
+                    <Label Content="mm" Height="28" HorizontalAlignment="Left" Margin="243,200,0,0" VerticalAlignment="Top" />
+                    <Label Content="mm" Height="28" HorizontalAlignment="Left" Margin="243,225,0,0" VerticalAlignment="Top" />
+                    <Label Content="mm" Height="28" HorizontalAlignment="Left" Margin="243,275,0,0" VerticalAlignment="Top" />
+                    <Label Content="mm" Height="28" HorizontalAlignment="Left" Margin="243,300,0,0" VerticalAlignment="Top" />
+                    <Label Content="mm" Height="28" HorizontalAlignment="Left" Margin="243,200,0,0" VerticalAlignment="Top" />
+                    <Label Content="mm" Height="28" HorizontalAlignment="Left" Margin="243,348,0,0" VerticalAlignment="Top" />
+                    <Label Content="{DynamicResource Starting position of station5}" Height="28" HorizontalAlignment="Left" Margin="6,373,0,0" VerticalAlignment="Top" Width="120" />
+                    <Label Content="{DynamicResource Photo number of station5}" Height="28" HorizontalAlignment="Left" Margin="6,398,0,0" VerticalAlignment="Top" Width="120" />
+                    <Label Content="{DynamicResource Photo interval of station5}" Height="28" HorizontalAlignment="Left" Margin="6,423,0,0" VerticalAlignment="Top" Width="120" />
+
+                    <Label Content="mm" Height="28" HorizontalAlignment="Left" Margin="243,376,0,0" VerticalAlignment="Top" />
+                    <Label Content="mm" Height="28" HorizontalAlignment="Left" Margin="243,424,0,0" VerticalAlignment="Top" />
+                    <Label Content="{DynamicResource Starting position of station6}" Height="28" HorizontalAlignment="Left" Margin="6,450,0,0" VerticalAlignment="Top" Width="120" />
+                    <Label Content="{DynamicResource Photo number of station6}" Height="28" HorizontalAlignment="Left" Margin="6,475,0,0" VerticalAlignment="Top" Width="120" />
+                    <Label Content="{DynamicResource Photo interval of station6}" Height="28" HorizontalAlignment="Left" Margin="6,500,0,0" VerticalAlignment="Top" Width="120" />
+
+                    <Label Content="mm" Height="28" HorizontalAlignment="Left" Margin="243,453,0,0" VerticalAlignment="Top" />
+                    <Label Content="mm" Height="28" HorizontalAlignment="Left" Margin="243,501,0,0" VerticalAlignment="Top" />
+                </Grid>
+
+            </TabItem>
+            <TabItem Header="{DynamicResource Channel2 material parameters}" Name="TabPara_channel2">
+                <Grid Height="589">
+                    <Label Content="{DynamicResource Qualified full charge}" Height="28" Width="120"  Margin="6,-2,0,0" VerticalAlignment ="Top" HorizontalAlignment="Left"/>
+                    <Label Content="{DynamicResource Unqualified full quantity}" Height="28" Width="120"  Margin="6,23,0,0"  VerticalAlignment ="Top" HorizontalAlignment="Left" />
+                    <Label Content="{DynamicResource Starting position of station1}" Height="28" Width="120"  Margin="6,72,0,0"  VerticalAlignment ="Top" HorizontalAlignment="Left"/>
+                    <Label Content="{DynamicResource Photo number of station1}" Height="28" Width="120" Margin="6,97,0,0" VerticalAlignment ="Top" HorizontalAlignment="Left" />
+                    <Label Content="{DynamicResource Photo interval of station1}" Height="28" Width="120" Margin="6,122,0,0" VerticalAlignment ="Top" HorizontalAlignment="Left" />
+                    <Label Content="{DynamicResource Starting position of station2}" Height="28" Width="120"  Margin="6,147,0,0"  VerticalAlignment ="Top" HorizontalAlignment="Left"/>
+                    <Label Content="{DynamicResource Photo number of station2}" Height="28" Width="120" Margin="6,172,0,0" VerticalAlignment ="Top" HorizontalAlignment="Left" />
+                    <Label Content="{DynamicResource Photo interval of station2}" Height="28" Width="120" Margin="6,197,0,0" VerticalAlignment ="Top" HorizontalAlignment="Left" />
+                    <Label Content="{DynamicResource Starting position of station3}" Height="28" Width="120"  Margin="6,222,0,0"  VerticalAlignment ="Top" HorizontalAlignment="Left"/>
+                    <Label Content="{DynamicResource Photo number of station3}" Height="28" Width="120" Margin="6,247,0,0" VerticalAlignment ="Top" HorizontalAlignment="Left" />
+                    <Label Content="{DynamicResource Photo interval of station3}" Height="28" Width="120" Margin="6,272,0,0" VerticalAlignment ="Top" HorizontalAlignment="Left" />
+                    <Label Content="{DynamicResource Starting position of station4}" Height="28" Width="120"  Margin="6,297,0,0"  VerticalAlignment ="Top" HorizontalAlignment="Left"/>
+                    <Label Content="{DynamicResource Photo number of station4}" Height="28" Width="120" Margin="6,322,0,0" VerticalAlignment ="Top" HorizontalAlignment="Left" />
+                    <Label Content="{DynamicResource Photo interval of station4}" Height="28" Width="120" Margin="6,347,0,0" VerticalAlignment ="Top" HorizontalAlignment="Left" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="125,0,0,0" Name="textBox_OKNum_2" VerticalAlignment="Top" Width="120" />
+                    <TextBox HorizontalAlignment="Left" Margin="125,25,0,330" Name="textBox_NGNum_2" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="125,75,0,0" Name="textBox_photeStart1_2" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="125,100,0,0" Name="textBox_photoNum1_2" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="125,125,0,0" Name="textBox_photoInterval1_2" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="125,150,0,0" Name="textBox_photeStart2_2" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="125,175,0,0" Name="textBox_photoNum2_2" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="125,200,0,0" Name="textBox_photoInterval2_2" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="125,225,0,0" Name="textBox_photeStart3_2" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="125,250,0,0" Name="textBox_photoNum3_2" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="125,275,0,0" Name="textBox_photoInterval3_2" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="125,300,0,0" Name="textBox_photeStart4_2" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="125,325,0,0" Name="textBox_photoNum4_2" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="125,350,0,0" Name="textBox_photoInterval4_2" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="125,50,0,0" Name="textBox_NGAlarm_2" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="125,377,0,0" Name="textBox_photeStart5_2" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="125,402,0,0" Name="textBox_photoNum5_2" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="125,427,0,0" Name="textBox_photoInterval5_2" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="125,453,0,0" Name="textBox_photeStart6_2" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="125,478,0,0" Name="textBox_photoNum6_2" VerticalAlignment="Top" Width="120" />
+                    <TextBox Height="23" HorizontalAlignment="Left" Margin="125,503,0,0" Name="textBox_photoInterval6_2" VerticalAlignment="Top" Width="120" />
+                    <Label Content="{DynamicResource Continuous disqualification alarm}" Height="28" HorizontalAlignment="Left" Margin="7,48,0,0" VerticalAlignment="Top" Width="120" />
+                    <Label Content="mm" Height="28" HorizontalAlignment="Left" Margin="243,75,0,0"  VerticalAlignment="Top" />
+                    <Label Content="mm" Height="28" HorizontalAlignment="Left" Margin="243,125,0,0" VerticalAlignment="Top" />
+                    <Label Content="mm" Height="28" HorizontalAlignment="Left" Margin="243,150,0,0" VerticalAlignment="Top" />
+                    <Label Content="mm" Height="28" HorizontalAlignment="Left" Margin="243,200,0,0" VerticalAlignment="Top" />
+                    <Label Content="mm" Height="28" HorizontalAlignment="Left" Margin="243,225,0,0" VerticalAlignment="Top" />
+                    <Label Content="mm" Height="28" HorizontalAlignment="Left" Margin="243,275,0,0" VerticalAlignment="Top" />
+                    <Label Content="mm" Height="28" HorizontalAlignment="Left" Margin="243,300,0,0" VerticalAlignment="Top" />
+                    <Label Content="mm" Height="28" HorizontalAlignment="Left" Margin="243,200,0,0" VerticalAlignment="Top" />
+                    <Label Content="mm" Height="28" HorizontalAlignment="Left" Margin="243,348,0,0" VerticalAlignment="Top" />
+                    <Label Content="{DynamicResource Starting position of station5}" Height="28" HorizontalAlignment="Left" Margin="6,374,0,0" VerticalAlignment="Top" Width="120" />
+                    <Label Content="{DynamicResource Photo number of station5}" Height="28" HorizontalAlignment="Left" Margin="6,399,0,0" VerticalAlignment="Top" Width="120" />
+                    <Label Content="{DynamicResource Photo interval of station5}" Height="28" HorizontalAlignment="Left" Margin="6,424,0,0" VerticalAlignment="Top" Width="120" />
+
+                    <Label Content="mm" Height="28" HorizontalAlignment="Left" Margin="243,377,0,0" VerticalAlignment="Top" />
+                    <Label Content="mm" Height="28" HorizontalAlignment="Left" Margin="243,425,0,0" VerticalAlignment="Top" />
+                    <Label Content="{DynamicResource Starting position of station6}" Height="28" HorizontalAlignment="Left" Margin="6,450,0,0" VerticalAlignment="Top" Width="120" />
+                    <Label Content="{DynamicResource Photo number of station6}" Height="28" HorizontalAlignment="Left" Margin="6,475,0,0" VerticalAlignment="Top" Width="120" />
+                    <Label Content="{DynamicResource Photo interval of station6}" Height="28" HorizontalAlignment="Left" Margin="6,500,0,0" VerticalAlignment="Top" Width="120" />
+
+                    <Label Content="mm" Height="28" HorizontalAlignment="Left" Margin="243,453,0,0" VerticalAlignment="Top" />
+                    <Label Content="mm" Height="28" HorizontalAlignment="Left" Margin="243,501,0,0" VerticalAlignment="Top" />
+                </Grid>
+
+            </TabItem>
+        </TabControl>
+        <Button Content="{DynamicResource CancelButton}" Height="23" HorizontalAlignment="Left" Margin="194,718,0,0" Name="button_Cancel" VerticalAlignment="Top" Width="75" Click="button_Cancel_Click" >
+            <Button.ToolTip>
+                <ToolTip>
+                    <StackPanel>
+                        <TextBlock Text="{DynamicResource CancelButton}"></TextBlock>
+                    </StackPanel>
+                </ToolTip>
+            </Button.ToolTip>
+        </Button>
+        <Button Content="{DynamicResource OKButton}" Height="23" HorizontalAlignment="Left" Margin="41,718,0,0" Name="button_OK" VerticalAlignment="Top" Width="75" Click="button_OK_Click">
+            <Button.ToolTip>
+                <ToolTip>
+                    <StackPanel>
+                        <TextBlock Text="{DynamicResource OKButton}"></TextBlock>
+                    </StackPanel>
+                </ToolTip>
+            </Button.ToolTip>
+        </Button>
+    </Grid>
+</Window>

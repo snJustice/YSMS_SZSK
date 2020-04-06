@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<AlarmParas>
+
+  <!--Alarm_PCI_Card/Alarm_9078/Alarm_PCI32IOS/Alarm_SerialPort-->
+  <AlarmType>Alarm_PCI_Card</AlarmType>
+
+  <!--板卡-->
+  <Alarm_PCI_Card_Paras>
+    <!--有无板卡-->
+    <HaveCard>1</HaveCard>
+    <!--32/64-->
+    <Version>64</Version>
+    <!--7230 值为 6-->
+    <CardType>6</CardType>
+    <CardNum>0</CardNum>
+    <Milliseconds>100</Milliseconds>
+  </Alarm_PCI_Card_Paras>
+
+  <!--板卡-->
+  <Alarm_PCI32IOS_Paras>
+    <CardType>840</CardType>
+    <CardNum>1</CardNum>
+    <Milliseconds>100</Milliseconds>
+  </Alarm_PCI32IOS_Paras>
+
+  <!--9078-->
+  <Alarm_9078_Paras>
+    <HaveDevice>0</HaveDevice>
+    <PortName>COM1</PortName>
+    <BaudRate>9600</BaudRate>
+    <DataBits>8</DataBits>
+    <Parity>None</Parity>
+    <StopBits>One</StopBits>
+  </Alarm_9078_Paras>
+
+  <!--串口-->
+  <Alarm_SerialPort_Paras>
+    <PortName>COM4</PortName>
+    <baudRate>115200</baudRate>
+    <SoftWareReadyOUT>00</SoftWareReadyOUT>
+    <StartOUT>01</StartOUT>
+    <ResetOUT>02</ResetOUT>
+    <StopOUT>03</StopOUT>
+    <AlarmOUT>04</AlarmOUT>
+    <DeviceStartIN>31</DeviceStartIN>
+    <DeviceResetIN>32</DeviceResetIN>
+    <DeviceStopIN>33</DeviceStopIN>
+    <AllSoftWareOKIN>34</AllSoftWareOKIN>
+    <Milliseconds>200</Milliseconds>
+  </Alarm_SerialPort_Paras>
+
+</AlarmParas>

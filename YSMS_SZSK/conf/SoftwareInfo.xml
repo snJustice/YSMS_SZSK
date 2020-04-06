@@ -1,0 +1,306 @@
+<?xml version="1.0"?>
+<SoftwareInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SystemRunModeTips> 【系统运行模式： 0脱机模式/1联机模式】 </SystemRunModeTips>
+  <SystemRunMode>0</SystemRunMode>
+  <LanguageTips> 【语言模式： 中文/English 】 </LanguageTips>
+  <Language>English</Language>
+  <IsSaveRunInfoDataTips> 【是否存储运行数据信息： true/false】 </IsSaveRunInfoDataTips>
+  <IsSaveRunInfoData>false</IsSaveRunInfoData>
+  <SoftwareTypeTips> 【软件类型：Normal电镀冲压/Pieces片式】 </SoftwareTypeTips>
+  <SoftwareType>Normal</SoftwareType>
+  <IsNormalHardWareTips> 【普通条带：true硬件触发/false软件触发】 </IsNormalHardWareTips>
+  <IsNormalHardWare>false</IsNormalHardWare>
+  <IsStrobeTips> 【是否是频闪光源：true/false】 </IsStrobeTips>
+  <IsStrobe>false</IsStrobe>
+  <SoftwareComTypeTips> 【与PLC通讯方式：udp/7230/2210】 </SoftwareComTypeTips>
+  <SoftwareComType>2210</SoftwareComType>
+  <PiecesSimplyModeTips> 【是否要做片式简化进程处理（一个工位一次错误，后面都不检测 片式才检测）：true/false】 </PiecesSimplyModeTips>
+  <PiecesSimplyMode>false</PiecesSimplyMode>
+  <IsHideUnmatchModelTips> 【是否启用未匹配隐藏模式：true/false】 </IsHideUnmatchModelTips>
+  <IsHideUnmatchModel>false</IsHideUnmatchModel>
+  <IsHideFuzzyImageTips> 【是否启用模糊图片隐藏模式：true/false】 </IsHideFuzzyImageTips>
+  <IsHideFuzzyImage>false</IsHideFuzzyImage>
+  <IsAutoReadCodeTips> 【是否开启扫码枪扫码功能：true/false】 </IsAutoReadCodeTips>
+  <IsAutoReadCode>false</IsAutoReadCode>
+  <HideFuzzyImageSecondsTips> 【模糊图片最长时间：】 </HideFuzzyImageSecondsTips>
+  <HideFuzzyImageSeconds>10</HideFuzzyImageSeconds>
+  <IsAlgorithmUseModelTips> 【算法是否需要模板(特殊打印算法时用false)：true/false】 </IsAlgorithmUseModelTips>
+  <IsAlgorithmUseModel>true</IsAlgorithmUseModel>
+  <IsBoxTypeTips> 【是否有料盒模式：true/false】 </IsBoxTypeTips>
+  <IsBoxType>false</IsBoxType>
+  <IsSaveBmpImageTips> 【是否保存BMP图片：true/false】 </IsSaveBmpImageTips>
+  <IsSaveBmpImage>false</IsSaveBmpImage>
+  <IsAutoLightOrDarkTips> 【是否自动设置是否背光：true/false】 </IsAutoLightOrDarkTips>
+  <IsAutoLightOrDark>false</IsAutoLightOrDark>
+  <IsSameTimeTips> 【是否同时启停：true/false】 </IsSameTimeTips>
+  <IsSameTime>false</IsSameTime>
+  <IsShowOKTips> 【是否显示OK信息：true/false】 </IsShowOKTips>
+  <IsShowOK>true</IsShowOK>
+  <IsNetWorkAlarmTips> 【是否网络传输报警：true/false】 </IsNetWorkAlarmTips>
+  <IsNetWorkAlarm>false</IsNetWorkAlarm>
+  <IsClientTips> 【本机是否是客户端：true/false】 </IsClientTips>
+  <IsClient>true</IsClient>
+  <DeviceIDTips> 【本机在网络报警中的设备编号：】 </DeviceIDTips>
+  <DeviceID>0</DeviceID>
+  <IsSoftwareCtrlDeviceTips> 【是否软件控制电机冲床运动逻辑：true/false】 </IsSoftwareCtrlDeviceTips>
+  <IsSoftwareCtrlDevice>false</IsSoftwareCtrlDevice>
+  <HasTwoChannelsTips> 【是否有两个通道：true/false】 </HasTwoChannelsTips>
+  <HasTwoChannels>false</HasTwoChannels>
+  <HasAssistTips> 【是否进行远程协助：true/false】 </HasAssistTips>
+  <HasAssist>false</HasAssist>
+  <CameraPhotoTypeTips> 【拍照模式： 0软件触发/1硬件触发】 </CameraPhotoTypeTips>
+  <CameraPhotoType>0</CameraPhotoType>
+  <HasAlarmCodeTips> 【是否要编码器延时报警： true/false】 </HasAlarmCodeTips>
+  <HasAlarmCode>true</HasAlarmCode>
+  <DistanceToAlarmCodeTips> 【毫米到编码器值的转换系数：】 </DistanceToAlarmCodeTips>
+  <DistanceToAlarmCode>10</DistanceToAlarmCode>
+  <UniteLenthTips> 【产品单元长度 通道1：】 </UniteLenthTips>
+  <UniteLenth>1</UniteLenth>
+  <UniteLenth2Tips> 【产品单元长度 通道2：】 </UniteLenth2Tips>
+  <UniteLenth2>1</UniteLenth2>
+  <MaxLenthNumTips> 【最大数量报警停机（成都贴切）：】 </MaxLenthNumTips>
+  <MaxLenthNum>34000000</MaxLenthNum>
+  <MaxLenthNum1Tips> 【最大数量报警停机（成都贴切）：】 </MaxLenthNum1Tips>
+  <MaxLenthNum1>34000000</MaxLenthNum1>
+  <SystemCodeTips> 【临时获得管理员权限的密码 系统运行密码 默认“yszn”】 </SystemCodeTips>
+  <SystemCode>yszn</SystemCode>
+  <HasPwdCorrectionTips> 【模板校正是否需要输入密码： true/false】 </HasPwdCorrectionTips>
+  <HasPwdCorrection>false</HasPwdCorrection>
+  <IsStopCheckTips> 【料停后，是否继续检测（冲床启停与检测同步）与ALARM/Di_Pause_1端口配使用： true/false】 </IsStopCheckTips>
+  <IsStopCheck>false</IsStopCheck>
+  <IsBatchCheckTips> 【是否是批量检测状态与IsStopCheck共用： true/false】 </IsBatchCheckTips>
+  <IsBatchCheck>false</IsBatchCheck>
+  <IsSureModelTips> 【是否固定模板顺序： true/false】 </IsSureModelTips>
+  <IsSureModel>false</IsSureModel>
+  <IsCheckProductStopTips> 【是否检测料带是停止状态(顺德)： true/false】 </IsCheckProductStopTips>
+  <IsCheckProductStop>false</IsCheckProductStop>
+  <IsCheckProductMoveTips> 【是否检测料带移动(台湾住矿)： true/false】 </IsCheckProductMoveTips>
+  <IsCheckProductMove>false</IsCheckProductMove>
+  <CheckProductMoveCntTips> 【多少次不移动判定为送料机构故障(台湾住矿)： 整数】 </CheckProductMoveCntTips>
+  <CheckProductMoveCnt>3</CheckProductMoveCnt>
+  <FirstChannelNameTips> 【第一通道的通道名称： 】 </FirstChannelNameTips>
+  <FirstChannelName>CCD</FirstChannelName>
+  <SecondChannelNameTips> 【第二通道的通道名称： 】 </SecondChannelNameTips>
+  <SecondChannelName>CCD2</SecondChannelName>
+  <ExposureTimeRawTips> 【曝光时间： ExposureTimeRaw】 </ExposureTimeRawTips>
+  <ExposureTimeRaw>ExposureTimeRaw</ExposureTimeRaw>
+  <GainRawTips> 【图像增益： GainRaw】 </GainRawTips>
+  <GainRaw>GainRaw</GainRaw>
+  <LastProductNameTips> 【上一次检测的产品名称： 】 </LastProductNameTips>
+  <LastProductName />
+  <FirstChannelLastProductNameTips> 【上一次第一通道检测的产品名称： 】 </FirstChannelLastProductNameTips>
+  <FirstChannelLastProductName>SO8 FL DUAL PAD CLIP 2R ( E003 )</FirstChannelLastProductName>
+  <SecondChannelLastProductNameTips> 【上一次第二通道检测的产品名称： 】 </SecondChannelLastProductNameTips>
+  <SecondChannelLastProductName />
+  <FirstChannelLastBatchNumberTips> 【上一次第一通道检测的产品批号： 】 </FirstChannelLastBatchNumberTips>
+  <FirstChannelLastBatchNumber>200204R3C-102</FirstChannelLastBatchNumber>
+  <SecondChannelLastBatchNumberTips> 【上一次第二通道检测的产品批号： 】 </SecondChannelLastBatchNumberTips>
+  <SecondChannelLastBatchNumber>3</SecondChannelLastBatchNumber>
+  <ColorRoiTips> 【ROI区： green】 </ColorRoiTips>
+  <ColorRoi>green</ColorRoi>
+  <ColorShieldingAreaTips> 【屏蔽区域： orange】 </ColorShieldingAreaTips>
+  <ColorShieldingArea>orange</ColorShieldingArea>
+  <ColorDetectionAreaTips> 【检测区域： green】 </ColorDetectionAreaTips>
+  <ColorDetectionArea>green</ColorDetectionArea>
+  <ColorLocationAreaTips> 【定位区域： cyan】 </ColorLocationAreaTips>
+  <ColorLocationArea>cyan</ColorLocationArea>
+  <ColorSizeTips> 【尺寸： coral】 </ColorSizeTips>
+  <ColorSize>coral</ColorSize>
+  <ColorDefectTips> 【缺陷： red】 </ColorDefectTips>
+  <ColorDefect>red</ColorDefect>
+  <SaveErrorLogTimeTips> 【保存错误日志文件90天： 】 </SaveErrorLogTimeTips>
+  <SaveErrorLogTime>90</SaveErrorLogTime>
+  <ProductSetPathTips> 【产品类型选择路径： 】 </ProductSetPathTips>
+  <ProductSetPath>C:\YSMS_130StandardV4_Info\产品分类</ProductSetPath>
+  <ExcelTemplatePathTips> 【报表模板路径： 】 </ExcelTemplatePathTips>
+  <ExcelTemplatePath>C:\YSMS_130StandardV4_Info\报表模板.xls</ExcelTemplatePath>
+  <OKImagePathTips> 【正常图片路径： 】 </OKImagePathTips>
+  <OKImagePath>C:\正常图片</OKImagePath>
+  <ErrorImagePathTips> 【异常图片路径： 】 </ErrorImagePathTips>
+  <ErrorImagePath>C:\130V4\异常图片</ErrorImagePath>
+  <OriginImagePathTips> 【 原图路径： 】 </OriginImagePathTips>
+  <OriginImagePath>C:\130V4\原图</OriginImagePath>
+  <AlarmImagePathTips> 【重大缺陷图片存储路径： 】 </AlarmImagePathTips>
+  <AlarmImagePath>C:\YSMS_130StandardV4_Info\AlarmImage</AlarmImagePath>
+  <LogPathTips> 【日志路径： 】 </LogPathTips>
+  <LogPath>C:\130V4\日志</LogPath>
+  <ErrorLogPathTips> 【错误日志路径，必须设置为最终要存的地址 在软件没load之前，配置文件内容无效】 </ErrorLogPathTips>
+  <ErrorLogPath>C:\HelpFiles\错误日志</ErrorLogPath>
+  <PicInfoConfirmFilePathTips> 【 图片确认信息文档保存路径： 】 </PicInfoConfirmFilePathTips>
+  <PicInfoConfirmFilePath>C:\PicInfoConfirmData</PicInfoConfirmFilePath>
+  <StaticMeasureImagePath_1Tips> 【静态检测图像1路径： 】 </StaticMeasureImagePath_1Tips>
+  <StaticMeasureImagePath_1>C:\YSMS_130StandardV4_Info\TestImage\1.bmp</StaticMeasureImagePath_1>
+  <StaticMeasureImagePath_2Tips> 【静态检测图像2路径： 】 </StaticMeasureImagePath_2Tips>
+  <StaticMeasureImagePath_2>C:\YSMS_130StandardV4_Info\TestImage\2.bmp</StaticMeasureImagePath_2>
+  <StaticMeasureImagePath_3Tips> 【静态检测图像3路径： 】 </StaticMeasureImagePath_3Tips>
+  <StaticMeasureImagePath_3>C:\YSMS_130StandardV4_Info\TestImage\3.bmp</StaticMeasureImagePath_3>
+  <StaticMeasureImagePath_4Tips> 【静态检测图像4路径： 】 </StaticMeasureImagePath_4Tips>
+  <StaticMeasureImagePath_4>C:\YSMS_130StandardV4_Info\TestImage\4.bmp</StaticMeasureImagePath_4>
+  <AdjustImagePathTips> 【模板校正图片路径： 】 </AdjustImagePathTips>
+  <AdjustImagePath>C:\YSMS_130StandardV4_Info\TestImage\Adjust_1.bmp</AdjustImagePath>
+  <AuthorizeInfoPathTips> 【授权码文件路径： 】 </AuthorizeInfoPathTips>
+  <AuthorizeInfoPath>C:\AuthorizeInfo.ini</AuthorizeInfoPath>
+  <PicInfoPathTips> 【图片信息保存路径： 】 </PicInfoPathTips>
+  <PicInfoPath>\缺陷信息_13-33-09-776.txt</PicInfoPath>
+  <AssistFilesPartInfoPathTips> 【远程协助文件路径： 】 </AssistFilesPartInfoPathTips>
+  <AssistFilesPartInfoPath />
+  <AssistParasPathTips> 【远程模板文件路径： 】 </AssistParasPathTips>
+  <AssistParasPath />
+  <AssistFilesPicPathTips> 【 远程图片文件路径： 】 </AssistFilesPicPathTips>
+  <AssistFilesPicPath />
+  <AssistInfoPathTips> 【远程配置文件路径： 】 </AssistInfoPathTips>
+  <AssistInfoPath />
+  <AssistFilesInfoPathTips> 【远程协助子文件路径： 】 </AssistFilesInfoPathTips>
+  <AssistFilesInfoPath>C:\HelpFiles</AssistFilesInfoPath>
+  <MoveAlterTips> 【框移动步长： 整数】 </MoveAlterTips>
+  <MoveAlter>1</MoveAlter>
+  <ChooseAlgIndexTips> 【默认算法下标： 整数】 </ChooseAlgIndexTips>
+  <ChooseAlgIndex>0</ChooseAlgIndex>
+  <SaveImageQueueMaxNumTips> 【存图缓存最大图片数量： 20】 </SaveImageQueueMaxNumTips>
+  <SaveImageQueueMaxNum>20</SaveImageQueueMaxNum>
+  <AlgorithmNormalParasNumTips> 【算法普通参数个数：整数】 </AlgorithmNormalParasNumTips>
+  <AlgorithmNormalParasNum>5</AlgorithmNormalParasNum>
+  <AlgorithmSeniorParasNumTips> 【算法高级参数个数： 整数】 </AlgorithmSeniorParasNumTips>
+  <AlgorithmSeniorParasNum>15</AlgorithmSeniorParasNum>
+  <AlgorithmSizeParasNumTips> 【尺寸算法参数个数： 整数】 </AlgorithmSizeParasNumTips>
+  <AlgorithmSizeParasNum>10</AlgorithmSizeParasNum>
+  <ModelUnMatchAlarmNumTips> 【模板未匹配报警次数： 整数】 </ModelUnMatchAlarmNumTips>
+  <ModelUnMatchAlarmNum>10</ModelUnMatchAlarmNum>
+  <CameraPhotoIntervalTips> 【相机拍照间隔： 整数】 </CameraPhotoIntervalTips>
+  <CameraPhotoInterval>150</CameraPhotoInterval>
+  <CameraPhotoCountTips> 【相机默认拍照张数：整数】 </CameraPhotoCountTips>
+  <CameraPhotoCount>10</CameraPhotoCount>
+  <CameraStartPhotoPositionTips> 【相机默认拍照开始位置： 整数】 </CameraStartPhotoPositionTips>
+  <CameraStartPhotoPosition>0</CameraStartPhotoPosition>
+  <CameraIntervalPhotoPositionTips> 【相机默认拍照间隔位置： 整数】 </CameraIntervalPhotoPositionTips>
+  <CameraIntervalPhotoPosition>0</CameraIntervalPhotoPosition>
+  <PhotoNumForOneSizeTips> 【每次尺寸测量间隔拍照次数： 整数】 </PhotoNumForOneSizeTips>
+  <PhotoNumForOneSize>50</PhotoNumForOneSize>
+  <MultiModelALarmUnmatchedTimesTips> 【 多模板时连续未匹配到一个模板几次报警： 整数】 </MultiModelALarmUnmatchedTimesTips>
+  <MultiModelALarmUnmatchedTimes>20</MultiModelALarmUnmatchedTimes>
+  <DetectionAreaOffCentersTips> 【检测区域中心偏移默认值： 整数】 </DetectionAreaOffCentersTips>
+  <DetectionAreaOffCenters>0</DetectionAreaOffCenters>
+  <DetectionAreaMaxTips> 【检测区域高宽最大值： 整数】 </DetectionAreaMaxTips>
+  <DetectionAreaMax>80</DetectionAreaMax>
+  <DefaultCreateChannelTips> 【默认创建通道： 整数】 </DefaultCreateChannelTips>
+  <DefaultCreateChannel>2</DefaultCreateChannel>
+  <DefaultDetectChannelTips> 【默认检测通道：整数】 </DefaultDetectChannelTips>
+  <DefaultDetectChannel>4</DefaultDetectChannel>
+  <HasBacklitTips> 【有无背光：0无/1有】 </HasBacklitTips>
+  <HasBacklit>1</HasBacklit>
+  <ProductGrayDefaultTips> 【产品边界灰度： 整数】 </ProductGrayDefaultTips>
+  <ProductGrayDefault>200</ProductGrayDefault>
+  <HoleGrayDefaultTips> 【定位孔边界灰度：整数】 </HoleGrayDefaultTips>
+  <HoleGrayDefault>160</HoleGrayDefault>
+  <MinScoreDefaultTips> 【最小匹配分数： 浮点数】 </MinScoreDefaultTips>
+  <MinScoreDefault>0.8</MinScoreDefault>
+  <AddMinutesTips> 【产品日期需要修正的分钟数： 整数】 </AddMinutesTips>
+  <AddMinutes>0</AddMinutes>
+  <MachineTips> 【机器号： 】 </MachineTips>
+  <Machine>1</Machine>
+  <ChannelStationNumTips> 【 通道1工位数： 整数】 </ChannelStationNumTips>
+  <ChannelStationNum>2</ChannelStationNum>
+  <SaveDumpImage_OKTips> 【是否保存OK截图： true/false】 </SaveDumpImage_OKTips>
+  <SaveDumpImage_OK>false</SaveDumpImage_OK>
+  <SaveDumpImage_NGTips> 【是否保存NG截图： true/false】 </SaveDumpImage_NGTips>
+  <SaveDumpImage_NG>false</SaveDumpImage_NG>
+  <SaveDumpImage_WPPTips> 【是否保存未匹配截图： true/false】 </SaveDumpImage_WPPTips>
+  <SaveDumpImage_WPP>false</SaveDumpImage_WPP>
+  <SaveOriginImage_OKTips> 【是否保存OK原图： true/false】 </SaveOriginImage_OKTips>
+  <SaveOriginImage_OK>false</SaveOriginImage_OK>
+  <SaveOriginImage_NGTips> 【是否保存NG未标记原图： true/false】 </SaveOriginImage_NGTips>
+  <SaveOriginImage_NG>false</SaveOriginImage_NG>
+  <SaveMarkOriginImage_NGTips> 【是否保存NG标记原图： true/false】 </SaveMarkOriginImage_NGTips>
+  <SaveMarkOriginImage_NG>true</SaveMarkOriginImage_NG>
+  <SaveOriginImage_WPPTips> 【是否保存未匹配原图： true/false】 </SaveOriginImage_WPPTips>
+  <SaveOriginImage_WPP>false</SaveOriginImage_WPP>
+  <SaveALLImage_WPPTips> 【是否保存未报警的未匹配图片： true/false】 </SaveALLImage_WPPTips>
+  <SaveALLImage_WPP>false</SaveALLImage_WPP>
+  <SaveNoProductTips> 【是否保存无产品图片： true/false】 </SaveNoProductTips>
+  <SaveNoProduct>false</SaveNoProduct>
+  <SaveOriginImage_SizeTips> 【是否保存尺寸错误原图： true/false】 </SaveOriginImage_SizeTips>
+  <SaveOriginImage_Size>false</SaveOriginImage_Size>
+  <SaveOriginImage_ImageErrorTips> 【是否保存图像异常的原图： true/false】 </SaveOriginImage_ImageErrorTips>
+  <SaveOriginImage_ImageError>true</SaveOriginImage_ImageError>
+  <ShowOriginImage_ImageErrorTips> 【是否在界面上显示图像异常的原图： true/false】 </ShowOriginImage_ImageErrorTips>
+  <ShowOriginImage_ImageError>false</ShowOriginImage_ImageError>
+  <IsSizeErrorAlarmTips> 【尺寸错误是否报警： true/false】 </IsSizeErrorAlarmTips>
+  <IsSizeErrorAlarm>false</IsSizeErrorAlarm>
+  <SaveMeasureValue2DBTips> 【是否保存测量数据到数据库： true/false】 </SaveMeasureValue2DBTips>
+  <SaveMeasureValue2DB>true</SaveMeasureValue2DB>
+  <IsAlarmSoftwareStopTips> 【报警软件是否停机： true/false】 </IsAlarmSoftwareStopTips>
+  <IsAlarmSoftwareStop>false</IsAlarmSoftwareStop>
+  <IsAlarmDeviceStopTips> 【报警硬件是否停机： true/false】 </IsAlarmDeviceStopTips>
+  <IsAlarmDeviceStop>false</IsAlarmDeviceStop>
+  <IsDelayAlarmAndMarkTips> 【延时停机并做标记（台湾住矿）手动打标： true/false】 </IsDelayAlarmAndMarkTips>
+  <IsDelayAlarmAndMark>false</IsDelayAlarmAndMark>
+  <IsPauseTips> 【是否可暂停（台湾住矿）： true/false】 </IsPauseTips>
+  <IsPause>false</IsPause>
+  <SpeedTips> 【设备运行速度（台湾住矿）：整数 】 </SpeedTips>
+  <Speed>150</Speed>
+  <DelayAlarmAndMarkTimeTips> 【延时标记时间ms（台湾住矿）： 整数】 </DelayAlarmAndMarkTimeTips>
+  <DelayAlarmAndMarkTime>1000</DelayAlarmAndMarkTime>
+  <PauseDefectTimeTips> 【暂停时间ms（台湾住矿）： 整数】 </PauseDefectTimeTips>
+  <PauseDefectTime>10000</PauseDefectTime>
+  <MatchAngleTips> 【匹配角度（台湾住矿）： 整数】 </MatchAngleTips>
+  <MatchAngle>20</MatchAngle>
+  <IsMeterRecordEnableTips> 【米数文档记录功能是否开启： true/false】 </IsMeterRecordEnableTips>
+  <IsMeterRecordEnable>true</IsMeterRecordEnable>
+  <DeviceLineNoTips>机台及产线编号</DeviceLineNoTips>
+  <DeviceLineNo>SOT</DeviceLineNo>
+  <LineLength1Tips> 【收卷长度1： 浮点数】 </LineLength1Tips>
+  <LineLength1>0</LineLength1>
+  <LineLength2Tips> 【收卷长度2： 浮点数】 </LineLength2Tips>
+  <LineLength2>0</LineLength2>
+  <IsResetClearAlarmListTips> 【复位是否清空报警队列： true/false】 </IsResetClearAlarmListTips>
+  <IsResetClearAlarmList>true</IsResetClearAlarmList>
+  <IsAlarmLoudSoundTips> 【报警软件是否亮灯和蜂鸣器： true/false】 </IsAlarmLoudSoundTips>
+  <IsAlarmLoudSound>true</IsAlarmLoudSound>
+  <IsSaveTestImageTips> 【是否保存测试图片： true/false】 </IsSaveTestImageTips>
+  <IsSaveTestImage>false</IsSaveTestImage>
+  <IsSaveSampleImageTips> 【是否抽样存图： true/false】 </IsSaveSampleImageTips>
+  <IsSaveSampleImage>false</IsSaveSampleImage>
+  <SampleImageNumTips> 【多少时间存一张图片ms（抽样存图）： 】 </SampleImageNumTips>
+  <SampleImageNum>1000</SampleImageNum>
+  <GrabErrorNumRestartTips> 【采集多少张出错重启： 整数】 </GrabErrorNumRestartTips>
+  <GrabErrorNumRestart>5</GrabErrorNumRestart>
+  <IsShowMeasureTimeTips> 【是否显示算法时间： true/false】 </IsShowMeasureTimeTips>
+  <IsShowMeasureTime>false</IsShowMeasureTime>
+  <IsAlarmNoProductTips> 【是否无产品报警： true/false】 </IsAlarmNoProductTips>
+  <IsAlarmNoProduct>true</IsAlarmNoProduct>
+  <ROIOperationStepsTips> 【检测区域操作步骤： 】 </ROIOperationStepsTips>
+  <ROIOperationSteps>1、设置ROI
+2、绘制检测区域和定位区域
+3、设置模板参数
+4、生成模板</ROIOperationSteps>
+  <LocatingHoleOperationStepsTips> 【定位区域操作步骤： 】 </LocatingHoleOperationStepsTips>
+  <LocatingHoleOperationSteps />
+  <GenerateModelOperationStepsTips> 【模板生成操作步骤： 】 </GenerateModelOperationStepsTips>
+  <GenerateModelOperationSteps />
+  <DefectDetectionOperationStepsTips> 【缺陷设定操作步骤： 】 </DefectDetectionOperationStepsTips>
+  <DefectDetectionOperationSteps>1、选择缺陷类型
+2、绘制检测区域
+3、调整参数
+4、试测成功,添加缺陷</DefectDetectionOperationSteps>
+  <SizeDetectionOperationStepsTips> 【尺寸设定操作步骤： 】 </SizeDetectionOperationStepsTips>
+  <SizeDetectionOperationSteps>1、选择尺寸类型
+2、绘制检测区域
+3、填写检测判据
+4、试测成功,添加尺寸</SizeDetectionOperationSteps>
+  <SpecialRegionOperationStepsTips> 【特殊区域操作步骤：】 </SpecialRegionOperationStepsTips>
+  <SpecialRegionOperationSteps />
+  <PLCResetTips> 【初始化信号读取地址： 整数】 </PLCResetTips>
+  <PLCReset>96</PLCReset>
+  <PLCOK2Tips> 【通道2 OK读取地址：整数 】 </PLCOK2Tips>
+  <PLCOK2>108</PLCOK2>
+  <PLCNG2Tips> 【通道2 NG读取地址： 整数】 </PLCNG2Tips>
+  <PLCNG2>116</PLCNG2>
+  <PulsePerMMTips> 【脉冲距离比（多少个脉冲代表一个毫米）片式使用： 浮点数】 </PulsePerMMTips>
+  <PulsePerMM>617</PulsePerMM>
+  <IsShowAlarmImageTips> 【是否显示报警图片： true/false】 </IsShowAlarmImageTips>
+  <IsShowAlarmImage>false</IsShowAlarmImage>
+  <IsCacheImageAlarmTips> 【缓存图像报警： true/false】 </IsCacheImageAlarmTips>
+  <IsCacheImageAlarm>false</IsCacheImageAlarm>
+  <CacheAlarmNumerTips> 【缓存图像报警数目： 1-19】 </CacheAlarmNumerTips>
+  <CacheAlarmNumer>10</CacheAlarmNumer>
+</SoftwareInfo>

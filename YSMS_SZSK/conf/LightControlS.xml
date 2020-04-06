@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Parity          [None   不发生奇偶校验检查] 
+                [Odd    设置奇偶校验位，使位数等于奇数 ]
+                [Even   设置奇偶校验位，使位数等于偶数]
+                [Mark   将奇偶校验位保留为 1 ]
+                [Space  将奇偶校验位保留为 0 ]        
+StopBits:       [None 不使用停止位。不支持此值]       
+                [One 使用一个停止位]  
+                [Two 使用两个停止位]   
+                [OnePointFive 使用 1.5 个停止位]      
+文件路径：      **\conf\LightControlS.xml
+-->
+<LightControls>
+    <LightControl >
+      <ControlNo>1</ControlNo>
+      <IsEnabled>0</IsEnabled>
+      <SerialPortPara>
+        <PortName>COM1</PortName>
+        <BaudRate>9600</BaudRate>
+        <DataBits>8</DataBits>       
+        <Parity>None</Parity>      
+        <StopBits>One</StopBits>
+      </SerialPortPara>
+      <Channels>
+        <Channel>
+          <ChannelNo>1</ChannelNo>
+          <Name>A</Name>
+          <DefaultValue>120</DefaultValue>
+          <Des>相机1</Des>
+        </Channel>
+        <Channel>
+          <ChannelNo>2</ChannelNo>
+          <Name>B</Name>
+          <DefaultValue>120</DefaultValue>
+          <Des>相机2</Des>
+        </Channel>
+      </Channels>
+    </LightControl>  
+  
+    <LightControl >
+      <ControlNo>2</ControlNo>
+      <IsEnabled>0</IsEnabled>
+      <SerialPortPara>
+        <PortName>COM2</PortName>
+        <BaudRate>9600</BaudRate>
+        <DataBits>8</DataBits>
+        <Parity >None</Parity>
+        <StopBits>One</StopBits>
+      </SerialPortPara>
+      <Channels>
+        <Channel>
+          <ChannelNo>1</ChannelNo>
+          <Name>C</Name>    
+          <DefaultValue>120</DefaultValue>
+          <NewDefaultValue>120</NewDefaultValue>
+          <Des>相机2</Des>
+        </Channel>
+        <Channel>
+          <ChannelNo>2</ChannelNo>
+          <Name>D</Name>
+          <DefaultValue>120</DefaultValue>
+          <NewDefaultValue>120</NewDefaultValue>
+          <Des>相机2</Des>
+        </Channel>
+      </Channels>
+    </LightControl>
+	
+</LightControls>

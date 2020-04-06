@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<ArrayOfGenericAlgorithm xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <GenericAlgorithm>
+    <m_AlgId>1</m_AlgId>
+    <m_AlgName>屏蔽区域</m_AlgName>
+    <GenericAlgorithmParasList>
+    </GenericAlgorithmParasList>
+  </GenericAlgorithm> 
+</ArrayOfGenericAlgorithm>

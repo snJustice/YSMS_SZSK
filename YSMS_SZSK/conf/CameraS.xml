@@ -1,0 +1,470 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CameraS>
+  <Camera ChannelNo="0" StationNo="0" Name="up1" IsEnabled="1" AOIHeight="1200" AOIWidth="1600" AlarmDelayTime="0" AlarmDelayCode="0" IsImageRotate="0">
+    <!--打开相机参数
+    Name, HorizontalResolution, VerticalResolution, ImageWidth, ImageHeight, StartRow, StartColumn, Field, BitsPerChannel, ColorSpace, Generic, ExternalTrigger, CameraType, Device, Port, LineIn
+    "GigEVision", 0, 0, 0, 0, 0, 0, "progressive", -1, "default", -1, "false", "default", "up1", 0, -1 
+    -->
+    <OpenFramegrabber>
+      <Para4HTuple ParaNo="00" ParaType="string" ParaName="Name">GigEVision</Para4HTuple>
+      <Para4HTuple ParaNo="01" ParaType="int" ParaName="HorizontalResolution">0</Para4HTuple>
+      <Para4HTuple ParaNo="02" ParaType="int" ParaName="VerticalResolution">0</Para4HTuple>
+      <Para4HTuple ParaNo="03" ParaType="int" ParaName="ImageWidth">0</Para4HTuple>
+      <Para4HTuple ParaNo="04" ParaType="int" ParaName="ImageHeight">0</Para4HTuple>
+      <Para4HTuple ParaNo="05" ParaType="int" ParaName="StartRow">0</Para4HTuple>
+      <Para4HTuple ParaNo="06" ParaType="int" ParaName="StartColumn">0</Para4HTuple>
+      <Para4HTuple ParaNo="07" ParaType="string" ParaName="Field">progressive</Para4HTuple>
+      <Para4HTuple ParaNo="08" ParaType="int" ParaName="BitsPerChannel">-1</Para4HTuple>
+      <Para4HTuple ParaNo="09" ParaType="string" ParaName="ColorSpace">default</Para4HTuple>
+      <Para4HTuple ParaNo="10" ParaType="int" ParaName="Generic">-1</Para4HTuple>
+      <Para4HTuple ParaNo="11" ParaType="string" ParaName="ExternalTrigger">false</Para4HTuple>
+      <Para4HTuple ParaNo="12" ParaType="string" ParaName="CameraType">default</Para4HTuple>
+      <Para4HTuple ParaNo="13" ParaType="string" ParaName="Device">up1</Para4HTuple>
+      <Para4HTuple ParaNo="14" ParaType="int" ParaName="Port">0</Para4HTuple>
+      <Para4HTuple ParaNo="15" ParaType="int" ParaName="LineIn">-1</Para4HTuple>
+    </OpenFramegrabber>
+    <!--相机初始化参数设置-->
+    <SetFramegrabberParam>
+      <!--      <Para7HTuple ParaNo="00"  ParaType="string"      ParaName="LightSourceSelector"  ShowName="LightSource Selector" Des="[Daylight6500K 、Off]"     DefaultValue="Off" Level="1">Off</Para7HTuple>
+
+      <Para7HTuple ParaNo="01"  ParaType="int"   ParaName="BalanceRatioRaw"      ShowName="BalanceRatioRaw" Des=""       DefaultValue="105" Level="1">105</Para7HTuple>-->
+      <Para7HTuple ParaNo="02" ParaType="int" ParaName="ExposureTime" ShowName="曝光时间" Des="[0,1000]" DefaultValue="300" Level="1">300</Para7HTuple>
+      <Para7HTuple ParaNo="03" ParaType="int" ParaName="Gain" ShowName="图像增益" Des="[1,3]" DefaultValue="1" Level="1">1</Para7HTuple>
+      <Para7HTuple ParaNo="04" ParaType="string" ParaName="TriggerMode" ShowName="触发模式" Des="" DefaultValue="On" Level="1">On</Para7HTuple>
+      <Para7HTuple ParaNo="05" ParaType="int" ParaName="grab_timeout" ShowName="采集延时" Des="" DefaultValue="390" Level="1">360000000</Para7HTuple>
+      <!-- <Para7HTuple ParaNo="06" ParaType="int" ParaName="LineDebouncerTimeAbs" ShowName="滤波" Des="" DefaultValue="0" Level="1">200</Para7HTuple> -->
+      <!-- <Para7HTuple ParaNo="07" ParaType="string" ParaName="TriggerActivation" ShowName="触发方式" Des="" DefaultValue="RisingEdge" Level="1">FallingEdge</Para7HTuple> -->
+      <!-- <Para7HTuple ParaNo="08" ParaType="string" ParaName="TriggerSource" ShowName="触发源" Des="" DefaultValue="0" Level="1">Line1</Para7HTuple> -->
+    </SetFramegrabberParam>
+    <CameraCalibration>
+      <CameraParameters>0,0.114367,2.49711e-005,2.49703e-005,1558.05,525.126,2456,2058</CameraParameters>
+      <CameraPose>-0.0109028,0.0120481,0.00062986,358.895,359.511,269.747,0</CameraPose>
+      <PixelToSizeRatio>0.025</PixelToSizeRatio>
+    </CameraCalibration>
+  </Camera>
+
+  <Camera ChannelNo="0" StationNo="1" Name="up2" IsEnabled="1" AOIHeight="1200" AOIWidth="1600" AlarmDelayTime="0" AlarmDelayCode="0" IsImageRotate="0">
+    <OpenFramegrabber>
+      <Para4HTuple ParaNo="00" ParaType="string" ParaName="Name">GigEVision</Para4HTuple>
+      <Para4HTuple ParaNo="01" ParaType="int" ParaName="HorizontalResolution">0</Para4HTuple>
+      <Para4HTuple ParaNo="02" ParaType="int" ParaName="VerticalResolution">0</Para4HTuple>
+      <Para4HTuple ParaNo="03" ParaType="int" ParaName="ImageWidth">0</Para4HTuple>
+      <Para4HTuple ParaNo="04" ParaType="int" ParaName="ImageHeight">0</Para4HTuple>
+      <Para4HTuple ParaNo="05" ParaType="int" ParaName="StartRow">0</Para4HTuple>
+      <Para4HTuple ParaNo="06" ParaType="int" ParaName="StartColumn">0</Para4HTuple>
+      <Para4HTuple ParaNo="07" ParaType="string" ParaName="Field">progressive</Para4HTuple>
+      <Para4HTuple ParaNo="08" ParaType="int" ParaName="BitsPerChannel">-1</Para4HTuple>
+      <Para4HTuple ParaNo="09" ParaType="string" ParaName="ColorSpace">default</Para4HTuple>
+      <Para4HTuple ParaNo="10" ParaType="int" ParaName="Generic">-1</Para4HTuple>
+      <Para4HTuple ParaNo="11" ParaType="string" ParaName="ExternalTrigger">false</Para4HTuple>
+      <Para4HTuple ParaNo="12" ParaType="string" ParaName="CameraType">default</Para4HTuple>
+      <Para4HTuple ParaNo="13" ParaType="string" ParaName="Device">up2</Para4HTuple>
+      <Para4HTuple ParaNo="14" ParaType="int" ParaName="Port">0</Para4HTuple>
+      <Para4HTuple ParaNo="15" ParaType="int" ParaName="LineIn">-1</Para4HTuple>
+    </OpenFramegrabber>
+    <SetFramegrabberParam>
+      <!--      <Para7HTuple ParaNo="00"  ParaType="string"      ParaName="LightSourceSelector"  ShowName="LightSource Selector" Des="[Daylight6500K 、Off]"     DefaultValue="Off" Level="1">Off</Para7HTuple>
+
+      <Para7HTuple ParaNo="01"  ParaType="int"   ParaName="BalanceRatioRaw"      ShowName="BalanceRatioRaw" Des=""       DefaultValue="105" Level="1">105</Para7HTuple>-->
+      <Para7HTuple ParaNo="02" ParaType="int" ParaName="ExposureTime" ShowName="曝光时间" Des="[25,2000]" DefaultValue="300" Level="1">300</Para7HTuple>
+      <!-- 	  <Para7HTuple ParaNo="03" ParaType="string" ParaName="TriggerMode" ShowName="触发模式" Des="" DefaultValue="On" Level="1">On</Para7HTuple>
+	  <Para7HTuple ParaNo="04" ParaType="int" ParaName="LineDebouncerTime" ShowName="图像防抖" Des="[1,10000]" DefaultValue="200" Level="200">200</Para7HTuple>
+ -->
+      <Para7HTuple ParaNo="03" ParaType="int" ParaName="Gain" ShowName="图像增益" Des="[1,20]" DefaultValue="1" Level="1">1</Para7HTuple>
+      <Para7HTuple ParaNo="04" ParaType="string" ParaName="TriggerMode" ShowName="触发模式" Des="" DefaultValue="On" Level="1">On</Para7HTuple>
+      <Para7HTuple ParaNo="05" ParaType="int" ParaName="grab_timeout" ShowName="采集延时" Des="" DefaultValue="390" Level="1">360000000</Para7HTuple>
+    </SetFramegrabberParam>
+    <CameraCalibration>
+      <CameraParameters>0,0.114367,2.49711e-005,2.49703e-005,1558.05,525.126,2456,2058</CameraParameters>
+      <CameraPose>-0.0109028,0.0120481,0.00062986,358.895,359.511,269.747,0</CameraPose>
+      <PixelToSizeRatio>0.025</PixelToSizeRatio>
+    </CameraCalibration>
+  </Camera>
+  <Camera ChannelNo="0" StationNo="2" Name="down1" IsEnabled="0" AOIHeight="1200" AOIWidth="1600" AlarmDelayTime="0" AlarmDelayCode="0" IsImageRotate="0">
+    <OpenFramegrabber>
+      <Para4HTuple ParaNo="00" ParaType="string" ParaName="Name">GigEVision</Para4HTuple>
+      <Para4HTuple ParaNo="01" ParaType="int" ParaName="HorizontalResolution">0</Para4HTuple>
+      <Para4HTuple ParaNo="02" ParaType="int" ParaName="VerticalResolution">0</Para4HTuple>
+      <Para4HTuple ParaNo="03" ParaType="int" ParaName="ImageWidth">0</Para4HTuple>
+      <Para4HTuple ParaNo="04" ParaType="int" ParaName="ImageHeight">0</Para4HTuple>
+      <Para4HTuple ParaNo="05" ParaType="int" ParaName="StartRow">0</Para4HTuple>
+      <Para4HTuple ParaNo="06" ParaType="int" ParaName="StartColumn">0</Para4HTuple>
+      <Para4HTuple ParaNo="07" ParaType="string" ParaName="Field">progressive</Para4HTuple>
+      <Para4HTuple ParaNo="08" ParaType="int" ParaName="BitsPerChannel">-1</Para4HTuple>
+      <Para4HTuple ParaNo="09" ParaType="string" ParaName="ColorSpace">default</Para4HTuple>
+      <Para4HTuple ParaNo="10" ParaType="int" ParaName="Generic">-1</Para4HTuple>
+      <Para4HTuple ParaNo="11" ParaType="string" ParaName="ExternalTrigger">false</Para4HTuple>
+      <Para4HTuple ParaNo="12" ParaType="string" ParaName="CameraType">default</Para4HTuple>
+      <Para4HTuple ParaNo="13" ParaType="string" ParaName="Device">down1</Para4HTuple>
+      <Para4HTuple ParaNo="14" ParaType="int" ParaName="Port">0</Para4HTuple>
+      <Para4HTuple ParaNo="15" ParaType="int" ParaName="LineIn">-1</Para4HTuple>
+    </OpenFramegrabber>
+    <SetFramegrabberParam>
+      <!--      <Para7HTuple ParaNo="00"  ParaType="string"      ParaName="LightSourceSelector"  ShowName="LightSource Selector" Des="[Daylight6500K 、Off]"     DefaultValue="Off" Level="1">Off</Para7HTuple>
+
+      <Para7HTuple ParaNo="01"  ParaType="int"   ParaName="BalanceRatioRaw"      ShowName="BalanceRatioRaw" Des=""       DefaultValue="105" Level="1">105</Para7HTuple>-->
+      <Para7HTuple ParaNo="02" ParaType="int" ParaName="ExposureTime" ShowName="曝光时间" Des="[25,1000]" DefaultValue="300" Level="1">300</Para7HTuple>
+      <Para7HTuple ParaNo="03" ParaType="int" ParaName="Gain" ShowName="图像增益" Des="[1,3]" DefaultValue="1" Level="1">1</Para7HTuple>
+      <Para7HTuple ParaNo="04" ParaType="string" ParaName="TriggerMode" ShowName="触发模式" Des="" DefaultValue="On" Level="1">On</Para7HTuple>
+      <Para7HTuple ParaNo="05" ParaType="int" ParaName="grab_timeout" ShowName="采集延时" Des="" DefaultValue="390" Level="1">360000000</Para7HTuple>
+      <!-- <Para7HTuple ParaNo="03" ParaType="int" ParaName="Gain" ShowName="图像增益" Des="[1,3]" DefaultValue="1" Level="1">1</Para7HTuple> -->
+      <!-- <Para7HTuple ParaNo="04" ParaType="string" ParaName="TriggerMode" ShowName="触发模式" Des="" DefaultValue="On" Level="1">On</Para7HTuple> -->
+      <!-- <Para7HTuple ParaNo="05" ParaType="int" ParaName="grab_timeout" ShowName="采集延时" Des="" DefaultValue="390" Level="1">360000000</Para7HTuple> -->
+      <!-- <Para7HTuple ParaNo="06" ParaType="int" ParaName="LineDebouncerTimeAbs" ShowName="滤波" Des="" DefaultValue="0" Level="1">200</Para7HTuple> -->
+      <!-- <Para7HTuple ParaNo="07" ParaType="string" ParaName="TriggerActivation" ShowName="触发方式" Des="" DefaultValue="RisingEdge" Level="1">FallingEdge</Para7HTuple> -->
+      <!-- <Para7HTuple ParaNo="08" ParaType="string" ParaName="TriggerSource" ShowName="触发源" Des="" DefaultValue="0" Level="1">Line1</Para7HTuple> -->
+    </SetFramegrabberParam>
+    <CameraCalibration>
+      <CameraParameters>0,0.114367,2.49711e-005,2.49703e-005,1558.05,525.126,2456,2058</CameraParameters>
+      <CameraPose>-0.0109028,0.0120481,0.00062986,358.895,359.511,269.747,0</CameraPose>
+      <PixelToSizeRatio>0.025</PixelToSizeRatio>
+    </CameraCalibration>
+  </Camera>
+  <Camera ChannelNo="0" StationNo="3" Name="down2" IsEnabled="0" AOIHeight="1200" AOIWidth="1600" AlarmDelayTime="0" AlarmDelayCode="0" IsImageRotate="0">
+    <OpenFramegrabber>
+      <Para4HTuple ParaNo="00" ParaType="string" ParaName="Name">GigEVision</Para4HTuple>
+      <Para4HTuple ParaNo="01" ParaType="int" ParaName="HorizontalResolution">0</Para4HTuple>
+      <Para4HTuple ParaNo="02" ParaType="int" ParaName="VerticalResolution">0</Para4HTuple>
+      <Para4HTuple ParaNo="03" ParaType="int" ParaName="ImageWidth">0</Para4HTuple>
+      <Para4HTuple ParaNo="04" ParaType="int" ParaName="ImageHeight">0</Para4HTuple>
+      <Para4HTuple ParaNo="05" ParaType="int" ParaName="StartRow">0</Para4HTuple>
+      <Para4HTuple ParaNo="06" ParaType="int" ParaName="StartColumn">0</Para4HTuple>
+      <Para4HTuple ParaNo="07" ParaType="string" ParaName="Field">progressive</Para4HTuple>
+      <Para4HTuple ParaNo="08" ParaType="int" ParaName="BitsPerChannel">-1</Para4HTuple>
+      <Para4HTuple ParaNo="09" ParaType="string" ParaName="ColorSpace">default</Para4HTuple>
+      <Para4HTuple ParaNo="10" ParaType="int" ParaName="Generic">-1</Para4HTuple>
+      <Para4HTuple ParaNo="11" ParaType="string" ParaName="ExternalTrigger">false</Para4HTuple>
+      <Para4HTuple ParaNo="12" ParaType="string" ParaName="CameraType">default</Para4HTuple>
+      <Para4HTuple ParaNo="13" ParaType="string" ParaName="Device">down2</Para4HTuple>
+      <Para4HTuple ParaNo="14" ParaType="int" ParaName="Port">0</Para4HTuple>
+      <Para4HTuple ParaNo="15" ParaType="int" ParaName="LineIn">-1</Para4HTuple>
+    </OpenFramegrabber>
+    <SetFramegrabberParam>
+      <!--      <Para7HTuple ParaNo="00"  ParaType="string"      ParaName="LightSourceSelector"  ShowName="LightSource Selector" Des="[Daylight6500K 、Off]"     DefaultValue="Off" Level="1">Off</Para7HTuple>
+
+      <Para7HTuple ParaNo="01"  ParaType="int"   ParaName="BalanceRatioRaw"      ShowName="BalanceRatioRaw" Des=""       DefaultValue="105" Level="1">105</Para7HTuple>-->
+      <Para7HTuple ParaNo="02" ParaType="int" ParaName="ExposureTime" ShowName="曝光时间" Des="[25,1000]" DefaultValue="300" Level="1">300</Para7HTuple>
+      <Para7HTuple ParaNo="03" ParaType="int" ParaName="Gain" ShowName="图像增益" Des="[1,3]" DefaultValue="1" Level="1">1</Para7HTuple>
+      <Para7HTuple ParaNo="04" ParaType="string" ParaName="TriggerMode" ShowName="触发模式" Des="" DefaultValue="On" Level="1">On</Para7HTuple>
+      <Para7HTuple ParaNo="05" ParaType="int" ParaName="grab_timeout" ShowName="采集延时" Des="" DefaultValue="390" Level="1">360000000</Para7HTuple>
+      <!-- <Para7HTuple ParaNo="03" ParaType="int" ParaName="Gain" ShowName="图像增益" Des="[1,3]" DefaultValue="1" Level="1">1</Para7HTuple> -->
+      <!-- <Para7HTuple ParaNo="04" ParaType="string" ParaName="TriggerMode" ShowName="触发模式" Des="" DefaultValue="On" Level="1">On</Para7HTuple> -->
+      <!-- <Para7HTuple ParaNo="05" ParaType="int" ParaName="grab_timeout" ShowName="采集延时" Des="" DefaultValue="390" Level="1">360000000</Para7HTuple> -->
+      <!-- <Para7HTuple ParaNo="06" ParaType="int" ParaName="LineDebouncerTimeAbs" ShowName="滤波" Des="" DefaultValue="0" Level="1">200</Para7HTuple> -->
+      <!-- <Para7HTuple ParaNo="07" ParaType="string" ParaName="TriggerActivation" ShowName="触发方式" Des="" DefaultValue="RisingEdge" Level="1">FallingEdge</Para7HTuple> -->
+      <!-- <Para7HTuple ParaNo="08" ParaType="string" ParaName="TriggerSource" ShowName="触发源" Des="" DefaultValue="0" Level="1">Line1</Para7HTuple> -->
+    </SetFramegrabberParam>
+    <CameraCalibration>
+      <CameraParameters>0,0.114367,2.49711e-005,2.49703e-005,1558.05,525.126,2456,2058</CameraParameters>
+      <CameraPose>-0.0109028,0.0120481,0.00062986,358.895,359.511,269.747,0</CameraPose>
+      <PixelToSizeRatio>0.025</PixelToSizeRatio>
+    </CameraCalibration>
+  </Camera>
+  <Camera ChannelNo="0" StationNo="4" Name="down2" IsEnabled="0" AOIHeight="1200" AOIWidth="1600" AlarmDelayTime="0" AlarmDelayCode="0" IsImageRotate="0">
+    <OpenFramegrabber>
+      <Para4HTuple ParaNo="00" ParaType="string" ParaName="Name">GigEVision</Para4HTuple>
+      <Para4HTuple ParaNo="01" ParaType="int" ParaName="HorizontalResolution">0</Para4HTuple>
+      <Para4HTuple ParaNo="02" ParaType="int" ParaName="VerticalResolution">0</Para4HTuple>
+      <Para4HTuple ParaNo="03" ParaType="int" ParaName="ImageWidth">0</Para4HTuple>
+      <Para4HTuple ParaNo="04" ParaType="int" ParaName="ImageHeight">0</Para4HTuple>
+      <Para4HTuple ParaNo="05" ParaType="int" ParaName="StartRow">0</Para4HTuple>
+      <Para4HTuple ParaNo="06" ParaType="int" ParaName="StartColumn">0</Para4HTuple>
+      <Para4HTuple ParaNo="07" ParaType="string" ParaName="Field">progressive</Para4HTuple>
+      <Para4HTuple ParaNo="08" ParaType="int" ParaName="BitsPerChannel">-1</Para4HTuple>
+      <Para4HTuple ParaNo="09" ParaType="string" ParaName="ColorSpace">default</Para4HTuple>
+      <Para4HTuple ParaNo="10" ParaType="int" ParaName="Generic">-1</Para4HTuple>
+      <Para4HTuple ParaNo="11" ParaType="string" ParaName="ExternalTrigger">false</Para4HTuple>
+      <Para4HTuple ParaNo="12" ParaType="string" ParaName="CameraType">default</Para4HTuple>
+      <Para4HTuple ParaNo="13" ParaType="string" ParaName="Device">down2</Para4HTuple>
+      <Para4HTuple ParaNo="14" ParaType="int" ParaName="Port">0</Para4HTuple>
+      <Para4HTuple ParaNo="15" ParaType="int" ParaName="LineIn">-1</Para4HTuple>
+    </OpenFramegrabber>
+    <SetFramegrabberParam>
+      <!--      <Para7HTuple ParaNo="00"  ParaType="string"      ParaName="LightSourceSelector"  ShowName="LightSource Selector" Des="[Daylight6500K 、Off]"     DefaultValue="Off" Level="1">Off</Para7HTuple>
+
+      <Para7HTuple ParaNo="01"  ParaType="int"   ParaName="BalanceRatioRaw"      ShowName="BalanceRatioRaw" Des=""       DefaultValue="105" Level="1">105</Para7HTuple>-->
+      <Para7HTuple ParaNo="02" ParaType="int" ParaName="ExposureTime" ShowName="曝光时间" Des="[25,1000]" DefaultValue="200" Level="1">300</Para7HTuple>
+      <Para7HTuple ParaNo="03" ParaType="int" ParaName="Gain" ShowName="图像增益" Des="[1,3]" DefaultValue="1" Level="1">1</Para7HTuple>
+      <Para7HTuple ParaNo="04" ParaType="string" ParaName="TriggerMode" ShowName="触发模式" Des="" DefaultValue="On" Level="1">On</Para7HTuple>
+      <Para7HTuple ParaNo="05" ParaType="int" ParaName="grab_timeout" ShowName="采集延时" Des="" DefaultValue="390" Level="1">360000000</Para7HTuple>
+      <!-- <Para7HTuple ParaNo="03" ParaType="int" ParaName="Gain" ShowName="图像增益" Des="[1,3]" DefaultValue="1" Level="1">1</Para7HTuple> -->
+      <!-- <Para7HTuple ParaNo="04" ParaType="string" ParaName="TriggerMode" ShowName="触发模式" Des="" DefaultValue="On" Level="1">On</Para7HTuple> -->
+      <!-- <Para7HTuple ParaNo="05" ParaType="int" ParaName="grab_timeout" ShowName="采集延时" Des="" DefaultValue="390" Level="1">360000000</Para7HTuple> -->
+      <!-- <Para7HTuple ParaNo="06" ParaType="int" ParaName="LineDebouncerTimeAbs" ShowName="滤波" Des="" DefaultValue="0" Level="1">200</Para7HTuple> -->
+      <!-- <Para7HTuple ParaNo="07" ParaType="string" ParaName="TriggerActivation" ShowName="触发方式" Des="" DefaultValue="RisingEdge" Level="1">FallingEdge</Para7HTuple> -->
+      <!-- <Para7HTuple ParaNo="08" ParaType="string" ParaName="TriggerSource" ShowName="触发源" Des="" DefaultValue="0" Level="1">Line1</Para7HTuple> -->
+    </SetFramegrabberParam>
+    <CameraCalibration>
+      <CameraParameters>0,0.114367,2.49711e-005,2.49703e-005,1558.05,525.126,2456,2058</CameraParameters>
+      <CameraPose>-0.0109028,0.0120481,0.00062986,358.895,359.511,269.747,0</CameraPose>
+      <PixelToSizeRatio>0.025</PixelToSizeRatio>
+    </CameraCalibration>
+  </Camera>
+  <Camera ChannelNo="0" StationNo="5" Name="down3" IsEnabled="0" AOIHeight="1200" AOIWidth="1600" AlarmDelayTime="0" AlarmDelayCode="0" IsImageRotate="0">
+    <OpenFramegrabber>
+      <Para4HTuple ParaNo="00" ParaType="string" ParaName="Name">GigEVision</Para4HTuple>
+      <Para4HTuple ParaNo="01" ParaType="int" ParaName="HorizontalResolution">0</Para4HTuple>
+      <Para4HTuple ParaNo="02" ParaType="int" ParaName="VerticalResolution">0</Para4HTuple>
+      <Para4HTuple ParaNo="03" ParaType="int" ParaName="ImageWidth">0</Para4HTuple>
+      <Para4HTuple ParaNo="04" ParaType="int" ParaName="ImageHeight">0</Para4HTuple>
+      <Para4HTuple ParaNo="05" ParaType="int" ParaName="StartRow">0</Para4HTuple>
+      <Para4HTuple ParaNo="06" ParaType="int" ParaName="StartColumn">0</Para4HTuple>
+      <Para4HTuple ParaNo="07" ParaType="string" ParaName="Field">progressive</Para4HTuple>
+      <Para4HTuple ParaNo="08" ParaType="int" ParaName="BitsPerChannel">-1</Para4HTuple>
+      <Para4HTuple ParaNo="09" ParaType="string" ParaName="ColorSpace">default</Para4HTuple>
+      <Para4HTuple ParaNo="10" ParaType="int" ParaName="Generic">-1</Para4HTuple>
+      <Para4HTuple ParaNo="11" ParaType="string" ParaName="ExternalTrigger">false</Para4HTuple>
+      <Para4HTuple ParaNo="12" ParaType="string" ParaName="CameraType">default</Para4HTuple>
+      <Para4HTuple ParaNo="13" ParaType="string" ParaName="Device">down3</Para4HTuple>
+      <Para4HTuple ParaNo="14" ParaType="int" ParaName="Port">0</Para4HTuple>
+      <Para4HTuple ParaNo="15" ParaType="int" ParaName="LineIn">-1</Para4HTuple>
+    </OpenFramegrabber>
+    <SetFramegrabberParam>
+      <!--      <Para7HTuple ParaNo="00"  ParaType="string"      ParaName="LightSourceSelector"  ShowName="LightSource Selector" Des="[Daylight6500K 、Off]"     DefaultValue="Off" Level="1">Off</Para7HTuple>
+
+      <Para7HTuple ParaNo="01"  ParaType="int"   ParaName="BalanceRatioRaw"      ShowName="BalanceRatioRaw" Des=""       DefaultValue="105" Level="1">105</Para7HTuple>-->
+      <Para7HTuple ParaNo="02" ParaType="int" ParaName="ExposureTime" ShowName="曝光时间" Des="[25,1000]" DefaultValue="200" Level="1">300</Para7HTuple>
+      <Para7HTuple ParaNo="03" ParaType="int" ParaName="Gain" ShowName="图像增益" Des="[1,3]" DefaultValue="1" Level="1">1</Para7HTuple>
+      <Para7HTuple ParaNo="04" ParaType="string" ParaName="TriggerMode" ShowName="触发模式" Des="" DefaultValue="On" Level="1">On</Para7HTuple>
+      <Para7HTuple ParaNo="05" ParaType="int" ParaName="grab_timeout" ShowName="采集延时" Des="" DefaultValue="390" Level="1">360000000</Para7HTuple>
+      <!-- <Para7HTuple ParaNo="03" ParaType="int" ParaName="Gain" ShowName="图像增益" Des="[1,3]" DefaultValue="1" Level="1">1</Para7HTuple> -->
+      <!-- <Para7HTuple ParaNo="04" ParaType="string" ParaName="TriggerMode" ShowName="触发模式" Des="" DefaultValue="On" Level="1">On</Para7HTuple> -->
+      <!-- <Para7HTuple ParaNo="05" ParaType="int" ParaName="grab_timeout" ShowName="采集延时" Des="" DefaultValue="390" Level="1">360000000</Para7HTuple> -->
+      <!-- <Para7HTuple ParaNo="06" ParaType="int" ParaName="LineDebouncerTimeAbs" ShowName="滤波" Des="" DefaultValue="0" Level="1">200</Para7HTuple> -->
+      <!-- <Para7HTuple ParaNo="07" ParaType="string" ParaName="TriggerActivation" ShowName="触发方式" Des="" DefaultValue="RisingEdge" Level="1">FallingEdge</Para7HTuple> -->
+      <!-- <Para7HTuple ParaNo="08" ParaType="string" ParaName="TriggerSource" ShowName="触发源" Des="" DefaultValue="0" Level="1">Line1</Para7HTuple> -->
+    </SetFramegrabberParam>
+    <CameraCalibration>
+      <CameraParameters>0,0.114367,2.49711e-005,2.49703e-005,1558.05,525.126,2456,2058</CameraParameters>
+      <CameraPose>-0.0109028,0.0120481,0.00062986,358.895,359.511,269.747,0</CameraPose>
+      <PixelToSizeRatio>0.025</PixelToSizeRatio>
+    </CameraCalibration>
+  </Camera>
+  <Camera ChannelNo="1" StationNo="0" Name="CCD2" IsEnabled="0" AOIHeight="1200" AOIWidth="1600" AlarmDelayTime="0" AlarmDelayCode="0" IsImageRotate="0">
+    <!--打开相机参数
+    Name, HorizontalResolution, VerticalResolution, ImageWidth, ImageHeight, StartRow, StartColumn, Field, BitsPerChannel, ColorSpace, Generic, ExternalTrigger, CameraType, Device, Port, LineIn
+    "GigEVision", 0, 0, 0, 0, 0, 0, "progressive", -1, "default", -1, "false", "default", "up1", 0, -1 
+    -->
+    <OpenFramegrabber>
+      <Para4HTuple ParaNo="00" ParaType="string" ParaName="Name">GigEVision</Para4HTuple>
+      <Para4HTuple ParaNo="01" ParaType="int" ParaName="HorizontalResolution">0</Para4HTuple>
+      <Para4HTuple ParaNo="02" ParaType="int" ParaName="VerticalResolution">0</Para4HTuple>
+      <Para4HTuple ParaNo="03" ParaType="int" ParaName="ImageWidth">0</Para4HTuple>
+      <Para4HTuple ParaNo="04" ParaType="int" ParaName="ImageHeight">0</Para4HTuple>
+      <Para4HTuple ParaNo="05" ParaType="int" ParaName="StartRow">0</Para4HTuple>
+      <Para4HTuple ParaNo="06" ParaType="int" ParaName="StartColumn">0</Para4HTuple>
+      <Para4HTuple ParaNo="07" ParaType="string" ParaName="Field">progressive</Para4HTuple>
+      <Para4HTuple ParaNo="08" ParaType="int" ParaName="BitsPerChannel">-1</Para4HTuple>
+      <Para4HTuple ParaNo="09" ParaType="string" ParaName="ColorSpace">default</Para4HTuple>
+      <Para4HTuple ParaNo="10" ParaType="int" ParaName="Generic">-1</Para4HTuple>
+      <Para4HTuple ParaNo="11" ParaType="string" ParaName="ExternalTrigger">false</Para4HTuple>
+      <Para4HTuple ParaNo="12" ParaType="string" ParaName="CameraType">default</Para4HTuple>
+      <Para4HTuple ParaNo="13" ParaType="string" ParaName="Device">CCD2</Para4HTuple>
+      <Para4HTuple ParaNo="14" ParaType="int" ParaName="Port">0</Para4HTuple>
+      <Para4HTuple ParaNo="15" ParaType="int" ParaName="LineIn">-1</Para4HTuple>
+    </OpenFramegrabber>
+    <!--相机初始化参数设置-->
+    <SetFramegrabberParam>
+      <!--      <Para7HTuple ParaNo="00"  ParaType="string"      ParaName="LightSourceSelector"  ShowName="LightSource Selector" Des="[Daylight6500K 、Off]"     DefaultValue="Off" Level="1">Off</Para7HTuple>
+
+      <Para7HTuple ParaNo="01"  ParaType="int"   ParaName="BalanceRatioRaw"      ShowName="BalanceRatioRaw" Des=""       DefaultValue="105" Level="1">105</Para7HTuple>-->
+      <Para7HTuple ParaNo="02" ParaType="int" ParaName="ExposureTimeRaw" ShowName="曝光时间" Des="[25,1000]" DefaultValue="300" Level="1">300</Para7HTuple>
+      <Para7HTuple ParaNo="03" ParaType="int" ParaName="GainRaw" ShowName="图像增益" Des="[1,3]" DefaultValue="1" Level="1">1</Para7HTuple>
+      <Para7HTuple ParaNo="04" ParaType="string" ParaName="TriggerMode" ShowName="触发模式" Des="" DefaultValue="On" Level="1">On</Para7HTuple>
+      <Para7HTuple ParaNo="05" ParaType="int" ParaName="grab_timeout" ShowName="采集延时" Des="" DefaultValue="390" Level="1">360000000</Para7HTuple>
+      <Para7HTuple ParaNo="06" ParaType="int" ParaName="LineDebouncerTimeAbs" ShowName="滤波" Des="" DefaultValue="0" Level="1">200</Para7HTuple>
+      <Para7HTuple ParaNo="07" ParaType="string" ParaName="TriggerActivation" ShowName="触发方式" Des="" DefaultValue="RisingEdge" Level="1">FallingEdge</Para7HTuple>
+      <Para7HTuple ParaNo="08" ParaType="string" ParaName="TriggerSource" ShowName="触发源" Des="" DefaultValue="0" Level="1">Line1</Para7HTuple>
+    </SetFramegrabberParam>
+    <CameraCalibration>
+      <CameraParameters>0,0.114367,2.49711e-005,2.49703e-005,1558.05,525.126,2456,2058</CameraParameters>
+      <CameraPose>-0.0109028,0.0120481,0.00062986,358.895,359.511,269.747,0</CameraPose>
+      <PixelToSizeRatio>0.025</PixelToSizeRatio>
+    </CameraCalibration>
+  </Camera>
+  <Camera ChannelNo="1" StationNo="1" Name="CCD4" IsEnabled="0" AOIHeight="1200" AOIWidth="1600" AlarmDelayTime="0" AlarmDelayCode="0" IsImageRotate="0">
+    <OpenFramegrabber>
+      <Para4HTuple ParaNo="00" ParaType="string" ParaName="Name">GigEVision</Para4HTuple>
+      <Para4HTuple ParaNo="01" ParaType="int" ParaName="HorizontalResolution">0</Para4HTuple>
+      <Para4HTuple ParaNo="02" ParaType="int" ParaName="VerticalResolution">0</Para4HTuple>
+      <Para4HTuple ParaNo="03" ParaType="int" ParaName="ImageWidth">0</Para4HTuple>
+      <Para4HTuple ParaNo="04" ParaType="int" ParaName="ImageHeight">0</Para4HTuple>
+      <Para4HTuple ParaNo="05" ParaType="int" ParaName="StartRow">0</Para4HTuple>
+      <Para4HTuple ParaNo="06" ParaType="int" ParaName="StartColumn">0</Para4HTuple>
+      <Para4HTuple ParaNo="07" ParaType="string" ParaName="Field">progressive</Para4HTuple>
+      <Para4HTuple ParaNo="08" ParaType="int" ParaName="BitsPerChannel">-1</Para4HTuple>
+      <Para4HTuple ParaNo="09" ParaType="string" ParaName="ColorSpace">default</Para4HTuple>
+      <Para4HTuple ParaNo="10" ParaType="int" ParaName="Generic">-1</Para4HTuple>
+      <Para4HTuple ParaNo="11" ParaType="string" ParaName="ExternalTrigger">false</Para4HTuple>
+      <Para4HTuple ParaNo="12" ParaType="string" ParaName="CameraType">default</Para4HTuple>
+      <Para4HTuple ParaNo="13" ParaType="string" ParaName="Device">CCD4</Para4HTuple>
+      <Para4HTuple ParaNo="14" ParaType="int" ParaName="Port">0</Para4HTuple>
+      <Para4HTuple ParaNo="15" ParaType="int" ParaName="LineIn">-1</Para4HTuple>
+    </OpenFramegrabber>
+    <SetFramegrabberParam>
+      <!--      <Para7HTuple ParaNo="00"  ParaType="string"      ParaName="LightSourceSelector"  ShowName="LightSource Selector" Des="[Daylight6500K 、Off]"     DefaultValue="Off" Level="1">Off</Para7HTuple>
+
+      <Para7HTuple ParaNo="01"  ParaType="int"   ParaName="BalanceRatioRaw"      ShowName="BalanceRatioRaw" Des=""       DefaultValue="105" Level="1">105</Para7HTuple>-->
+      <Para7HTuple ParaNo="02" ParaType="int" ParaName="ExposureTimeRaw" ShowName="曝光时间" Des="[25,1000]" DefaultValue="300" Level="1">300</Para7HTuple>
+      <Para7HTuple ParaNo="03" ParaType="int" ParaName="GainRaw" ShowName="图像增益" Des="[1,3]" DefaultValue="1" Level="1">1</Para7HTuple>
+      <Para7HTuple ParaNo="04" ParaType="string" ParaName="TriggerMode" ShowName="触发模式" Des="" DefaultValue="On" Level="1">On</Para7HTuple>
+      <Para7HTuple ParaNo="05" ParaType="int" ParaName="grab_timeout" ShowName="采集延时" Des="" DefaultValue="390" Level="1">360000000</Para7HTuple>
+      <Para7HTuple ParaNo="06" ParaType="int" ParaName="LineDebouncerTimeAbs" ShowName="滤波" Des="" DefaultValue="0" Level="1">200</Para7HTuple>
+      <Para7HTuple ParaNo="07" ParaType="string" ParaName="TriggerActivation" ShowName="触发方式" Des="" DefaultValue="RisingEdge" Level="1">FallingEdge</Para7HTuple>
+      <Para7HTuple ParaNo="08" ParaType="string" ParaName="TriggerSource" ShowName="触发源" Des="" DefaultValue="0" Level="1">Line1</Para7HTuple>
+    </SetFramegrabberParam>
+    <CameraCalibration>
+      <CameraParameters>0,0.114367,2.49711e-005,2.49703e-005,1558.05,525.126,2456,2058</CameraParameters>
+      <CameraPose>-0.0109028,0.0120481,0.00062986,358.895,359.511,269.747,0</CameraPose>
+      <PixelToSizeRatio>0.025</PixelToSizeRatio>
+    </CameraCalibration>
+  </Camera>
+  <Camera ChannelNo="1" StationNo="2" Name="CCD6" IsEnabled="0" AOIHeight="1200" AOIWidth="1600" AlarmDelayTime="0" AlarmDelayCode="0" IsImageRotate="0">
+    <OpenFramegrabber>
+      <Para4HTuple ParaNo="00" ParaType="string" ParaName="Name">GigEVision</Para4HTuple>
+      <Para4HTuple ParaNo="01" ParaType="int" ParaName="HorizontalResolution">0</Para4HTuple>
+      <Para4HTuple ParaNo="02" ParaType="int" ParaName="VerticalResolution">0</Para4HTuple>
+      <Para4HTuple ParaNo="03" ParaType="int" ParaName="ImageWidth">0</Para4HTuple>
+      <Para4HTuple ParaNo="04" ParaType="int" ParaName="ImageHeight">0</Para4HTuple>
+      <Para4HTuple ParaNo="05" ParaType="int" ParaName="StartRow">0</Para4HTuple>
+      <Para4HTuple ParaNo="06" ParaType="int" ParaName="StartColumn">0</Para4HTuple>
+      <Para4HTuple ParaNo="07" ParaType="string" ParaName="Field">progressive</Para4HTuple>
+      <Para4HTuple ParaNo="08" ParaType="int" ParaName="BitsPerChannel">-1</Para4HTuple>
+      <Para4HTuple ParaNo="09" ParaType="string" ParaName="ColorSpace">default</Para4HTuple>
+      <Para4HTuple ParaNo="10" ParaType="int" ParaName="Generic">-1</Para4HTuple>
+      <Para4HTuple ParaNo="11" ParaType="string" ParaName="ExternalTrigger">false</Para4HTuple>
+      <Para4HTuple ParaNo="12" ParaType="string" ParaName="CameraType">default</Para4HTuple>
+      <Para4HTuple ParaNo="13" ParaType="string" ParaName="Device">CCD6</Para4HTuple>
+      <Para4HTuple ParaNo="14" ParaType="int" ParaName="Port">0</Para4HTuple>
+      <Para4HTuple ParaNo="15" ParaType="int" ParaName="LineIn">-1</Para4HTuple>
+    </OpenFramegrabber>
+    <SetFramegrabberParam>
+      <!--      <Para7HTuple ParaNo="00"  ParaType="string"      ParaName="LightSourceSelector"  ShowName="LightSource Selector" Des="[Daylight6500K 、Off]"     DefaultValue="Off" Level="1">Off</Para7HTuple>
+
+      <Para7HTuple ParaNo="01"  ParaType="int"   ParaName="BalanceRatioRaw"      ShowName="BalanceRatioRaw" Des=""       DefaultValue="105" Level="1">105</Para7HTuple>-->
+      <Para7HTuple ParaNo="02" ParaType="int" ParaName="ExposureTimeRaw" ShowName="曝光时间" Des="[25,1000]" DefaultValue="300" Level="1">300</Para7HTuple>
+      <Para7HTuple ParaNo="03" ParaType="int" ParaName="GainRaw" ShowName="图像增益" Des="[1,3]" DefaultValue="1" Level="1">1</Para7HTuple>
+      <Para7HTuple ParaNo="04" ParaType="string" ParaName="TriggerMode" ShowName="触发模式" Des="" DefaultValue="On" Level="1">On</Para7HTuple>
+      <Para7HTuple ParaNo="05" ParaType="int" ParaName="grab_timeout" ShowName="采集延时" Des="" DefaultValue="390" Level="1">360000000</Para7HTuple>
+      <Para7HTuple ParaNo="06" ParaType="int" ParaName="LineDebouncerTimeAbs" ShowName="滤波" Des="" DefaultValue="0" Level="1">200</Para7HTuple>
+      <Para7HTuple ParaNo="07" ParaType="string" ParaName="TriggerActivation" ShowName="触发方式" Des="" DefaultValue="RisingEdge" Level="1">FallingEdge</Para7HTuple>
+      <Para7HTuple ParaNo="08" ParaType="string" ParaName="TriggerSource" ShowName="触发源" Des="" DefaultValue="0" Level="1">Line1</Para7HTuple>
+    </SetFramegrabberParam>
+    <CameraCalibration>
+      <CameraParameters>0,0.114367,2.49711e-005,2.49703e-005,1558.05,525.126,2456,2058</CameraParameters>
+      <CameraPose>-0.0109028,0.0120481,0.00062986,358.895,359.511,269.747,0</CameraPose>
+      <PixelToSizeRatio>0.025</PixelToSizeRatio>
+    </CameraCalibration>
+  </Camera>
+  <Camera ChannelNo="1" StationNo="3" Name="null" IsEnabled="0" AOIHeight="1200" AOIWidth="1600" AlarmDelayTime="0" AlarmDelayCode="0" IsImageRotate="0">
+    <OpenFramegrabber>
+      <Para4HTuple ParaNo="00" ParaType="string" ParaName="Name">GigEVision</Para4HTuple>
+      <Para4HTuple ParaNo="01" ParaType="int" ParaName="HorizontalResolution">0</Para4HTuple>
+      <Para4HTuple ParaNo="02" ParaType="int" ParaName="VerticalResolution">0</Para4HTuple>
+      <Para4HTuple ParaNo="03" ParaType="int" ParaName="ImageWidth">0</Para4HTuple>
+      <Para4HTuple ParaNo="04" ParaType="int" ParaName="ImageHeight">0</Para4HTuple>
+      <Para4HTuple ParaNo="05" ParaType="int" ParaName="StartRow">0</Para4HTuple>
+      <Para4HTuple ParaNo="06" ParaType="int" ParaName="StartColumn">0</Para4HTuple>
+      <Para4HTuple ParaNo="07" ParaType="string" ParaName="Field">progressive</Para4HTuple>
+      <Para4HTuple ParaNo="08" ParaType="int" ParaName="BitsPerChannel">-1</Para4HTuple>
+      <Para4HTuple ParaNo="09" ParaType="string" ParaName="ColorSpace">default</Para4HTuple>
+      <Para4HTuple ParaNo="10" ParaType="int" ParaName="Generic">-1</Para4HTuple>
+      <Para4HTuple ParaNo="11" ParaType="string" ParaName="ExternalTrigger">false</Para4HTuple>
+      <Para4HTuple ParaNo="12" ParaType="string" ParaName="CameraType">default</Para4HTuple>
+      <Para4HTuple ParaNo="13" ParaType="string" ParaName="Device">null</Para4HTuple>
+      <Para4HTuple ParaNo="14" ParaType="int" ParaName="Port">0</Para4HTuple>
+      <Para4HTuple ParaNo="15" ParaType="int" ParaName="LineIn">-1</Para4HTuple>
+    </OpenFramegrabber>
+    <SetFramegrabberParam>
+      <!--      <Para7HTuple ParaNo="00"  ParaType="string"      ParaName="LightSourceSelector"  ShowName="LightSource Selector" Des="[Daylight6500K 、Off]"     DefaultValue="Off" Level="1">Off</Para7HTuple>
+
+      <Para7HTuple ParaNo="01"  ParaType="int"   ParaName="BalanceRatioRaw"      ShowName="BalanceRatioRaw" Des=""       DefaultValue="105" Level="1">105</Para7HTuple>-->
+      <Para7HTuple ParaNo="02" ParaType="int" ParaName="ExposureTimeRaw" ShowName="曝光时间" Des="[25,1000]" DefaultValue="200" Level="1">300</Para7HTuple>
+      <Para7HTuple ParaNo="03" ParaType="int" ParaName="GainRaw" ShowName="图像增益" Des="[1,3]" DefaultValue="1" Level="1">1</Para7HTuple>
+      <Para7HTuple ParaNo="04" ParaType="string" ParaName="TriggerMode" ShowName="触发模式" Des="" DefaultValue="On" Level="1">On</Para7HTuple>
+      <Para7HTuple ParaNo="05" ParaType="int" ParaName="grab_timeout" ShowName="采集延时" Des="" DefaultValue="390" Level="1">360000000</Para7HTuple>
+      <Para7HTuple ParaNo="06" ParaType="int" ParaName="LineDebouncerTimeAbs" ShowName="滤波" Des="" DefaultValue="0" Level="1">200</Para7HTuple>
+      <Para7HTuple ParaNo="07" ParaType="string" ParaName="TriggerActivation" ShowName="触发方式" Des="" DefaultValue="RisingEdge" Level="1">FallingEdge</Para7HTuple>
+      <Para7HTuple ParaNo="08" ParaType="string" ParaName="TriggerSource" ShowName="触发源" Des="" DefaultValue="0" Level="1">Line1</Para7HTuple>
+    </SetFramegrabberParam>
+    <CameraCalibration>
+      <CameraParameters>0,0.114367,2.49711e-005,2.49703e-005,1558.05,525.126,2456,2058</CameraParameters>
+      <CameraPose>-0.0109028,0.0120481,0.00062986,358.895,359.511,269.747,0</CameraPose>
+      <PixelToSizeRatio>0.025</PixelToSizeRatio>
+    </CameraCalibration>
+  </Camera>
+  <Camera ChannelNo="1" StationNo="4" Name="null" IsEnabled="0" AOIHeight="1200" AOIWidth="1600" AlarmDelayTime="0" AlarmDelayCode="0" IsImageRotate="0">
+    <OpenFramegrabber>
+      <Para4HTuple ParaNo="00" ParaType="string" ParaName="Name">GigEVision</Para4HTuple>
+      <Para4HTuple ParaNo="01" ParaType="int" ParaName="HorizontalResolution">0</Para4HTuple>
+      <Para4HTuple ParaNo="02" ParaType="int" ParaName="VerticalResolution">0</Para4HTuple>
+      <Para4HTuple ParaNo="03" ParaType="int" ParaName="ImageWidth">0</Para4HTuple>
+      <Para4HTuple ParaNo="04" ParaType="int" ParaName="ImageHeight">0</Para4HTuple>
+      <Para4HTuple ParaNo="05" ParaType="int" ParaName="StartRow">0</Para4HTuple>
+      <Para4HTuple ParaNo="06" ParaType="int" ParaName="StartColumn">0</Para4HTuple>
+      <Para4HTuple ParaNo="07" ParaType="string" ParaName="Field">progressive</Para4HTuple>
+      <Para4HTuple ParaNo="08" ParaType="int" ParaName="BitsPerChannel">-1</Para4HTuple>
+      <Para4HTuple ParaNo="09" ParaType="string" ParaName="ColorSpace">default</Para4HTuple>
+      <Para4HTuple ParaNo="10" ParaType="int" ParaName="Generic">-1</Para4HTuple>
+      <Para4HTuple ParaNo="11" ParaType="string" ParaName="ExternalTrigger">false</Para4HTuple>
+      <Para4HTuple ParaNo="12" ParaType="string" ParaName="CameraType">default</Para4HTuple>
+      <Para4HTuple ParaNo="13" ParaType="string" ParaName="Device">null</Para4HTuple>
+      <Para4HTuple ParaNo="14" ParaType="int" ParaName="Port">0</Para4HTuple>
+      <Para4HTuple ParaNo="15" ParaType="int" ParaName="LineIn">-1</Para4HTuple>
+    </OpenFramegrabber>
+    <SetFramegrabberParam>
+      <!--      <Para7HTuple ParaNo="00"  ParaType="string"      ParaName="LightSourceSelector"  ShowName="LightSource Selector" Des="[Daylight6500K 、Off]"     DefaultValue="Off" Level="1">Off</Para7HTuple>
+
+      <Para7HTuple ParaNo="01"  ParaType="int"   ParaName="BalanceRatioRaw"      ShowName="BalanceRatioRaw" Des=""       DefaultValue="105" Level="1">105</Para7HTuple>-->
+      <Para7HTuple ParaNo="02" ParaType="int" ParaName="ExposureTimeRaw" ShowName="曝光时间" Des="[25,1000]" DefaultValue="200" Level="1">300</Para7HTuple>
+      <Para7HTuple ParaNo="03" ParaType="int" ParaName="GainRaw" ShowName="图像增益" Des="[1,3]" DefaultValue="1" Level="1">1</Para7HTuple>
+      <Para7HTuple ParaNo="04" ParaType="string" ParaName="TriggerMode" ShowName="触发模式" Des="" DefaultValue="On" Level="1">On</Para7HTuple>
+      <Para7HTuple ParaNo="05" ParaType="int" ParaName="grab_timeout" ShowName="采集延时" Des="" DefaultValue="390" Level="1">360000000</Para7HTuple>
+      <Para7HTuple ParaNo="06" ParaType="int" ParaName="LineDebouncerTimeAbs" ShowName="滤波" Des="" DefaultValue="0" Level="1">200</Para7HTuple>
+      <Para7HTuple ParaNo="07" ParaType="string" ParaName="TriggerActivation" ShowName="触发方式" Des="" DefaultValue="RisingEdge" Level="1">FallingEdge</Para7HTuple>
+      <Para7HTuple ParaNo="08" ParaType="string" ParaName="TriggerSource" ShowName="触发源" Des="" DefaultValue="0" Level="1">Line1</Para7HTuple>
+    </SetFramegrabberParam>
+    <CameraCalibration>
+      <CameraParameters>0,0.114367,2.49711e-005,2.49703e-005,1558.05,525.126,2456,2058</CameraParameters>
+      <CameraPose>-0.0109028,0.0120481,0.00062986,358.895,359.511,269.747,0</CameraPose>
+      <PixelToSizeRatio>0.025</PixelToSizeRatio>
+    </CameraCalibration>
+  </Camera>
+  <Camera ChannelNo="1" StationNo="5" Name="null" IsEnabled="0" AOIHeight="1200" AOIWidth="1600" AlarmDelayTime="0" AlarmDelayCode="0" IsImageRotate="0">
+    <OpenFramegrabber>
+      <Para4HTuple ParaNo="00" ParaType="string" ParaName="Name">GigEVision</Para4HTuple>
+      <Para4HTuple ParaNo="01" ParaType="int" ParaName="HorizontalResolution">0</Para4HTuple>
+      <Para4HTuple ParaNo="02" ParaType="int" ParaName="VerticalResolution">0</Para4HTuple>
+      <Para4HTuple ParaNo="03" ParaType="int" ParaName="ImageWidth">0</Para4HTuple>
+      <Para4HTuple ParaNo="04" ParaType="int" ParaName="ImageHeight">0</Para4HTuple>
+      <Para4HTuple ParaNo="05" ParaType="int" ParaName="StartRow">0</Para4HTuple>
+      <Para4HTuple ParaNo="06" ParaType="int" ParaName="StartColumn">0</Para4HTuple>
+      <Para4HTuple ParaNo="07" ParaType="string" ParaName="Field">progressive</Para4HTuple>
+      <Para4HTuple ParaNo="08" ParaType="int" ParaName="BitsPerChannel">-1</Para4HTuple>
+      <Para4HTuple ParaNo="09" ParaType="string" ParaName="ColorSpace">default</Para4HTuple>
+      <Para4HTuple ParaNo="10" ParaType="int" ParaName="Generic">-1</Para4HTuple>
+      <Para4HTuple ParaNo="11" ParaType="string" ParaName="ExternalTrigger">false</Para4HTuple>
+      <Para4HTuple ParaNo="12" ParaType="string" ParaName="CameraType">default</Para4HTuple>
+      <Para4HTuple ParaNo="13" ParaType="string" ParaName="Device">null</Para4HTuple>
+      <Para4HTuple ParaNo="14" ParaType="int" ParaName="Port">0</Para4HTuple>
+      <Para4HTuple ParaNo="15" ParaType="int" ParaName="LineIn">-1</Para4HTuple>
+    </OpenFramegrabber>
+    <SetFramegrabberParam>
+      <!--      <Para7HTuple ParaNo="00"  ParaType="string"      ParaName="LightSourceSelector"  ShowName="LightSource Selector" Des="[Daylight6500K 、Off]"     DefaultValue="Off" Level="1">Off</Para7HTuple>
+
+      <Para7HTuple ParaNo="01"  ParaType="int"   ParaName="BalanceRatioRaw"      ShowName="BalanceRatioRaw" Des=""       DefaultValue="105" Level="1">105</Para7HTuple>-->
+      <Para7HTuple ParaNo="02" ParaType="int" ParaName="ExposureTimeRaw" ShowName="曝光时间" Des="[25,1000]" DefaultValue="200" Level="1">300</Para7HTuple>
+      <Para7HTuple ParaNo="03" ParaType="int" ParaName="GainRaw" ShowName="图像增益" Des="[1,3]" DefaultValue="1" Level="1">1</Para7HTuple>
+      <Para7HTuple ParaNo="04" ParaType="string" ParaName="TriggerMode" ShowName="触发模式" Des="" DefaultValue="On" Level="1">On</Para7HTuple>
+      <Para7HTuple ParaNo="05" ParaType="int" ParaName="grab_timeout" ShowName="采集延时" Des="" DefaultValue="390" Level="1">360000000</Para7HTuple>
+      <Para7HTuple ParaNo="06" ParaType="int" ParaName="LineDebouncerTimeAbs" ShowName="滤波" Des="" DefaultValue="0" Level="1">200</Para7HTuple>
+      <Para7HTuple ParaNo="07" ParaType="string" ParaName="TriggerActivation" ShowName="触发方式" Des="" DefaultValue="RisingEdge" Level="1">FallingEdge</Para7HTuple>
+      <Para7HTuple ParaNo="08" ParaType="string" ParaName="TriggerSource" ShowName="触发源" Des="" DefaultValue="0" Level="1">Line1</Para7HTuple>
+    </SetFramegrabberParam>
+    <CameraCalibration>
+      <CameraParameters>0,0.114367,2.49711e-005,2.49703e-005,1558.05,525.126,2456,2058</CameraParameters>
+      <CameraPose>-0.0109028,0.0120481,0.00062986,358.895,359.511,269.747,0</CameraPose>
+      <PixelToSizeRatio>0.025</PixelToSizeRatio>
+    </CameraCalibration>
+  </Camera>
+</CameraS>
