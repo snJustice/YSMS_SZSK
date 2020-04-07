@@ -12,7 +12,8 @@
     <sys:String x:Key="CancelCross">取消十字</sys:String>
     <sys:String x:Key="ClrCache">清空缓存</sys:String>
 
-
+    <sys:String x:Key="Product Type">产品型号:</sys:String>
+    <sys:String x:Key="Product Serial Number">生产批号:</sys:String>
     <sys:String x:Key="Title">YSMS-S130智能测量软件系统V</sys:String>
     <sys:String x:Key="Define">定义测量</sys:String>
     <sys:String x:Key="New">新建</sys:String>

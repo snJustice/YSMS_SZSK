@@ -77,6 +77,12 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Communication\LightControll.cs" />
+    <Compile Include="CustomerUserControll\ProductionMessage.xaml.cs">
+      <DependentUpon>ProductionMessage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerUserControll\UserMeasureControl.xaml.cs">
+      <DependentUpon>UserMeasureControl.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Models\RunningStatusInfo.cs" />
     <Compile Include="全局类\Global.cs" />
     <Compile Include="全局类\PublicEnum.cs" />
@@ -85,6 +91,14 @@
       <DependentUpon>SystemInfoWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="CustomerUserControll\CameraViews.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomerUserControll\ProductionMessage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CustomerUserControll\UserMeasureControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -208,15 +222,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\公司Logo.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="YSMS_SZSK_Data.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="YSMS_SZSK_Data_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>YSMS_SZSK_Data.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

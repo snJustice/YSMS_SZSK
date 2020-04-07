@@ -60,7 +60,7 @@ namespace YSMS_SZSK
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
 
-
+            /*
             string exMessage = "";
             if (0 != SoftwareInfo.getInstance().load(InfoPath.getInstance().SoftwareInfo, ref exMessage))
             {
@@ -76,7 +76,7 @@ namespace YSMS_SZSK
 
 
             //打开相机
-            GetCamerasInfo();
+            GetCamerasInfo();*/
 
 
 
@@ -175,7 +175,7 @@ namespace YSMS_SZSK
                 Global.m_dicCameraS.SetGetStationCodeFunc(Global.GetStationImageCode);
             }
             if (SoftwareInfo.getInstance().SystemRunMode == 1)
-            {/*
+            {
                 string openCamera = Global.m_dicCameraS.OpenAllCamera();
 
                 if ("OK" != openCamera)
@@ -184,7 +184,7 @@ namespace YSMS_SZSK
                     MessageBox.Show(messageBoxText: openCamera);
                     this.Closing -= Window_Closing;
                     this.Close();
-                }*/
+                }
             }
             Global.IsGrab(false);
 

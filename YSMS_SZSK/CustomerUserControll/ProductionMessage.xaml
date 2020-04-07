@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="YSMS_SZSK.CustomerUserControll.ProductionMessage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:YSMS_SZSK.CustomerUserControll"
+             mc:Ignorable="d" Height="60" Width="610" >
+    <Grid Margin="0,0,0,10">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*"/>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="200*"/>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="200*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="{DynamicResource Product Type}"  Margin="5,10,31,10"  Background="White" Grid.Column="1"/>
+        <Label Content="{DynamicResource Product Serial Number}"  Margin="5,10,31,10" VerticalAlignment="Top"  Background="White" Grid.Column="3"/>
+        <TextBox   Margin="10,10,20,10" TextWrapping="Wrap" Text=""  Grid.Column="2"/>
+        <TextBox Grid.Column="4"  Margin="10,10,20,10" TextWrapping="Wrap" Text="" />
+
+    </Grid>
+</UserControl>

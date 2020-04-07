@@ -21,26 +21,6 @@
                     </Button>
                 </Grid>
             </TabItem>
-            <TabItem Header="{DynamicResource Schematic diagram1}" Name="tabItem2" FontSize="15">
-                <Grid Name="hGrid2">
-                    <WindowsFormsHost Height="455" Width="600" HorizontalAlignment="Left" Margin="0,0,0,0" Name="windowsFormsHost2" VerticalAlignment="Top"  />
-                </Grid>
-            </TabItem>
-            <TabItem Header="{DynamicResource Schematic diagram2}" Name="tabItem3" FontSize="15">
-                <Grid Name="hGrid3">
-                    <WindowsFormsHost Height="455" Width="600" HorizontalAlignment="Left" Margin="0,0,0,0" Name="windowsFormsHost3" VerticalAlignment="Top"  />
-                </Grid>
-            </TabItem>
-            <TabItem Header="{DynamicResource Schematic diagram3}" Name="tabItem7" FontSize="15">
-                <Grid Name="hGrid4">
-                    <WindowsFormsHost Height="455" Width="600" HorizontalAlignment="Left" Margin="0,0,0,0" Name="windowsFormsHost4" VerticalAlignment="Top"  />
-                </Grid>
-            </TabItem>
-            <TabItem Header="{DynamicResource Schematic diagram4}" Name="tabItem8"  FontSize="15">
-                <Grid Name="hGrid5">
-                    <WindowsFormsHost Height="455" Width="600" HorizontalAlignment="Left" Margin="0,0,0,0" Name="windowsFormsHost5" VerticalAlignment="Top"  />
-                </Grid>
-            </TabItem>
             <TabItem Header="{DynamicResource Other info}" Name="tabItem4" FontSize="15">
                 <Grid>
                     <Grid.ColumnDefinitions>
@@ -143,6 +123,5 @@
                 </Grid>
             </TabItem>
         </TabControl>
-        <Button Content="{DynamicResource Close Test}" Name="button_CloseTest" HorizontalAlignment="Right" VerticalAlignment="Top"  />
     </Grid>
 </UserControl>
