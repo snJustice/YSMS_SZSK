@@ -338,6 +338,7 @@ namespace YSMS.DataManage
             try
             {
                 //打开相机
+                /*///////////////////////////////////////////////////--2020-04-07,zhouyin,要复原
                 HOperatorSet.OpenFramegrabber(
 
                     dicOpenFramegrabber_00_15["00"].GetHTuple,
@@ -370,7 +371,8 @@ namespace YSMS.DataManage
 
                 // wuqh 2016-9-12 更改图像采集方式
                 HOperatorSet.SetFramegrabberParam(hv_AcqHandle, "GtlBufferHandlingMode", "2");
-                
+                */
+                HOperatorSet.OpenFramegrabber("File", 1, 1, 0, 0, 0, 0, "default", -1, "default", -1, "false", @"C:\Users\ZY\Desktop\图片", "default", 1, -1, out hv_AcqHandle); 
                 HOperatorSet.GrabImageStart(hv_AcqHandle, -1);
             }
             catch (Exception ex)
