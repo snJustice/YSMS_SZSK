@@ -50,8 +50,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="halcondotnet">
-      <HintPath>..\..\..\software\halcon12\bin\dotnet35\halcondotnet.dll</HintPath>
+    <Reference Include="halcondotnet, Version=12.0.0.0, Culture=neutral, PublicKeyToken=4973bed59ddbf2b8, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dll\halcondotnet.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -83,7 +84,10 @@
     <Compile Include="CustomerUserControll\UserMeasureControl.xaml.cs">
       <DependentUpon>UserMeasureControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="Models\RunningStatusInfo.cs" />
+    <Compile Include="Utils\ControlFindExtension.cs" />
+    <Compile Include="Utils\Tools.cs" />
     <Compile Include="全局类\Global.cs" />
     <Compile Include="全局类\PublicEnum.cs" />
     <Compile Include="全局类\WinHotKey.cs" />
@@ -222,6 +226,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\公司Logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dll\halcondotnet.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

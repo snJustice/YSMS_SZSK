@@ -11,6 +11,7 @@ using System.IO;
 using System.Windows;
 
 using System.Diagnostics;       // baicx 20200305 监视时间
+using System.Collections.Concurrent;
 
 namespace YSMS.DataManage
 {
@@ -201,30 +202,45 @@ namespace YSMS.DataManage
                 {
                     case CameraState.Standby:
                         cameraState = state;
-                        //清空图像
-                        while (queueImage.Count > 0)
+
+
+                        while(!queueImage.IsEmpty)
                         {
-                            //PackedImage packedImage = queueImage.Dequeue();
-
-                            if (queueImage[0].Image != null && queueImage[0].Image.IsInitialized())
+                            PackedImage temppackage = null;
+                            if(!queueImage.TryDequeue(out temppackage))
                             {
-                                PackedImage packedImage = queueImage[0];
-                                if (packedImage != null)
-                                {
-                                    if (packedImage.Image != null)
-                                    {
-                                        packedImage.Image.Dispose();
-                                    }
-                                }
+                                continue;
                             }
-
-                            if (queueImage.Count > 0)
+                            else
                             {
-                                queueImage.RemoveAt(0);
+                                temppackage.Image.Dispose();
                             }
-
-                            Thread.Sleep(20);
                         }
+
+                        //清空图像
+                        //while (queueImage.Count > 0)
+                        //{
+                        //    //PackedImage packedImage = queueImage.Dequeue();
+
+                        //    if (queueImage[0].Image != null && queueImage[0].Image.IsInitialized())
+                        //    {
+                        //        PackedImage packedImage = queueImage[0];
+                        //        if (packedImage != null)
+                        //        {
+                        //            if (packedImage.Image != null)
+                        //            {
+                        //                packedImage.Image.Dispose();
+                        //            }
+                        //        }
+                        //    }
+
+                        //    if (queueImage.Count > 0)
+                        //    {
+                        //        queueImage.RemoveAt(0);
+                        //    }
+
+                        //    Thread.Sleep(20);
+                        //}
 
                         break;
                     case CameraState.Photo:
@@ -253,7 +269,7 @@ namespace YSMS.DataManage
         /// <summary>
         /// 新的图像队列
         /// </summary>
-        public List<PackedImage> queueImage = new List<PackedImage>();
+        public ConcurrentQueue<PackedImage> queueImage = new ConcurrentQueue<PackedImage>();
 
         /// <summary>
         /// 运行起始时间
@@ -338,7 +354,7 @@ namespace YSMS.DataManage
             try
             {
                 //打开相机
-                /*///////////////////////////////////////////////////--2020-04-07,zhouyin,要复原
+                
                 HOperatorSet.OpenFramegrabber(
 
                     dicOpenFramegrabber_00_15["00"].GetHTuple,
@@ -362,7 +378,7 @@ namespace YSMS.DataManage
                     dicOpenFramegrabber_00_15["15"].GetHTuple,
                     out hv_AcqHandle);
 
-
+                /*////////////////////////////////////////////////////////////////zy
                 //设置初始化参数
                 foreach (var para in dicSetFramegrabberParam.Values)
                 {
@@ -372,7 +388,7 @@ namespace YSMS.DataManage
                 // wuqh 2016-9-12 更改图像采集方式
                 HOperatorSet.SetFramegrabberParam(hv_AcqHandle, "GtlBufferHandlingMode", "2");
                 */
-                HOperatorSet.OpenFramegrabber("File", 1, 1, 0, 0, 0, 0, "default", -1, "default", -1, "false", @"C:\Users\ZY\Desktop\图片", "default", 1, -1, out hv_AcqHandle); 
+              
                 HOperatorSet.GrabImageStart(hv_AcqHandle, -1);
             }
             catch (Exception ex)
@@ -659,7 +675,7 @@ namespace YSMS.DataManage
                                 packedImage.StationNo = StationNo;
                                 packedImage.ChannelNo = ChannelNo;
                                 //queueImage.Enqueue(packedImage);
-                                queueImage.Add(packedImage);
+                                queueImage.Enqueue(packedImage);
 
 
                                 if (SoftwareInfo.getInstance().IsSaveRunInfoData)

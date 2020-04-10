@@ -62,7 +62,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="halcondotnet">
-      <HintPath>G:\WorkSoftware\halcon12\bin\dotnet35\halcondotnet.dll</HintPath>
+      <HintPath>..\YSMS_SZSK\dll\halcondotnet.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />

@@ -15,7 +15,7 @@ namespace YSMS.DataManage
         /// <summary>
         /// 相机集合
         /// </summary>
-        private Camera[,] dicCamera = new Camera[2, 6];
+        private Camera[,] dicCamera = new Camera[4, 2];
 
         /// <summary>
         /// 设置读取当前编码器值的方法（冲压电镀）
@@ -526,7 +526,7 @@ namespace YSMS.DataManage
         {
             for (int i = 0; i < 6; i++)
             {
-                dicCamera[channelNo, i].queueImage.Clear ();
+                dicCamera[channelNo, i].queueImage=new System.Collections.Concurrent.ConcurrentQueue<PackedImage>();
             }
         }
 

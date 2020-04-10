@@ -6,21 +6,21 @@
     "GigEVision", 0, 0, 0, 0, 0, 0, "progressive", -1, "default", -1, "false", "default", "up1", 0, -1 
     -->
     <OpenFramegrabber>
-      <Para4HTuple ParaNo="00"  ParaType="string"   ParaName="Name">GigEVision</Para4HTuple>
-      <Para4HTuple ParaNo="01"  ParaType="int"      ParaName="HorizontalResolution">0</Para4HTuple>
-      <Para4HTuple ParaNo="02"  ParaType="int"      ParaName="VerticalResolution" >0</Para4HTuple>
+      <Para4HTuple ParaNo="00"  ParaType="string"   ParaName="Name">File</Para4HTuple>
+      <Para4HTuple ParaNo="01"  ParaType="int"      ParaName="HorizontalResolution">1</Para4HTuple>
+      <Para4HTuple ParaNo="02"  ParaType="int"      ParaName="VerticalResolution" >1</Para4HTuple>
       <Para4HTuple ParaNo="03"  ParaType="int"      ParaName="ImageWidth" >0</Para4HTuple>
       <Para4HTuple ParaNo="04"  ParaType="int"      ParaName="ImageHeight" >0</Para4HTuple>
       <Para4HTuple ParaNo="05"  ParaType="int"      ParaName="StartRow" >0</Para4HTuple>
       <Para4HTuple ParaNo="06"  ParaType="int"      ParaName="StartColumn" >0</Para4HTuple>
-      <Para4HTuple ParaNo="07"  ParaType="string"   ParaName="Field" >progressive</Para4HTuple>
+      <Para4HTuple ParaNo="07"  ParaType="string"   ParaName="Field" >default</Para4HTuple>
       <Para4HTuple ParaNo="08"  ParaType="int"      ParaName="BitsPerChannel" >-1</Para4HTuple>
       <Para4HTuple ParaNo="09"  ParaType="string"   ParaName="ColorSpace">default</Para4HTuple>
       <Para4HTuple ParaNo="10"  ParaType="int"      ParaName="Generic" >-1</Para4HTuple>
       <Para4HTuple ParaNo="11"  ParaType="string"   ParaName="ExternalTrigger" >false</Para4HTuple>
-      <Para4HTuple ParaNo="12"  ParaType="string"   ParaName="CameraType">default</Para4HTuple>
-      <Para4HTuple ParaNo="13"  ParaType="string"   ParaName="Device" >up1</Para4HTuple>
-      <Para4HTuple ParaNo="14"  ParaType="int"      ParaName="Port">0</Para4HTuple>
+      <Para4HTuple ParaNo="12"  ParaType="string"   ParaName="CameraType">C:\Users\admin\Desktop\图片\285\对应10个</Para4HTuple>
+      <Para4HTuple ParaNo="13"  ParaType="string"   ParaName="Device" >default</Para4HTuple>
+      <Para4HTuple ParaNo="14"  ParaType="int"      ParaName="Port">1</Para4HTuple>
       <Para4HTuple ParaNo="15"  ParaType="int"      ParaName="LineIn" >-1</Para4HTuple>
     </OpenFramegrabber>
 
@@ -41,21 +41,21 @@
   <Camera No="02" Name="up2" IsEnabled="1" AOIHeight="1234" AOIWidth="1624">
     
     <OpenFramegrabber>
-      <Para4HTuple ParaNo="00"  ParaType="string"   ParaName="Name">GigEVision</Para4HTuple>
-      <Para4HTuple ParaNo="01"  ParaType="int"      ParaName="HorizontalResolution">0</Para4HTuple>
-      <Para4HTuple ParaNo="02"  ParaType="int"      ParaName="VerticalResolution" >0</Para4HTuple>
+      <Para4HTuple ParaNo="00"  ParaType="string"   ParaName="Name">File</Para4HTuple>
+      <Para4HTuple ParaNo="01"  ParaType="int"      ParaName="HorizontalResolution">1</Para4HTuple>
+      <Para4HTuple ParaNo="02"  ParaType="int"      ParaName="VerticalResolution" >1</Para4HTuple>
       <Para4HTuple ParaNo="03"  ParaType="int"      ParaName="ImageWidth" >0</Para4HTuple>
       <Para4HTuple ParaNo="04"  ParaType="int"      ParaName="ImageHeight" >0</Para4HTuple>
       <Para4HTuple ParaNo="05"  ParaType="int"      ParaName="StartRow" >0</Para4HTuple>
       <Para4HTuple ParaNo="06"  ParaType="int"      ParaName="StartColumn" >0</Para4HTuple>
-      <Para4HTuple ParaNo="07"  ParaType="string"   ParaName="Field" >progressive</Para4HTuple>
+      <Para4HTuple ParaNo="07"  ParaType="string"   ParaName="Field" >default</Para4HTuple>
       <Para4HTuple ParaNo="08"  ParaType="int"      ParaName="BitsPerChannel" >-1</Para4HTuple>
       <Para4HTuple ParaNo="09"  ParaType="string"   ParaName="ColorSpace">default</Para4HTuple>
       <Para4HTuple ParaNo="10"  ParaType="int"      ParaName="Generic" >-1</Para4HTuple>
       <Para4HTuple ParaNo="11"  ParaType="string"   ParaName="ExternalTrigger" >false</Para4HTuple>
-      <Para4HTuple ParaNo="12"  ParaType="string"   ParaName="CameraType">default</Para4HTuple>
-      <Para4HTuple ParaNo="13"  ParaType="string"   ParaName="Device" >up2</Para4HTuple>
-      <Para4HTuple ParaNo="14"  ParaType="int"      ParaName="Port">0</Para4HTuple>
+      <Para4HTuple ParaNo="12"  ParaType="string"   ParaName="CameraType">C:\Users\admin\Desktop\pppp\285</Para4HTuple>
+      <Para4HTuple ParaNo="13"  ParaType="string"   ParaName="Device" >default</Para4HTuple>
+      <Para4HTuple ParaNo="14"  ParaType="int"      ParaName="Port">1</Para4HTuple>
       <Para4HTuple ParaNo="15"  ParaType="int"      ParaName="LineIn" >-1</Para4HTuple>
     </OpenFramegrabber>
    
@@ -72,21 +72,21 @@
   <Camera No="03" Name="down1" IsEnabled="1" AOIHeight="1234" AOIWidth="1624">
   
     <OpenFramegrabber>
-      <Para4HTuple ParaNo="00"  ParaType="string"   ParaName="Name">GigEVision</Para4HTuple>
-      <Para4HTuple ParaNo="01"  ParaType="int"      ParaName="HorizontalResolution">0</Para4HTuple>
-      <Para4HTuple ParaNo="02"  ParaType="int"      ParaName="VerticalResolution" >0</Para4HTuple>
+      <Para4HTuple ParaNo="00"  ParaType="string"   ParaName="Name">File</Para4HTuple>
+      <Para4HTuple ParaNo="01"  ParaType="int"      ParaName="HorizontalResolution">1</Para4HTuple>
+      <Para4HTuple ParaNo="02"  ParaType="int"      ParaName="VerticalResolution" >1</Para4HTuple>
       <Para4HTuple ParaNo="03"  ParaType="int"      ParaName="ImageWidth" >0</Para4HTuple>
       <Para4HTuple ParaNo="04"  ParaType="int"      ParaName="ImageHeight" >0</Para4HTuple>
       <Para4HTuple ParaNo="05"  ParaType="int"      ParaName="StartRow" >0</Para4HTuple>
       <Para4HTuple ParaNo="06"  ParaType="int"      ParaName="StartColumn" >0</Para4HTuple>
-      <Para4HTuple ParaNo="07"  ParaType="string"   ParaName="Field" >progressive</Para4HTuple>
+      <Para4HTuple ParaNo="07"  ParaType="string"   ParaName="Field" >default</Para4HTuple>
       <Para4HTuple ParaNo="08"  ParaType="int"      ParaName="BitsPerChannel" >-1</Para4HTuple>
       <Para4HTuple ParaNo="09"  ParaType="string"   ParaName="ColorSpace">default</Para4HTuple>
       <Para4HTuple ParaNo="10"  ParaType="int"      ParaName="Generic" >-1</Para4HTuple>
       <Para4HTuple ParaNo="11"  ParaType="string"   ParaName="ExternalTrigger" >false</Para4HTuple>
-      <Para4HTuple ParaNo="12"  ParaType="string"   ParaName="CameraType">default</Para4HTuple>
-      <Para4HTuple ParaNo="13"  ParaType="string"   ParaName="Device" >down1</Para4HTuple>
-      <Para4HTuple ParaNo="14"  ParaType="int"      ParaName="Port">0</Para4HTuple>
+      <Para4HTuple ParaNo="12"  ParaType="string"   ParaName="CameraType">C:\Users\admin\Desktop\pppp\287</Para4HTuple>
+      <Para4HTuple ParaNo="13"  ParaType="string"   ParaName="Device" >default</Para4HTuple>
+      <Para4HTuple ParaNo="14"  ParaType="int"      ParaName="Port">1</Para4HTuple>
       <Para4HTuple ParaNo="15"  ParaType="int"      ParaName="LineIn" >-1</Para4HTuple>
     </OpenFramegrabber>
    
@@ -103,21 +103,21 @@
   <Camera No="04" Name="down2" IsEnabled="1" AOIHeight="1234" AOIWidth="1624">
   
     <OpenFramegrabber>
-      <Para4HTuple ParaNo="00"  ParaType="string"   ParaName="Name">GigEVision</Para4HTuple>
-      <Para4HTuple ParaNo="01"  ParaType="int"      ParaName="HorizontalResolution">0</Para4HTuple>
-      <Para4HTuple ParaNo="02"  ParaType="int"      ParaName="VerticalResolution" >0</Para4HTuple>
+      <Para4HTuple ParaNo="00"  ParaType="string"   ParaName="Name">File</Para4HTuple>
+      <Para4HTuple ParaNo="01"  ParaType="int"      ParaName="HorizontalResolution">1</Para4HTuple>
+      <Para4HTuple ParaNo="02"  ParaType="int"      ParaName="VerticalResolution" >1</Para4HTuple>
       <Para4HTuple ParaNo="03"  ParaType="int"      ParaName="ImageWidth" >0</Para4HTuple>
       <Para4HTuple ParaNo="04"  ParaType="int"      ParaName="ImageHeight" >0</Para4HTuple>
       <Para4HTuple ParaNo="05"  ParaType="int"      ParaName="StartRow" >0</Para4HTuple>
       <Para4HTuple ParaNo="06"  ParaType="int"      ParaName="StartColumn" >0</Para4HTuple>
-      <Para4HTuple ParaNo="07"  ParaType="string"   ParaName="Field" >progressive</Para4HTuple>
+      <Para4HTuple ParaNo="07"  ParaType="string"   ParaName="Field" >default</Para4HTuple>
       <Para4HTuple ParaNo="08"  ParaType="int"      ParaName="BitsPerChannel" >-1</Para4HTuple>
       <Para4HTuple ParaNo="09"  ParaType="string"   ParaName="ColorSpace">default</Para4HTuple>
       <Para4HTuple ParaNo="10"  ParaType="int"      ParaName="Generic" >-1</Para4HTuple>
       <Para4HTuple ParaNo="11"  ParaType="string"   ParaName="ExternalTrigger" >false</Para4HTuple>
-      <Para4HTuple ParaNo="12"  ParaType="string"   ParaName="CameraType">default</Para4HTuple>
-      <Para4HTuple ParaNo="13"  ParaType="string"   ParaName="Device" >down2</Para4HTuple>
-      <Para4HTuple ParaNo="14"  ParaType="int"      ParaName="Port">0</Para4HTuple>
+      <Para4HTuple ParaNo="12"  ParaType="string"   ParaName="CameraType">C:\Users\admin\Desktop\图片\287</Para4HTuple>
+      <Para4HTuple ParaNo="13"  ParaType="string"   ParaName="Device" >default</Para4HTuple>
+      <Para4HTuple ParaNo="14"  ParaType="int"      ParaName="Port">1</Para4HTuple>
       <Para4HTuple ParaNo="15"  ParaType="int"      ParaName="LineIn" >-1</Para4HTuple>
     </OpenFramegrabber>
    

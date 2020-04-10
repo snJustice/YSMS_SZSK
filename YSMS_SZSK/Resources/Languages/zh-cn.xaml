@@ -374,6 +374,16 @@
 
     <sys:String x:Key="Whether to save OK original image">是否保存OK原图</sys:String>
     <sys:String x:Key="Whether to save NG original image">是否保存NG原图</sys:String>
+
+    <sys:String x:Key="Whether to save flow1 OK original image">是否保存流道1 OK原图</sys:String>
+    <sys:String x:Key="Whether to save flow1 NG original image">是否保存流道1 NG原图</sys:String>
+
+    <sys:String x:Key="Whether to save flow2 OK original image">是否保存流道2 OK原图</sys:String>
+    <sys:String x:Key="Whether to save flow2 NG original image">是否保存流道2 NG原图</sys:String>
+
+    <sys:String x:Key="Whether to save flow3 OK original image">是否保存流道3 OK原图</sys:String>
+    <sys:String x:Key="Whether to save flow3 NG original image">是否保存流道3 NG原图</sys:String>
+
     <sys:String x:Key="Whether to save the tape mark NG original image">是否保存带标记NG原图</sys:String>
     <sys:String x:Key="Whether to save the tape mark NG screenShot image">是否保存带标记NG截图</sys:String>
     <sys:String x:Key="Machine and line No">机台及产线编号</sys:String>
@@ -962,5 +972,8 @@
     <sys:String x:Key="Matched">匹配</sys:String>
     <sys:String x:Key="No matched">未匹配</sys:String>
 
+
+
+    <sys:String x:Key="SoftwareInfo Save Successfully">参数信息保存成功</sys:String>
 
 </ResourceDictionary>

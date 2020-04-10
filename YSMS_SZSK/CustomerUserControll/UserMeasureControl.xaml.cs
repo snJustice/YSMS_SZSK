@@ -1,17 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+﻿using System.Windows.Controls;
 
 namespace YSMS_SZSK.CustomerUserControll
 {
@@ -23,6 +10,20 @@ namespace YSMS_SZSK.CustomerUserControll
         public UserMeasureControl()
         {
             InitializeComponent();
+            
+            
+
         }
+
+        public string StationMessage { set { lbl_Number.Content = value; } get { return lbl_Number.Content.ToString(); } }
+
+        public string Product_Type { set { txtbox_Product_Type.Text = value; } get { return txtbox_Product_Type.Text.ToString(); } }
+        public string Product_Serial_Number { set { txtbox_Product_SerialNumber.Text = value; } get { return txtbox_Product_SerialNumber.Text.ToString(); } }
+        
+
+
+        public CameraViews WorkStation2 { get { return Work_Station2; } }
+
+        public CameraViews WorkStation1 { get { return Work_Station1; } }
     }
 }

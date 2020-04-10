@@ -10,7 +10,7 @@ namespace YSMS.DataManage
     {
 
         #region 实例对象（单例）
-        private static SoftwareInfo instance;
+        private static SoftwareInfo instance ;
         /// <summary>
         /// 获取单例对象
         /// </summary>
@@ -35,6 +35,28 @@ namespace YSMS.DataManage
         }
         #endregion
 
+
+        public string SaveAllImagePathTips = "【保存图像的路径】";
+        public string SaveAllImagePath = "";
+
+        public string Folw1IsSaveOkImageTips = "【通道1是否保存ok图像：1保存/0不保存】";
+        public bool Folw1IsSaveOkImage = false;
+
+        public string Folw1IsSaveNGImageTips = "【通道1是否保存NG图像：1保存/0不保存】";
+        public bool Folw1IsSaveNGImage = false;
+
+
+        public string Folw2IsSaveOkImageTips = "【通道2是否保存ok图像：1保存/0不保存】";
+        public bool Folw2IsSaveOkImage = false;
+
+        public string Folw2IsSaveNGImageTips = "【通道2是否保存NG图像：1保存/0不保存】";
+        public bool Folw2IsSaveNGImage = false;
+
+        public string Folw3IsSaveOkImageTips = "【通道3是否保存ok图像：1保存/0不保存】";
+        public bool Folw3IsSaveOkImage = false;
+
+        public string Folw3IsSaveNGImageTips = "【通道3是否保存NG图像：1保存/0不保存】";
+        public bool Folw3IsSaveNGImage = false;
 
         /// <summary>
         /// 系统运行模式 0：脱机模式 1：联机模式 

@@ -4,12 +4,12 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              mc:Ignorable="d" 
-             d:DesignHeight="500" d:DesignWidth="613" FontSize="13" FontFamily="Microsoft YaHei" FontWeight="Bold" >
+             d:DesignHeight="500" d:DesignWidth="500" FontSize="13" FontFamily="Microsoft YaHei" FontWeight="Bold" >
     <Grid>
-        <TabControl Height="485" HorizontalAlignment="Left" Name="tabControl1" VerticalAlignment="Top" Width="613" >
+        <TabControl  Name="tabControl1" Margin="0,0,0,0" >
             <TabItem Header="{DynamicResource Real-time Image}" Name="tabItem1" Focusable="True" FontSize="15">
-                <Grid Name="hGrid1">
-                    <WindowsFormsHost Height="455" Width="600" HorizontalAlignment="Left" Margin="0,0,0,0" Name="windowsFormsHost1" VerticalAlignment="Top"  />
+                <Grid Name="hGrid1" Margin="0,0,4,0">
+                    <WindowsFormsHost   Margin="10,10,10,10" Name="windowsFormsHost1"   />
                     <Button Content="{DynamicResource screenshot}" Height="23" HorizontalAlignment="Left" Margin="537,0,0,0" Name="button_ScreenShot" VerticalAlignment="Top" Width="60"  >
                         <Button.ToolTip>
                             <ToolTip>

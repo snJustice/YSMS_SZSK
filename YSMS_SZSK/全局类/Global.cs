@@ -1079,7 +1079,9 @@ namespace YSMS_130Standard
                 return;
 
                 //DateTime.Now.ToString("HH-mm-ss-fff")
+#pragma warning disable CS0162 // 检测到无法访问的代码
                 string str = "";
+#pragma warning restore CS0162 // 检测到无法访问的代码
                 if (strList.Count < 6)
                 {
                     return;

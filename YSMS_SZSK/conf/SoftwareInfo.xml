@@ -1,7 +1,30 @@
 <?xml version="1.0"?>
 <SoftwareInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+  <SaveAllImagePathTips>【保存图像的路径】</SaveAllImagePathTips>
+  <SaveAllImagePath>D://Images</SaveAllImagePath>
+
+  <Folw1IsSaveOkImageTips>【通道1是否保存ok图像：1保存/0不保存】</Folw1IsSaveOkImageTips>
+  <Folw1IsSaveOkImage>0</Folw1IsSaveOkImage>
+
+  <Folw1IsSaveNGImageTips>【通道1是否保存ng图像：1保存/0不保存】</Folw1IsSaveNGImageTips>
+  <Folw1IsSaveNGImage>0</Folw1IsSaveNGImage>
+  
+  <Folw2IsSaveOkImageTips>【通道2是否保存ok图像：1保存/0不保存】</Folw2IsSaveOkImageTips>
+  <Folw2IsSaveOkImage>0</Folw2IsSaveOkImage>
+  
+  <Folw2IsSaveNGImageTips>【通道2是否保存ng图像：1保存/0不保存】</Folw2IsSaveNGImageTips>
+  <Folw2IsSaveNGImage>0</Folw2IsSaveNGImage>
+
+  <Folw3IsSaveOkImageTips>【通道3是否保存ok图像：1保存/0不保存】</Folw3IsSaveOkImageTips>
+  <Folw3IsSaveOkImage>0</Folw3IsSaveOkImage>
+  
+  <Folw3IsSaveNGImageTips>【通道3是否保存ng图像：1保存/0不保存】</Folw3IsSaveNGImageTips>
+  <Folw3IsSaveNGImage>0</Folw3IsSaveNGImage>
+  
+  
   <SystemRunModeTips> 【系统运行模式： 0脱机模式/1联机模式】 </SystemRunModeTips>
-  <SystemRunMode>0</SystemRunMode>
+  <SystemRunMode>1</SystemRunMode>
   <LanguageTips> 【语言模式： 中文/English 】 </LanguageTips>
   <Language>English</Language>
   <IsSaveRunInfoDataTips> 【是否存储运行数据信息： true/false】 </IsSaveRunInfoDataTips>

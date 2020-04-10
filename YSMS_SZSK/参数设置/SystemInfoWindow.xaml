@@ -4,14 +4,16 @@
         Title="{DynamicResource Parameter Setting}" Height="790" Width="325" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="/YSMS_SZSK;component/Images/公司Logo.ico" FontSize="13" FontFamily="Microsoft YaHei" FontWeight="Bold" >
     <Grid Height="751">
         <TabControl Height="700" HorizontalAlignment="Left" Name="tabControl1" VerticalAlignment="Top" Width="305">
-            <TabItem Header="{DynamicResource Basic parameters}" Name="tabItem1">
+            <TabItem Header="{DynamicResource Basic parameters}" Name="tabItem1" IsSelected="True">
                 <Grid Width="302">
-                    <CheckBox Content="{DynamicResource Whether to save OK original image}" Height="20" FontSize="14" HorizontalAlignment="Left" Margin="7,9,0,0" Name="checkBox_OK" VerticalAlignment="Top" />
-                    <CheckBox Content="{DynamicResource Whether to save NG original image}" FontSize="14" Height="20" HorizontalAlignment="Left" Margin="7,34,0,0" Name="checkBox_NG" VerticalAlignment="Top" />
-                    <CheckBox Content="{DynamicResource Whether to save the tape mark NG original image}" FontSize="14" Height="20" HorizontalAlignment="Left" Margin="7,59,0,0" Name="checkBox_MarkNG" VerticalAlignment="Top" />
-                    <CheckBox Content="{DynamicResource Whether to save the unmatched original image}" FontSize="14" Height="20" HorizontalAlignment="Left" Margin="7,110,0,0" Name="checkBox_WPP" VerticalAlignment="Top" />
-                    <CheckBox Content="{DynamicResource Whether to save the unreported unmatched images}" FontSize="14" Height="20" HorizontalAlignment="Left" Margin="7,135,0,0" Name="checkBox_allWPP" VerticalAlignment="Top" />
-                    <CheckBox Content="{DynamicResource Whether to save the size error original image}" FontSize="14" Height="20" HorizontalAlignment="Left" Margin="7,185,0,0" Name="checkBox_Size" VerticalAlignment="Top" />
+                    <CheckBox Content="{DynamicResource Whether to save flow1 OK original image}" Height="20" FontSize="14" HorizontalAlignment="Left" Margin="7,9,0,0" Name="checkBox_OK_Flow1" VerticalAlignment="Top" />
+                    <CheckBox Content="{DynamicResource Whether to save flow1 NG original image}" FontSize="14" Height="20" HorizontalAlignment="Left" Margin="7,34,0,0" Name="checkBox_NG_Flow1" VerticalAlignment="Top" />
+
+                    <CheckBox Content="{DynamicResource Whether to save flow2 OK original image}" FontSize="14" Height="20" HorizontalAlignment="Left" Margin="7,59,0,0" Name="checkBox_OK_Flow2" VerticalAlignment="Top" />
+                    <CheckBox Content="{DynamicResource Whether to save flow2 NG original image}" FontSize="14" Height="20" HorizontalAlignment="Left" Margin="7,85,0,0" Name="checkBox_NG_Flow2" VerticalAlignment="Top" />
+
+                    <CheckBox Content="{DynamicResource Whether to save flow3 OK original image}" FontSize="14" Height="20" HorizontalAlignment="Left" Margin="8,110,0,0" Name="checkBox_OK_Flow3" VerticalAlignment="Top" />
+                    <CheckBox Content="{DynamicResource Whether to save flow3 NG original image}" FontSize="14" Height="20" HorizontalAlignment="Left" Margin="8,135,0,0" Name="checkBox_NG_Flow3" VerticalAlignment="Top" />
                     <CheckBox Content="{DynamicResource Whether to alarm size error}" FontSize="14" Height="20" HorizontalAlignment="Left" Margin="7,211,0,0" Name="checkBox_SizeAlarm" VerticalAlignment="Top" />
                     <CheckBox Content="{DynamicResource Whether to save the measurement data to the database}" FontSize="14" Height="20" HorizontalAlignment="Left" Margin="7,237,0,0" Name="checkBox_MeasureSize2DB" VerticalAlignment="Top" />
                     <CheckBox Content="{DynamicResource Whether the alarm software should stop detection}" FontSize="14" Height="20" HorizontalAlignment="Left" Margin="7,263,0,0" Name="checkBox_IsAlarmSoftwareStop" VerticalAlignment="Top" />
@@ -29,7 +31,7 @@
                     <Label Content="{DynamicResource WaitInterval}" Height="28" HorizontalAlignment="Left" Margin="7,499,0,0" Name="label3" VerticalAlignment="Top" Visibility="Hidden" />
                     <TextBox Height="23" HorizontalAlignment="Right" Margin="0,501,38,0" Name="textBox_WaitInterval" VerticalAlignment="Top" Visibility="Hidden" Width="110" />
                     <Label Content="{DynamicResource Pieces}" Height="28" HorizontalAlignment="Left" Margin="270,501,0,0" Name="label4" VerticalAlignment="Top" Visibility="Hidden" />
-                    <CheckBox Content="{DynamicResource Whether to save the tape mark NG screenShot image}" FontSize="14" Height="20" HorizontalAlignment="Left" Margin="7,85,0,0" Name="checkBox_screenShot" VerticalAlignment="Top" />
+                    <CheckBox Content="{DynamicResource Whether to save the tape mark NG screenShot image}" FontSize="14" Height="20" HorizontalAlignment="Left" Margin="7,185,0,0" Name="checkBox_screenShot" VerticalAlignment="Top" />
                     <Label Content="{DynamicResource Machine and line No}" Height="28" HorizontalAlignment="Left" Margin="7,536,0,0" Name="label5" VerticalAlignment="Top" FontWeight="Bold"  Visibility="Hidden" Foreground="Blue" />
                     <TextBox Height="23" HorizontalAlignment="Left" Margin="154,538,0,0" Name="textBox_DeviceLineNo" VerticalAlignment="Top" Width="110" Visibility="Hidden" Background="{x:Null}" BorderBrush="Black" Foreground="Blue" TextAlignment="Center" />
                     <Label Content="{DynamicResource the Length of Coiler1}" Height="28" HorizontalAlignment="Left" Margin="7,569,0,0" Name="label6" VerticalAlignment="Top" Visibility="Hidden" Foreground="Blue" />
@@ -38,7 +40,7 @@
                     <TextBox Height="23" HorizontalAlignment="Left" Margin="154,0,0,16" Name="textBox_LineLength2" VerticalAlignment="Bottom" Width="110" Visibility="Hidden" Background="{x:Null}" BorderBrush="Black" Foreground="Blue" TextAlignment="Center" />
                 </Grid>
             </TabItem>
-            <TabItem Header="{DynamicResource Channel1 Normalmaterial parameters}" Name="TabParaNormal_channel1">
+            <TabItem Header="{DynamicResource Channel1 Normalmaterial parameters}" Name="TabParaNormal_channel1" IsEnabled="False">
                 <Grid Height="588">
                     <Label Content="{DynamicResource speed}" Height="28" HorizontalAlignment="Left" Margin="6,9,0,0" VerticalAlignment="Top" Width="120" />
                     <Label Content="{DynamicResource Starting mark of station2}" Height="28" Width="124"  Margin="2,59,0,0"  VerticalAlignment ="Top" HorizontalAlignment="Left"/>
@@ -73,7 +75,7 @@
 
             </TabItem>
 
-            <TabItem Header="{DynamicResource Channel1 material parameters}" Name="TabPara_channel1">
+            <TabItem Header="{DynamicResource Channel1 material parameters}" Name="TabPara_channel1" IsEnabled="False">
                 <Grid Height="587">
                     <Label Content="{DynamicResource Qualified full charge}" Height="28" Width="120"  Margin="6,-2,0,0" VerticalAlignment ="Top" HorizontalAlignment="Left"/>
                     <Label Content="{DynamicResource Unqualified full quantity}" Height="28" Width="120"  Margin="6,23,0,0"  VerticalAlignment ="Top" HorizontalAlignment="Left" />
@@ -135,7 +137,7 @@
                 </Grid>
 
             </TabItem>
-            <TabItem Header="{DynamicResource Channel2 material parameters}" Name="TabPara_channel2">
+            <TabItem Header="{DynamicResource Channel2 material parameters}" Name="TabPara_channel2" IsEnabled="False">
                 <Grid Height="589">
                     <Label Content="{DynamicResource Qualified full charge}" Height="28" Width="120"  Margin="6,-2,0,0" VerticalAlignment ="Top" HorizontalAlignment="Left"/>
                     <Label Content="{DynamicResource Unqualified full quantity}" Height="28" Width="120"  Margin="6,23,0,0"  VerticalAlignment ="Top" HorizontalAlignment="Left" />
